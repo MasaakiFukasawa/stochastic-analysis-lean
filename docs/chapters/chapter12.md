@@ -925,3 +925,8 @@ import Book.Chapter12
 - [Chapter12ZeroExtensionTruncation](../../src/Chapter12ZeroExtensionTruncation.lean)
 - [FullAuditCylinderOriginal](../../src/FullAuditCylinderOriginal.lean)
 - [FullAuditMalliavinBrownianExercise](../../src/FullAuditMalliavinBrownianExercise.lean)
+
+## 構成から結論までをつなぐ定理
+
+- [EndToEndNaturalBrownianDensity](../../src/EndToEndNaturalBrownianDensity.lean)
+- [EndToEndNaturalDivergence](../../src/EndToEndNaturalDivergence.lean)

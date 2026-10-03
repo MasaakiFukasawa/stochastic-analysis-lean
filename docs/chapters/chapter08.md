@@ -336,3 +336,7 @@ import Book.Chapter08
 - [FullAuditTimeAverageAE](../../src/FullAuditTimeAverageAE.lean)
 - [FullAuditTimeAverageCoupling](../../src/FullAuditTimeAverageCoupling.lean)
 - [FullAuditTimeProductIntegrability](../../src/FullAuditTimeProductIntegrability.lean)
+
+## 構成から結論までをつなぐ定理
+
+- [EndToEndSmallMassConstructed](../../src/EndToEndSmallMassConstructed.lean)

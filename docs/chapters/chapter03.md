@@ -194,3 +194,8 @@ import Book.Chapter03
 - [Chapter3WrittenObstructions](../../src/Chapter3WrittenObstructions.lean)
 - [Chapter3WrittenRegularization](../../src/Chapter3WrittenRegularization.lean)
 - [Chapter3WrittenTaylor](../../src/Chapter3WrittenTaylor.lean)
+
+## 時間・空間の正則性を分けた伊藤の公式
+
+- [Chapter4C12ClockIto](../../src/Chapter4C12ClockIto.lean)
+- [Chapter4C12ItoConstructed](../../src/Chapter4C12ItoConstructed.lean)

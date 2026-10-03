@@ -4,7 +4,7 @@
 import Book.Appendices
 ```
 
-測度論・関数解析・ブラウン運動の構成。定理の仮定を明示した形式化です。特に分数ブラウン運動の構成は、与えられた確率積分の等長写像を仮定するインターフェースを含みます。
+測度論・関数解析・ブラウン運動の構成。定理の仮定を明示した形式化です。分数ブラウン運動は、[EndToEndMVNWritten](../../src/EndToEndMVNWritten.lean) で元の独立なブラウン運動から実際の伊藤積分とともに構成しています。
 
 - [Appendix](../../src/Appendix.lean)
 - [Extended](../../src/Extended.lean)
@@ -90,3 +90,14 @@ import Book.Appendices
 - [ManuscriptPiLambda](../../src/ManuscriptPiLambda.lean)
 - [ManuscriptMeasurability](../../src/ManuscriptMeasurability.lean)
 - [ManuscriptProjection](../../src/ManuscriptProjection.lean)
+
+## 構成から結論までをつなぐ定理
+
+- [EndToEndMVNWritten](../../src/EndToEndMVNWritten.lean)
+- [EndToEndCramerWoldSmoothing](../../src/EndToEndCramerWoldSmoothing.lean)
+- [EndToEndConvergenceTools](../../src/EndToEndConvergenceTools.lean)
+- [EndToEndContinuousFSpace](../../src/EndToEndContinuousFSpace.lean)
+- [EndToEndHilbertRepresentation](../../src/EndToEndHilbertRepresentation.lean)
+- [EndToEndSignedTruncation](../../src/EndToEndSignedTruncation.lean)
+- [EndToEndFiniteIntegral](../../src/EndToEndFiniteIntegral.lean)
+- [EndToEndMonotoneProbability](../../src/EndToEndMonotoneProbability.lean)

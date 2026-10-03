@@ -13,6 +13,8 @@ jobs:
         run: |
           curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Clear previous audit result
+        run: rm -f audit/latest-run.json
       - name: Check release sources
         run: python3 scripts/audit.py --check-only
       - name: Fetch Mathlib cache

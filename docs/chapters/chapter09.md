@@ -178,3 +178,7 @@ import Book.Chapter09
 - [Chapter9VectorIncrement](../../src/Chapter9VectorIncrement.lean)
 - [FullAuditDenoising](../../src/FullAuditDenoising.lean)
 - [FullAuditOUExercise](../../src/FullAuditOUExercise.lean)
+
+## 構成から結論までをつなぐ定理
+
+- [EndToEndOUReverse](../../src/EndToEndOUReverse.lean)

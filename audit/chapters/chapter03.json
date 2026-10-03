@@ -190,7 +190,11 @@
       "Chapter3ReverseIntegralCounterexample"
     ],
     "whole_chapter_verified": true,
-    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+    "constructed_modules": [
+      "Chapter4C12ClockIto",
+      "Chapter4C12ItoConstructed"
+    ]
   },
   "inventory": {
     "chapter": "第3章 伊藤の公式",

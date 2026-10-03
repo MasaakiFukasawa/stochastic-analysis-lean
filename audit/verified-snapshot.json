@@ -63152,7 +63152,13 @@
         "FullAuditStoppingExercises"
       ],
       "whole_chapter_verified": true,
-      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+      "constructed_modules": [
+        "EndToEndConditionalL1",
+        "EndToEndConditionalL2",
+        "EndToEndDiscreteVariation",
+        "EndToEndTwoPointIsometry"
+      ]
     },
     {
       "chapter": 2,
@@ -63592,7 +63598,10 @@
         "Chapter2ItoConstructionUniversalCovariance"
       ],
       "whole_chapter_verified": true,
-      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+      "constructed_modules": [
+        "EndToEndParameterItoGlobal"
+      ]
     },
     {
       "chapter": 3,
@@ -63785,7 +63794,11 @@
         "Chapter3ReverseIntegralCounterexample"
       ],
       "whole_chapter_verified": true,
-      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+      "constructed_modules": [
+        "Chapter4C12ClockIto",
+        "Chapter4C12ItoConstructed"
+      ]
     },
     {
       "chapter": 4,
@@ -63879,7 +63892,10 @@
         "Chapter4SDENoiseInformation"
       ],
       "whole_chapter_verified": true,
-      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+      "constructed_modules": [
+        "EndToEndRandomSDEExistence"
+      ]
     },
     {
       "chapter": 5,
@@ -64912,7 +64928,10 @@
         "FullAuditTimeProductIntegrability"
       ],
       "whole_chapter_verified": true,
-      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+      "constructed_modules": [
+        "EndToEndSmallMassConstructed"
+      ]
     },
     {
       "chapter": 9,
@@ -65089,7 +65108,10 @@
         "Chapter9ReversePastInformation"
       ],
       "whole_chapter_verified": true,
-      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+      "constructed_modules": [
+        "EndToEndOUReverse"
+      ]
     },
     {
       "chapter": 10,
@@ -66506,7 +66528,11 @@
         "FullAuditMalliavinBrownianExercise"
       ],
       "whole_chapter_verified": true,
-      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+      "constructed_modules": [
+        "EndToEndNaturalBrownianDensity",
+        "EndToEndNaturalDivergence"
+      ]
     },
     {
       "chapter": 13,
@@ -66601,11 +66627,18 @@
         "Chapter13UnitNoiseBrownian"
       ],
       "whole_chapter_verified": true,
-      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+      "constructed_modules": [
+        "EndToEndHJMInitialCurve",
+        "EndToEndHJMConstructedGlobal",
+        "EndToEndHJMAEModelComplete",
+        "EndToEndBondApplications",
+        "EndToEndSwapRates"
+      ]
     }
   ],
   "appendix_record": {
-    "scope": "All appendix proof modules, including expanded manuscript arguments; Chapter 2 Wiener integral properties remain explicit hypotheses",
+    "scope": "Base appendix proof modules and their explicitly stated hypotheses. EndToEndMVNWritten additionally constructs the actual Ito integrals from independent Brownian motions.",
     "lean_toolchain": "leanprover/lean4:v4.34.0",
     "mathlib_commit": "5ed2965256430c3649e86755f9576b54eca72435",
     "verified_module_count": 84,
@@ -67130,7 +67163,17 @@
       "app0.tex": "53828806be9e43a5ad7a8065b47f4cc8038cf7b43fa141e98beb20935379a38b",
       "app1.tex": "a6fd8c09a1381fac59424e875f5d3eba153884c24dcb378ee3afe117152741b5",
       "app2.tex": "9608cd8a9936bc697124f9aa54f7ef2cc4fd5a1d9950dfd94fc8ff1284d4ed7d"
-    }
+    },
+    "constructed_modules": [
+      "EndToEndMVNWritten",
+      "EndToEndCramerWoldSmoothing",
+      "EndToEndConvergenceTools",
+      "EndToEndContinuousFSpace",
+      "EndToEndHilbertRepresentation",
+      "EndToEndSignedTruncation",
+      "EndToEndFiniteIntegral",
+      "EndToEndMonotoneProbability"
+    ]
   },
   "constructed_interfaces": {
     "new_modules": 94,

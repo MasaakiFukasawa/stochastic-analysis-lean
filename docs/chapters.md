@@ -16,3 +16,5 @@
 | 12 | マリアバン解析 | `Book.Chapter12` | [証明ファイルと対応表](chapters/chapter12.md) |
 | 13 | 金利モデル | `Book.Chapter13` | [証明ファイルと対応表](chapters/chapter13.md) |
 | 付録 | 測度論・関数解析・ブラウン運動 | `Book.Appendices` | [付録の案内](chapters/appendices.md) |
+
+全体は `import Book`、構成と結論をつなぐ定理は `import Book.Constructed` から読み込めます。[ファイル別の検証結果](../audit/constructed-interfaces.json)も参照してください。

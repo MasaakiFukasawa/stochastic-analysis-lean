@@ -441,3 +441,7 @@ import Book.Chapter02
 - [RecentItoFubiniBridge](../../src/RecentItoFubiniBridge.lean)
 - [RecentItoFubiniCheck](../../src/RecentItoFubiniCheck.lean)
 - [RecentItoTerminalCheck](../../src/RecentItoTerminalCheck.lean)
+
+## 構成から結論までをつなぐ定理
+
+- [EndToEndParameterItoGlobal](../../src/EndToEndParameterItoGlobal.lean)

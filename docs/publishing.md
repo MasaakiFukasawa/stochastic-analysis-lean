@@ -1,18 +1,23 @@
-# GitHubへの公開
+# 公開内容と更新手順
 
-この `stochastic-analysis-lean` フォルダを新しいGitリポジトリのルートにしてください。
+公開先は [MasaakiFukasawa/stochastic-analysis-lean](https://github.com/MasaakiFukasawa/stochastic-analysis-lean) です。このフォルダがリポジトリのルートです。
+
+公開するのはLeanソース、利用案内、依存関係の指定、検証結果です。教科書本文・TeX・PDF・非公開の照合記録は含めません。`.lake/` とログはGitの管理対象外です。`audit/latest-run.json` は公開対象で、検査を実行すると更新されます。
+
+更新時は、次の順に確認します。
 
 ```sh
 python3 scripts/audit.py --check-only
-git init
-git add .
-git commit -m "Publish manuscript proof files and reproducible Lean project"
+python3 scripts/audit.py
+git diff --check
+git status --short
+git diff
 ```
 
-GitHubで空のリポジトリを作成し、その画面に表示されるリモートURLを `origin` に登録してpushします。`.gitignore` によって `.lake/`・ログ・実行時の監査結果は除外されます。原稿PDF・TeXや元の作業フォルダ全体を追加する必要はありません。
+証明ソースを変更すると、保存された検証済みハッシュとの不一致が検出されます。ビルド・公理監査・原稿対応の確認を行い、その結果に基づいて検証記録を更新してください。ハッシュの更新だけを検証成功として扱わないでください。
 
-`lean-toolchain` と `lake-manifest.json` はコミット対象です。依存関係を更新する目的がなければ `lake update` で別のMathlibへ切り替えないでください。
+公開するファイルを確認して個別に `git add` し、コミットして `git push origin main` で反映します。元の原稿作業フォルダ全体は追加しません。
 
-公開後はGitHub Actionsの **Lean verification** を手動実行できます。Mathlibのキャッシュを取得し、全体のビルドと公理監査を行います。全章ビルドには時間がかかるため、標準では手動起動にしています。
+`lean-toolchain` と `lake-manifest.json` はコミット対象です。依存関係を変更するとき以外は `lake update` を実行しません。
 
-バージョンを付ける際は、Leanのビルド成功、監査成功、原稿対応表の確認を記録したコミットにタグを付けると、他の人が同じ版を利用できます。
+GitHub Actionsの **Lean verification** は手動で起動できます。依存キャッシュを取得し、全体のビルドと公理監査を行います。実行結果はActionsの成果物に保存され、リポジトリ内の記録へは自動コミットされません。バージョンのタグは、ビルド・監査・原稿対応の確認を終えたコミットに付けてください。

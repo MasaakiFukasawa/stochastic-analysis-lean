@@ -92,7 +92,14 @@
       "Chapter13UnitNoiseBrownian"
     ],
     "whole_chapter_verified": true,
-    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+    "constructed_modules": [
+      "EndToEndHJMInitialCurve",
+      "EndToEndHJMConstructedGlobal",
+      "EndToEndHJMAEModelComplete",
+      "EndToEndBondApplications",
+      "EndToEndSwapRates"
+    ]
   },
   "inventory": {
     "chapter": 13,

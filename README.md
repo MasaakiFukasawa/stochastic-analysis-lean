@@ -31,7 +31,7 @@ import Book.Chapter13
 #check Asakura.Chapter13.numeraire_payoff_pricing
 ```
 
-全体は `import Book`、付録は `import Book.Appendices` です。元の確率過程から構成と結論をつなぐ定理は `import Book.Constructed` からも読み込めます。他のプロジェクトからは、公開後のこのリポジトリをLakeの依存パッケージに指定します。LeanとMathlibのバージョンも合わせてください。
+全体は `import Book`、付録は `import Book.Appendices` です。元の確率過程から構成と結論をつなぐ定理は `import Book.Constructed` からも読み込めます。他のプロジェクトからは、このリポジトリをLakeの依存パッケージに指定します。LeanとMathlibのバージョンも合わせてください。
 
 ## 章を選ぶ
 
@@ -61,6 +61,6 @@ import Book.Chapter13
 
 ## 公開とライセンス
 
-このフォルダをリポジトリのルートとして公開できます。[公開手順](docs/publishing.md)を参照してください。原稿本文・TeX・PDFと組版用クラスファイルは含めていません。対応表には命題の識別情報とLeanの参照先を記載し、本文の転載は含めません。
+公開先は [MasaakiFukasawa/stochastic-analysis-lean](https://github.com/MasaakiFukasawa/stochastic-analysis-lean) です。[公開内容と更新手順](docs/publishing.md)を参照してください。原稿本文・TeX・PDFと組版用クラスファイルは含めていません。対応表には命題の識別情報とLeanの参照先を記載し、本文の転載は含めません。
 
 既存コードのApache License 2.0とMathlib由来の著作権表示を保持しています。[LICENSE](LICENSE)・[NOTICE](NOTICE)を参照してください。

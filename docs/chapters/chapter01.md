@@ -42,3 +42,10 @@ import Book.Chapter01
 - [FullAuditProjectionRules](../../src/FullAuditProjectionRules.lean)
 - [FullAuditSmoothCutoff](../../src/FullAuditSmoothCutoff.lean)
 - [FullAuditStoppingExercises](../../src/FullAuditStoppingExercises.lean)
+
+## 構成から結論までをつなぐ定理
+
+- [EndToEndConditionalL1](../../src/EndToEndConditionalL1.lean)
+- [EndToEndConditionalL2](../../src/EndToEndConditionalL2.lean)
+- [EndToEndDiscreteVariation](../../src/EndToEndDiscreteVariation.lean)
+- [EndToEndTwoPointIsometry](../../src/EndToEndTwoPointIsometry.lean)
