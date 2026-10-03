@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "date_utc": "2026-10-03T17:05:32Z",
+  "modules": 3835,
+  "declarations": 6777,
+  "missing_declarations": [],
+  "unexpected_axioms": {},
+  "scope": "Lean statements and transitive axioms; not automatic verification of TeX prose."
+}
