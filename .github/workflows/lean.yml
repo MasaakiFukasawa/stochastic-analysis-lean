@@ -1,0 +1,30 @@
+name: Lean verification
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check release sources
+        run: python3 scripts/audit.py --check-only
+      - name: Fetch Mathlib cache
+        run: lake exe cache get
+      - name: Build and audit
+        env:
+          LEAN_NUM_THREADS: 2
+        run: python3 scripts/audit.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lean-audit
+          path: |
+            audit/latest-run.json
+            .lake/audit/axioms.log

@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-03",
+  "proof_sources_unchanged": true,
+  "source_modules": 3741,
+  "entry_point_compilation": [
+    {
+      "module": "Book.Appendices",
+      "passed": true
+    },
+    {
+      "module": "Book.Chapter01",
+      "passed": true
+    },
+    {
+      "module": "Book.Chapter02",
+      "passed": true
+    },
+    {
+      "module": "Book.Chapter03",
+      "passed": true
+    },
+    {
+      "module": "Book.Chapter04",
+      "passed": true
+    },
+    {
+      "module": "Book.Chapter05",
+      "passed": true
+    },
+    {
+      "module": "Book.Chapter06",
+      "passed": true
+    },
+    {
+      "module": "Book.Chapter07",
+      "passed": true
+    },
+    {
+      "module": "Book.Chapter08",
+      "passed": true
+    },
+    {
+      "module": "Book.Chapter09",
+      "passed": true
+    },
+    {
+      "module": "Book.Chapter10",
+      "passed": true
+    },
+    {
+      "module": "Book.Chapter11",
+      "passed": true
+    },
+    {
+      "module": "Book.Chapter12",
+      "passed": true
+    },
+    {
+      "module": "Book.Chapter13",
+      "passed": true
+    },
+    {
+      "module": "Book",
+      "passed": true
+    }
+  ],
+  "axiom_audit": {
+    "passed": true,
+    "declarations": 6647,
+    "missing": [],
+    "unexpected": {}
+  },
+  "clean_lake_build_performed": false,
+  "method": "Exported entry points freshly compiled using matching, previously compiled proof objects. All imported theorem axioms rechecked. Full fresh Lake build is available via scripts/audit.py; not performed in this packaging task.",
+  "lake_configuration_checked": true,
+  "portable_audit_script_passed": true,
+  "markdown_links_checked": true,
+  "portable_audit_result": {
+    "passed": true,
+    "date_utc": "2026-10-03T02:58:11Z",
+    "modules": 3741,
+    "declarations": 6647,
+    "missing_declarations": [],
+    "unexpected_axioms": {},
+    "scope": "Lean statements and transitive axioms; not automatic verification of TeX prose."
+  }
+}

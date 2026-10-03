@@ -1,0 +1,16 @@
+Some manuscript-aligned proofs adapt implementations of the same mathematical
+arguments from mathlib4, revision 5ed2965256430c3649e86755f9576b54eca72435:
+
+ManuscriptConvergence.lean:
+  Mathlib/MeasureTheory/Integral/Lebesgue/Add.lean (monotone convergence)
+  Copyright 2018 Mario Carneiro; authors Mario Carneiro, Johannes Hölzl.
+ManuscriptInequalities.lean:
+  Mathlib/MeasureTheory/Integral/MeanInequalities.lean
+  Copyright 2020 Rémy Degenne.
+ManuscriptLpComplete.lean:
+  Mathlib/MeasureTheory/Function/LpSpace/Complete.lean
+  Copyright 2020 Rémy Degenne; authors Rémy Degenne, Sébastien Gouëzel.
+
+Adaptations expand the manuscript's argument under local theorem names and
+connect to locally proved Fatou and Minkowski lemmas. The original notices are
+retained in each file. Apache License 2.0 is included in LICENSE.

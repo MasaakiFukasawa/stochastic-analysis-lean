@@ -1,0 +1,63 @@
+import Chapter12CylinderCoordinateBlocks
+import Chapter12DerivativeGrowthProduct
+
+open MeasureTheory
+open scoped ContDiff
+namespace Asakura.Chapter12
+set_option backward.isDefEq.respectTransparency false
+set_option maxHeartbeats 1600000
+
+noncomputable def mulSmoothCylinder {H : Type*} [NormedAddCommGroup H]
+    [InnerProductSpace ℝ H] (c d : SmoothCylinder H) : SmoothCylinder H :=
+  smoothCylinderOfFunction (Fin.append c.direction d.direction)
+    (fun z => c.f (cylinderLeftBlock c.dim d.dim z)*d.f (cylinderRightBlock c.dim d.dim z))
+    ((c.smooth.comp (cylinderLeftBlock c.dim d.dim).contDiff).mul
+      (d.smooth.comp (cylinderRightBlock c.dim d.dim).contDiff))
+    (iterated_polynomial_growth_mul _ _
+      (c.smooth.comp (cylinderLeftBlock c.dim d.dim).contDiff)
+      (d.smooth.comp (cylinderRightBlock c.dim d.dim).contDiff)
+      (iterated_polynomial_growth_comp_linear c.f c.smooth _ c.all_derivatives_growth)
+      (iterated_polynomial_growth_comp_linear d.f d.smooth _ d.all_derivatives_growth))
+
+theorem mulSmoothCylinder_df {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+    (c d : SmoothCylinder H) (z : Fin (c.dim+d.dim) → ℝ) :
+    (mulSmoothCylinder c d).df z =
+      c.f (cylinderLeftBlock c.dim d.dim z) •
+        (d.df (cylinderRightBlock c.dim d.dim z)).comp (cylinderRightBlock c.dim d.dim)+
+      d.f (cylinderRightBlock c.dim d.dim z) •
+        (c.df (cylinderLeftBlock c.dim d.dim z)).comp (cylinderLeftBlock c.dim d.dim) := by
+  exact (((c.derivative _).comp z (cylinderLeftBlock c.dim d.dim).hasFDerivAt).mul
+    ((d.derivative _).comp z (cylinderRightBlock c.dim d.dim).hasFDerivAt)).fderiv
+
+theorem mulSmoothCylinder_value {Ω H : Type*} [MeasurableSpace Ω]
+    [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+    (P : Measure Ω) (W : H →ₗᵢ[ℝ] Lp ℝ 2 P) (c d : SmoothCylinder H) :
+    (mulSmoothCylinder c d).value P W = fun w => c.value P W w*d.value P W w := by
+  funext w
+  simp [SmoothCylinder.value,mulSmoothCylinder,smoothCylinderOfFunction,
+    cylinderLeftBlock,cylinderRightBlock,Fin.append_left,Fin.append_right]
+
+theorem mulSmoothCylinder_gradient {Ω H : Type*} [MeasurableSpace Ω]
+    [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+    (P : Measure Ω) (W : H →ₗᵢ[ℝ] Lp ℝ 2 P) (c d : SmoothCylinder H) :
+    (mulSmoothCylinder c d).gradient P W = fun w =>
+      d.value P W w • c.gradient P W w+c.value P W w • d.gradient P W w := by
+  funext w
+  unfold SmoothCylinder.gradient
+  change (∑ j : Fin (c.dim+d.dim), (mulSmoothCylinder c d).df
+    (fun i => W (Fin.append c.direction d.direction i) w) (Pi.single j 1) •
+      Fin.append c.direction d.direction j) = _
+  rw [Fin.sum_univ_add]
+  simp only [mulSmoothCylinder_df,ContinuousLinearMap.add_apply,ContinuousLinearMap.smul_apply,
+    ContinuousLinearMap.comp_apply,cylinderLeftBlock_left,cylinderLeftBlock_right,
+    cylinderRightBlock_left,cylinderRightBlock_right,map_zero,smul_zero,add_zero,zero_add,
+    Fin.append_left,Fin.append_right]
+  dsimp only [mulSmoothCylinder,smoothCylinderOfFunction]
+  simp only [cylinderLeftBlock_left,cylinderLeftBlock_right,cylinderRightBlock_left,
+    cylinderRightBlock_right,map_zero,smul_zero,add_zero,zero_add]
+  simp only [Finset.smul_sum]
+  congr 1 <;> apply Finset.sum_congr rfl <;> intro j _
+  · simp [cylinderRightBlock,cylinderLeftBlock,Fin.append_right,Fin.append_left,SmoothCylinder.value,smul_smul]
+  · simp [cylinderLeftBlock,cylinderRightBlock,Fin.append_left,Fin.append_right,SmoothCylinder.value,smul_smul]
+
+end Asakura.Chapter12

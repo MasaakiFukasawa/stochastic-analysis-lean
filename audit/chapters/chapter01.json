@@ -1,0 +1,556 @@
+{
+  "summary": {
+    "chapter": 1,
+    "title": "条件付き期待値",
+    "entry": "Book.Chapter01",
+    "seed_modules": [
+      "Chapter1BinaryExercises",
+      "Chapter1DyadicOriginalSpace",
+      "Chapter1FiniteSigmaDimension",
+      "Chapter1L1OperatorConnection",
+      "Chapter1NaturalFiltration",
+      "Chapter1StieltjesUniformConvergence",
+      "Chapter1TwoPointProjection",
+      "Chapter1WrittenAsano",
+      "Chapter1WrittenInteger",
+      "Chapter1WrittenJensen",
+      "Chapter1WrittenStoppedMeasurable",
+      "Chapter1WrittenStopping",
+      "FullAuditCLTDistribution",
+      "FullAuditConditionalExercises",
+      "FullAuditDiceExercise",
+      "FullAuditDiscreteVariation",
+      "FullAuditDoob",
+      "FullAuditFactorizationExercise",
+      "FullAuditGaussianIndependence",
+      "FullAuditGaussianRegression",
+      "FullAuditIndependenceExercises",
+      "FullAuditIndependentSeries",
+      "FullAuditJensenContraction",
+      "FullAuditKolmogorovMaximal",
+      "FullAuditL1Identification",
+      "FullAuditL2L1Projection",
+      "FullAuditNoncommutingCE",
+      "FullAuditOptionalSampling",
+      "FullAuditPartitionExercise",
+      "FullAuditProjectionRules",
+      "FullAuditSmoothCutoff",
+      "FullAuditStoppingExercises"
+    ],
+    "whole_chapter_verified": true,
+    "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+  },
+  "inventory": {
+    "chapter": 1,
+    "title": "条件付き期待値",
+    "sources_sha256": {
+      "chap1.tex": "cd8ee14b0a49fbc981004efb1554e28b874111dcf497d8c04de10b1712bc1fb1"
+    },
+    "modules": [
+      "Chapter1BinaryExercises",
+      "Chapter1DyadicOriginalSpace",
+      "Chapter1FiniteSigmaDimension",
+      "Chapter1L1OperatorConnection",
+      "Chapter1NaturalFiltration",
+      "Chapter1StieltjesUniformConvergence",
+      "Chapter1TwoPointProjection",
+      "Chapter1WrittenAsano",
+      "Chapter1WrittenInteger",
+      "Chapter1WrittenJensen",
+      "Chapter1WrittenStoppedMeasurable",
+      "Chapter1WrittenStopping",
+      "FullAuditCLTDistribution",
+      "FullAuditConditionalExercises",
+      "FullAuditDiceExercise",
+      "FullAuditDiscreteVariation",
+      "FullAuditDoob",
+      "FullAuditFactorizationExercise",
+      "FullAuditGaussianIndependence",
+      "FullAuditGaussianRegression",
+      "FullAuditIndependenceExercises",
+      "FullAuditIndependentSeries",
+      "FullAuditJensenContraction",
+      "FullAuditKolmogorovMaximal",
+      "FullAuditL1Identification",
+      "FullAuditL2L1Projection",
+      "FullAuditNoncommutingCE",
+      "FullAuditOptionalSampling",
+      "FullAuditPartitionExercise",
+      "FullAuditProjectionRules",
+      "FullAuditSmoothCutoff",
+      "FullAuditStoppingExercises"
+    ],
+    "items": [
+      {
+        "id": "1.1.rep.1",
+        "line": 108,
+        "environment": "rep",
+        "end_line": 110,
+        "evidence_modules": [
+          "FullAuditProjectionRules"
+        ],
+        "note": "L2直交射影の直交余項からC2、差を自身で試験して一意性、定数1で試験してC1、有界なYとの積で試験してC3、射影の線形性でC4、入れ子の試験空間でC5を導出。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.1.rem.1",
+        "line": 112,
+        "environment": "rem",
+        "end_line": 117,
+        "evidence_modules": [],
+        "note": "等式を確率1で同一視する記法の規約。証明を要する主張ではない。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.1.ex.1",
+        "line": 120,
+        "environment": "ex",
+        "end_line": 150,
+        "evidence_modules": [
+          "Chapter1TwoPointProjection"
+        ],
+        "note": "二点の実測度による積分、重み付き座標の内積保存、平方完成と期待値の一意最小性。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.1.rep.2",
+        "line": 152,
+        "environment": "rep",
+        "end_line": 157,
+        "evidence_modules": [
+          "FullAuditDiceExercise"
+        ],
+        "note": "実際の6点等確率測度を構成し、偶奇が生成するσ代数の全事象を同定。C2の集合積分を全て計算して奇数上3・偶数上4を得る。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.1.rep.3",
+        "line": 159,
+        "environment": "rep",
+        "end_line": 165,
+        "evidence_modules": [
+          "Chapter1FiniteSigmaDimension"
+        ],
+        "note": "有限σ代数の原子の構成、事象数2^nと原子数n、正確率の指示関数からL²同値類への線形全単射。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.1.rep.4",
+        "line": 168,
+        "environment": "rep",
+        "end_line": 182,
+        "evidence_modules": [
+          "Chapter1BinaryExercises",
+          "Chapter1DyadicOriginalSpace"
+        ],
+        "note": "原稿通り(0,1]のルベーグ測度。floorで定義された二進桁の全ファイバーを端点込みで同定し、各セルの測度と積分から次元と区間平均公式を導く。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.1.rep.5",
+        "line": 184,
+        "environment": "rep",
+        "end_line": 192,
+        "evidence_modules": [
+          "FullAuditFactorizationExercise"
+        ],
+        "note": "Sのボレルσ代数について単関数からの因子分解を検証。Sは位相空間であるという原稿の既存規約を使用し、仮定を変更しない。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.1.lem.1",
+        "line": 207,
+        "environment": "lem",
+        "end_line": 210,
+        "evidence_modules": [
+          "FullAuditL2L1Projection"
+        ],
+        "note": "C2を正負の符号集合に適用し、L2射影そのもののL1縮小性を証明。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.1.prop.1",
+        "line": 232,
+        "environment": "prop",
+        "end_line": 248,
+        "evidence_modules": [
+          "FullAuditL1Identification",
+          "FullAuditProjectionRules",
+          "Chapter1L1OperatorConnection"
+        ],
+        "note": "L2射影を実際のL1内の稠密領域に移し、切断、連続拡張、集合積分、符号集合による一意性、線形性を接続。定数への射影と積分との同定はFullAuditProjectionRulesで別途確認。 構成したL¹連続線形作用素と後続のLean命題で使う条件付き期待値の同定も追加。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.1.rep.6",
+        "line": 281,
+        "environment": "rep",
+        "end_line": 300,
+        "evidence_modules": [
+          "FullAuditConditionalExercises"
+        ],
+        "note": "条件付き期待値の基礎補題を用いた解答。厳密な正値性は零積分による証明。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.1.rep.7",
+        "line": 310,
+        "environment": "rep",
+        "end_line": 318,
+        "evidence_modules": [
+          "FullAuditPartitionExercise"
+        ],
+        "note": "指示関数が生成するσ代数を同定し、セルが確率1で覆うという原稿の条件で集合積分を計算。零の残余を含めて解答を接続。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.2.thm.1",
+        "line": 325,
+        "environment": "thm",
+        "end_line": 329,
+        "evidence_modules": [
+          "Chapter1WrittenJensen"
+        ],
+        "note": "支持直線を有理点で可算化し、条件付き期待値に移して上限を取る。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.2.cor.1",
+        "line": 419,
+        "environment": "cor",
+        "end_line": 423,
+        "evidence_modules": [
+          "FullAuditJensenContraction"
+        ],
+        "note": "原稿のイェンセン不等式から有限pのべき積分を評価し、p=∞は上下の定数による挟み込みを展開。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.2.rep.1",
+        "line": 429,
+        "environment": "rep",
+        "end_line": 433,
+        "evidence_modules": [
+          "FullAuditConditionalExercises"
+        ],
+        "note": "条件付き期待値の基礎補題を用いた解答。厳密な正値性は零積分による証明。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.3.rep.1",
+        "line": 443,
+        "environment": "rep",
+        "end_line": 451,
+        "evidence_modules": [
+          "FullAuditIndependenceExercises"
+        ],
+        "note": "条件付き期待値の定義と確率の積の同値性・対称性、二値事象の生成σ代数。独立な変数の条件付き期待値にはMathlibの先行補題を使用。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.3.rep.2",
+        "line": 453,
+        "environment": "rep",
+        "end_line": 461,
+        "evidence_modules": [
+          "FullAuditIndependenceExercises"
+        ],
+        "note": "条件付き期待値の定義と確率の積の同値性・対称性、二値事象の生成σ代数。独立な変数の条件付き期待値にはMathlibの先行補題を使用。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.3.rep.3",
+        "line": 467,
+        "environment": "rep",
+        "end_line": 470,
+        "evidence_modules": [
+          "Chapter1BinaryExercises"
+        ],
+        "note": "二進桁の有限列の法則を独立公平ビットの積測度として計算。任意の有限部分列を初期区間に埋め込んで無限列の独立性を導く。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.3.thm.1",
+        "line": 498,
+        "environment": "thm",
+        "end_line": 502,
+        "evidence_modules": [
+          "FullAuditGaussianIndependence"
+        ],
+        "note": "特性関数の積への分解、共分散の和、分布の一意性を展開。共分散行列が特異な場合も含む。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.3.thm.2",
+        "line": 519,
+        "environment": "thm",
+        "end_line": 536,
+        "evidence_modules": [
+          "FullAuditGaussianRegression"
+        ],
+        "note": "実際の共分散行列の半正定値性、スペクトル分解・平方根因子、擬逆行列の恒等式、残差の共分散消去、特性関数による独立性、条件付き期待値を接続。ランク零も含む。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.3.thm.3",
+        "line": 560,
+        "environment": "thm",
+        "end_line": 579,
+        "evidence_modules": [
+          "FullAuditCLTDistribution"
+        ],
+        "note": "原稿の熱核積分、ガウス部分積分、時間零端点を含む線分テイラー展開、ヘッセ剰余、最大モーメントの消失、実際の部分和と残りの分散、独立性による相殺、期待値の望遠和、指定の滑らかな近似関数による両方の分布関数の極限を接続。各行の有限二次モーメントを明示的に仮定。基礎的な積分内微分・部分積分・独立性の有限和はMathlibの先行解析結果を使用。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.3.rep.4",
+        "line": 766,
+        "environment": "rep",
+        "end_line": 776,
+        "evidence_modules": [
+          "FullAuditSmoothCutoff"
+        ],
+        "note": "原稿指定の指数型バンプとIic上の積分を構成し、全階微分の有界性、滑らかさ、指示関数との大小関係を端点込みで証明。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.4.ex.1",
+        "line": 810,
+        "environment": "ex",
+        "end_line": 816,
+        "evidence_modules": [
+          "Chapter1NaturalFiltration"
+        ],
+        "note": "有限列を切り詰める可測写像から生成σ代数の単調性を導く。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.4.lem.1",
+        "line": 825,
+        "environment": "lem",
+        "end_line": 834,
+        "evidence_modules": [
+          "Chapter1WrittenInteger"
+        ],
+        "note": "前向き・後向きL2、L1への切断、整数添字の接続。後向きに概収束部分列は用いない。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.4.lem.2",
+        "line": 880,
+        "environment": "lem",
+        "end_line": 887,
+        "evidence_modules": [
+          "Chapter1WrittenInteger"
+        ],
+        "note": "前向き・後向きL2、L1への切断、整数添字の接続。後向きに概収束部分列は用いない。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.4.thm.1",
+        "line": 951,
+        "environment": "thm",
+        "end_line": 962,
+        "evidence_modules": [
+          "Chapter1WrittenInteger"
+        ],
+        "note": "前向き・後向きL2、L1への切断、整数添字の接続。後向きに概収束部分列は用いない。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.4.thm.2",
+        "line": 1004,
+        "environment": "thm",
+        "end_line": 1011,
+        "evidence_modules": [
+          "FullAuditDiscreteVariation"
+        ],
+        "note": "原稿の条件付き期待値近似を全接続。全変動で正規化し、任意の有限分割を近似、有限和評価、極限、全変動の上限。用いたL1収束も原稿に沿った既存証明。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.4.cor.1",
+        "line": 1036,
+        "environment": "cor",
+        "end_line": 1047,
+        "evidence_modules": [
+          "Chapter1StieltjesUniformConvergence"
+        ],
+        "note": "有限区間のBV関数を定数延長してdCを構成。区間上への引戻しと時刻tへの制限の全変動を同定。消滅する分割幅からボレル生成を証明し、条件付き期待値による離散全変動定理を適用。連続なCではVとV_nの連続性を導き、コンパクト性によるDiniの証明経路で一様収束。IntervalCellsは原稿の有限区間分割をセルと左右端点で表した同値な符号化。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.5.ex.1",
+        "line": 1073,
+        "environment": "ex",
+        "end_line": 1088,
+        "evidence_modules": [
+          "FullAuditStoppingExercises"
+        ],
+        "note": "二値停止時刻のσ代数と、単調な遅延による停止時刻。可算共終集合で端点を処理し、原稿の実拡張数の部分集合にも適用できる。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.5.prop.1",
+        "line": 1097,
+        "environment": "prop",
+        "end_line": 1099,
+        "evidence_modules": [
+          "Chapter1WrittenStopping"
+        ],
+        "note": "原稿の任意の拡張実数の部分集合を時間集合とする停止σ代数・比較事象。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.5.rep.1",
+        "line": 1111,
+        "environment": "rep",
+        "end_line": 1118,
+        "evidence_modules": [
+          "FullAuditStoppingExercises"
+        ],
+        "note": "二値停止時刻のσ代数と、単調な遅延による停止時刻。可算共終集合で端点を処理し、原稿の実拡張数の部分集合にも適用できる。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.5.prop.2",
+        "line": 1121,
+        "environment": "prop",
+        "end_line": 1129,
+        "evidence_modules": [
+          "Chapter1WrittenStopping"
+        ],
+        "note": "原稿の任意の拡張実数の部分集合を時間集合とする停止σ代数・比較事象。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.5.prop.3",
+        "line": 1175,
+        "environment": "prop",
+        "end_line": 1183,
+        "evidence_modules": [
+          "Chapter1WrittenStoppedMeasurable"
+        ],
+        "note": "指示関数で局所化した可測性判定。原稿の単関数近似を使用。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.5.prop.4",
+        "line": 1209,
+        "environment": "prop",
+        "end_line": 1218,
+        "evidence_modules": [
+          "Chapter1WrittenAsano"
+        ],
+        "note": "浅野の三つの恒等式。局所化した可測性とC5から導出。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.5.rep.2",
+        "line": 1267,
+        "environment": "rep",
+        "end_line": 1275,
+        "evidence_modules": [
+          "FullAuditNoncommutingCE"
+        ],
+        "note": "3点等確率空間の二つのσ代数、共通部分、自明σ代数への期待値、セル平均をすべて接続した反例。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.5.rep.3",
+        "line": 1278,
+        "environment": "rep",
+        "end_line": 1282,
+        "evidence_modules": [
+          "FullAuditStoppingExercises"
+        ],
+        "note": "二値停止時刻のσ代数と、単調な遅延による停止時刻。可算共終集合で端点を処理し、原稿の実拡張数の部分集合にも適用できる。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.6.thm.1",
+        "line": 1319,
+        "environment": "thm",
+        "end_line": 1326,
+        "evidence_modules": [
+          "FullAuditOptionalSampling"
+        ],
+        "note": "可算な時間繊維で可測性と可積分性を証明し、集合積分を足し合わせる原稿の経路。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.6.thm.2",
+        "line": 1345,
+        "environment": "thm",
+        "end_line": 1369,
+        "evidence_modules": [
+          "FullAuditDoob"
+        ],
+        "note": "実際の適合過程から最初の到達時刻、任意抽出、弱評価、切断、層別積分、ヘルダー、単調収束を接続。有限最大値と確率1での非負性も処理。",
+        "coverage_complete": true,
+        "review_complete": true
+      },
+      {
+        "id": "1.6.rep.1",
+        "line": 1413,
+        "environment": "rep",
+        "end_line": 1426,
+        "evidence_modules": [
+          "FullAuditKolmogorovMaximal",
+          "FullAuditIndependentSeries"
+        ],
+        "note": "欠落したx>0を追加。二乗部分和への原稿のドゥーブ不等式、独立な交差項の消去、任意の末尾列への適用、最大事象の増大極限、分散の末尾和の消失、可算な誤差閾値から確率1のコーシー性と収束まで検証。",
+        "coverage_complete": true,
+        "review_complete": true
+      }
+    ],
+    "review_complete": true,
+    "formal_coverage_complete": true
+  },
+  "verification": {
+    "whole_chapter_verified": true,
+    "chapter_source_matches": true,
+    "review_complete": true,
+    "formal_coverage_complete": true,
+    "missing_passed_evidence_modules": [],
+    "scope": "Revised chapter manuscript correspondence in coverage.json, constructed proof connections, dependency build, and axiom audit. Chapter 1 manuscript proof paths and exercises are recorded item by item.",
+    "toolchain": "leanprover/lean4:v4.34.0",
+    "all_selected_modules_passed": true
+  }
+}
