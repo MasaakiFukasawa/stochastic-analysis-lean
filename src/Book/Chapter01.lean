@@ -30,5 +30,9 @@ import FullAuditPartitionExercise
 import FullAuditProjectionRules
 import FullAuditSmoothCutoff
 import FullAuditStoppingExercises
+import EndToEndConditionalL1
+import EndToEndConditionalL2
+import EndToEndDiscreteVariation
+import EndToEndTwoPointIsometry
 
 /-! 第1章: 条件付き期待値。命題の仮定と検証範囲は docs/chapters を参照。 -/

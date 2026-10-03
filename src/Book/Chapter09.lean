@@ -166,5 +166,6 @@ import Chapter9VectorBayes
 import Chapter9VectorIncrement
 import FullAuditDenoising
 import FullAuditOUExercise
+import EndToEndOUReverse
 
 /-! 第9章: 拡散モデル。命題の仮定と検証範囲は docs/chapters を参照。 -/

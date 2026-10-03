@@ -324,5 +324,6 @@ import FullAuditStationaryVariance
 import FullAuditTimeAverageAE
 import FullAuditTimeAverageCoupling
 import FullAuditTimeProductIntegrability
+import EndToEndSmallMassConstructed
 
 /-! 第8章: ランジュバン方程式と不変分布。命題の仮定と検証範囲は docs/chapters を参照。 -/

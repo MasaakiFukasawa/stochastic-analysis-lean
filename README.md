@@ -31,7 +31,7 @@ import Book.Chapter13
 #check Asakura.Chapter13.numeraire_payoff_pricing
 ```
 
-全体は `import Book`、付録は `import Book.Appendices` です。他のプロジェクトからは、公開後のこのリポジトリをLakeの依存パッケージに指定します。LeanとMathlibのバージョンも合わせてください。
+全体は `import Book`、付録は `import Book.Appendices` です。元の確率過程から構成と結論をつなぐ定理は `import Book.Constructed` からも読み込めます。他のプロジェクトからは、公開後のこのリポジトリをLakeの依存パッケージに指定します。LeanとMathlibのバージョンも合わせてください。
 
 ## 章を選ぶ
 
@@ -44,6 +44,7 @@ import Book.Chapter13
 | `src/*.lean` | 証明本体 |
 | `docs/chapters/` | 章別の利用案内 |
 | `audit/chapters/` | 原稿とLean命題の対応表・検証結果 |
+| `audit/constructed-interfaces.json` | 構成から結論までをつなぐ定理と検証結果 |
 | `audit/verified-snapshot.json` | 検証済みソースのハッシュと定理一覧 |
 | `scripts/audit.py` | ビルド・公理依存の再検査 |
 

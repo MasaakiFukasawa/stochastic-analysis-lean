@@ -1,7 +1,6 @@
 {
-  "date": "2026-10-03",
-  "proof_sources_unchanged": true,
-  "source_modules": 3741,
+  "date": "2026-10-04",
+  "source_modules": 3835,
   "entry_point_compilation": [
     {
       "module": "Book.Appendices",
@@ -60,26 +59,31 @@
       "passed": true
     },
     {
+      "module": "Book.Constructed",
+      "passed": true
+    },
+    {
       "module": "Book",
       "passed": true
     }
   ],
   "axiom_audit": {
     "passed": true,
-    "declarations": 6647,
+    "declarations": 6777,
     "missing": [],
     "unexpected": {}
   },
+  "constructed_interface_modules": 93,
+  "additional_dependency_modules": 1,
   "clean_lake_build_performed": false,
-  "method": "Exported entry points freshly compiled using matching, previously compiled proof objects. All imported theorem axioms rechecked. Full fresh Lake build is available via scripts/audit.py; not performed in this packaging task.",
+  "method": "Added connection modules and the orthogonal-decomposition dependency were compiled. Exported entry points were freshly compiled against source-identical checked objects. All registered transitive axiom dependencies were rechecked through the portable audit script. This is not a clean rebuild of existing dependencies.",
   "lake_configuration_checked": true,
   "portable_audit_script_passed": true,
-  "markdown_links_checked": true,
   "portable_audit_result": {
     "passed": true,
-    "date_utc": "2026-10-03T02:58:11Z",
-    "modules": 3741,
-    "declarations": 6647,
+    "date_utc": "2026-10-03T17:05:32Z",
+    "modules": 3835,
+    "declarations": 6777,
     "missing_declarations": [],
     "unexpected_axioms": {},
     "scope": "Lean statements and transitive axioms; not automatic verification of TeX prose."

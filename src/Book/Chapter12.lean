@@ -913,5 +913,7 @@ import Chapter12WienerVegaDivergence
 import Chapter12ZeroExtensionTruncation
 import FullAuditCylinderOriginal
 import FullAuditMalliavinBrownianExercise
+import EndToEndNaturalBrownianDensity
+import EndToEndNaturalDivergence
 
 /-! 第12章: マリアバン解析。命題の仮定と検証範囲は docs/chapters を参照。 -/

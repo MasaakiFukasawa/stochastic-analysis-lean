@@ -429,5 +429,6 @@ import PiLambda
 import RecentItoFubiniBridge
 import RecentItoFubiniCheck
 import RecentItoTerminalCheck
+import EndToEndParameterItoGlobal
 
 /-! 第2章: 伊藤積分。命題の仮定と検証範囲は docs/chapters を参照。 -/

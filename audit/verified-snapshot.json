@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-03",
-  "scope": "Compiled Lean source snapshots. Source identity, reproduced builds, and axiom audits are recorded separately.",
+  "date": "2026-10-04",
+  "scope": "Compiled Lean source snapshots with constructed interfaces. Mathematical correspondence, incremental compilation and clean builds are distinct records.",
   "toolchain": "leanprover/lean4:v4.34.0",
   "mathlib_revision": "5ed2965256430c3649e86755f9576b54eca72435",
   "modules": {
@@ -61930,6 +61930,1186 @@
         "GaussianCopies",
         "L2Moments"
       ]
+    },
+    "EndToEndBondAnnuity": {
+      "source_sha256": "54f83ef171907a17e555481ba696599e668a9ef9bb06e65e290d574569a4f9f9",
+      "declarations": [
+        "Asakura.EndToEnd.BondMarket.positive_bond_ae",
+        "Asakura.EndToEnd.BondMarket.annuity_discounted",
+        "Asakura.EndToEnd.BondMarket.annuity_positive_ae"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndBondApplications"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndBondApplications": {
+      "source_sha256": "5a9f4c7b703a3c46121512b6c076035a0241563e3ad8c921e76c0dcdea196834",
+      "declarations": [
+        "Asakura.EndToEnd.BondMarket.initial_price",
+        "Asakura.EndToEnd.BondMarket.forward_term_rate",
+        "Asakura.EndToEnd.BondMarket.option_forward_pricing"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndBondMarket",
+        "EndToEndTrivialInformation"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndBondMarket": {
+      "source_sha256": "b881aef1904998127b2668635045b11b1fd65e6929e668d916c6f064651cfe0b",
+      "declarations": [
+        "Asakura.EndToEnd.BondMarket.pricing",
+        "Asakura.EndToEnd.BondMarket.forward_numeraire"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter13BondNumeraire",
+        "Chapter13ClosedBondPricing"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndBrownianDensity": {
+      "source_sha256": "55991f0bbfd1132c96525fbeb2e8635757d7d9518ac6cca296bb43e8dba2983b",
+      "declarations": [
+        "Asakura.EndToEnd.brownian_density_constructed"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndMalliavinConstruction",
+        "EndToEndBrownianPathMoments",
+        "Chapter12BrownianEllipticPositiveSmoothDensity",
+        "Chapter12FiniteBrownianTrim",
+        "Mathlib.MeasureTheory.Measure.SeparableMeasure"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndBrownianJointPast": {
+      "source_sha256": "1160b17cade006705d238bb56dbd22c713002b91b44e180b472b1c33c53db969",
+      "declarations": [
+        "Asakura.EndToEnd.gaussian_brownian_increment_independent_joint_past"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndIndependentGaussianPair",
+        "Mathlib.Probability.BrownianMotion.Basic"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndBrownianPathMoments": {
+      "source_sha256": "d5bdbad7d22ca7fee710af529648ec14b426b3be8ccf36e4ded028f49b75735f",
+      "declarations": [
+        "Asakura.EndToEnd.brownian_system_preBrownian",
+        "Asakura.EndToEnd.brownian_system_path_memLp"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter12BrownianCompactCommonLaw",
+        "Chapter12FiniteBrownianPathMoments",
+        "Chapter7NaturalBrownianSystem"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndCoefficientNullRepair": {
+      "source_sha256": "fbcc15c8abffb51fe5ef7f79cd52fb9e8a9b8c70ca706dbe9645cbdec23fcd83",
+      "declarations": [
+        "Asakura.EndToEnd.parameter_coefficient_null_repair"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndFiniteParameterExtension"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndCompactFunctionMetric": {
+      "source_sha256": "df21dee4d9a8f252fb112a08b80198a1b897cca5c6c5a2264b0bdfea3af06ee8",
+      "declarations": [
+        "Asakura.EndToEnd.compactRestrictions_embedding",
+        "Asakura.EndToEnd.compactSeriesMetric_complete"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Mathlib.Topology.ContinuousMap.Compact",
+        "Mathlib.Topology.MetricSpace.PiNat"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndConditionalL1": {
+      "source_sha256": "fc641d1808bfd8db3ff22e07d0427940f0a35eb51773b9f1fefe2dad9ed35e88",
+      "declarations": [
+        "Asakura.EndToEnd.conditional_integer_L1"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter1WrittenInteger"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndConditionalL2": {
+      "source_sha256": "e8ddbd63b888b5439c38334e84d7440f065b13c3b6b41e035eedf46097fba135",
+      "declarations": [
+        "Asakura.EndToEnd.conditional_integer_L2"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter1WrittenInteger"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndContinuousFSpace": {
+      "source_sha256": "4bd76366a8cf2e877ee3a09939a035fa45f50bb51733247fafffdce2b529b1e2",
+      "declarations": [
+        "Asakura.EndToEnd.compact_distance_maximum",
+        "Asakura.EndToEnd.continuousFSpaceMetric_formula",
+        "Asakura.EndToEnd.continuousFSpaceMetric_complete",
+        "Asakura.EndToEnd.continuousFSpaceMetric_add",
+        "Asakura.EndToEnd.continuousFSpaceMetric_smul",
+        "Asakura.EndToEnd.continuousFSpaceMetric_translation"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndCompactFunctionMetric",
+        "Mathlib.Topology.Algebra.Module.ContinuousLinearMap.Basic"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndContinuousPathRepresentative": {
+      "source_sha256": "b851b9a7ef5d152f809a1dc656be371abd3806dc911abe5ceda1602bcb9bb274",
+      "declarations": [
+        "Asakura.EndToEnd.continuous_path_joint_representative"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndLpRepresentative",
+        "Mathlib.MeasureTheory.Constructions.BorelSpace.ContinuousMap",
+        "Mathlib.Topology.ContinuousMap.SecondCountableSpace",
+        "Mathlib.Topology.ContinuousMap.Compact",
+        "Mathlib.Topology.DenseEmbedding"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndConvergenceTools": {
+      "source_sha256": "a7d493a52f562e0100146e7268d3ca9b0911aafcf96d4bb0b452463cb2dcf75d",
+      "declarations": [
+        "Asakura.EndToEnd.probability_distribution_written",
+        "Asakura.EndToEnd.joint_continuous_convergence"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndProbabilityTests",
+        "EndToEndJointConvergence"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndCramerWoldSmoothing": {
+      "source_sha256": "23df2a9a7e7c0c17e0f383f0c5b04607c27c5a2fbebe1c48b2626d8ff94a7bc7",
+      "declarations": [
+        "Asakura.EndToEnd.characteristic_smoothing_convergence",
+        "Asakura.EndToEnd.cramer_wold_written"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndGaussianSmoothedTests",
+        "EndToEndGaussianFirstMoment",
+        "EndToEndSmoothingTestBound",
+        "Chapter7CramerWold"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndDensityL1": {
+      "source_sha256": "051c9d9ec0f420b5101fa73674e679d9af1a455ade15d26f81c884796f4ff14a",
+      "declarations": [
+        "Asakura.EndToEnd.probability_density_L1"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndProbabilityTests"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndDensityTests": {
+      "source_sha256": "073d221353b9f4711e76b612c0d1d3fcfdc127f98e2de6c74335babf1b9b7166",
+      "declarations": [
+        "Asakura.EndToEnd.density_L1_tests"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndDensityL1",
+        "Mathlib.MeasureTheory.Integral.BoundedContinuousFunction"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndDiscreteVariation": {
+      "source_sha256": "f86ea5c097f8132e9d442f03761fe6b4a5f1e49f770a5612138791ed0b1788ab",
+      "declarations": [
+        "Asakura.EndToEnd.discrete_variation"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "FullAuditDiscreteVariation"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndFiniteCoefficientRepair": {
+      "source_sha256": "d891622cdd8c5b3894194faddf327a7c63cc9afc74236cf41dabc79c522082dd",
+      "declarations": [
+        "Asakura.EndToEnd.finite_coefficient_repair"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndCoefficientNullRepair"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndFiniteIntegral": {
+      "source_sha256": "d1d1d438d7d54d93c048da909492277f112682e75b512221dc06643783ccb1e1",
+      "declarations": [
+        "Asakura.EndToEnd.finite_integral_ae_finite",
+        "Asakura.EndToEnd.counting_borel_cantelli"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "AppendixWrittenBorelCantelli"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndFiniteMaturityDrift": {
+      "source_sha256": "015d5a70c6917e5611822bcbb79487d8bfb90d202f1f85c7729c457ec864d5fb",
+      "declarations": [
+        "Asakura.EndToEnd.finite_maturity_drift"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter13FiniteCoordinateHJM",
+        "FullAuditBVClamp"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndFiniteParameterExtension": {
+      "source_sha256": "1fc0f37d66b35800465ec0aac7ea275c4971d58705e642e5b23dd24d72f140a0",
+      "declarations": [
+        "Asakura.EndToEnd.finite_parameter_extension"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMFiniteMaturity"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndGaussianBrownianSystem": {
+      "source_sha256": "36fb2b3254a0f6616695b8b702f7bd976e9f3709ab31cfe4a0c1c320f829a8c2",
+      "declarations": [
+        "Asakura.EndToEnd.gaussianBrownianSystem"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndJointGaussianProduct",
+        "Chapter7NaturalBrownianSystem",
+        "Chapter12FiniteGreekExponents"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndGaussianFirstMoment": {
+      "source_sha256": "87ff77b18091667f5961852a790f7f5703cc6d7a60151c0a30fb941aab4921dc",
+      "declarations": [
+        "Asakura.EndToEnd.gaussian_kernel_first_moment"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter12GaussianKernelMeasure"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndGaussianSmoothedLaw": {
+      "source_sha256": "328ed303f3869b127c387badd84c0a4061a3108549257e15410a17b4c88bf397",
+      "declarations": [
+        "Asakura.EndToEnd.gaussian_smoothed_law"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter12GaussianMixtureWeakLimit"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndGaussianSmoothedTests": {
+      "source_sha256": "057ed5bc49a5694658e9aee882152f492bc7729380218c32d8d1ce8a0b7c91d7",
+      "declarations": [
+        "Asakura.EndToEnd.gaussian_smoothed_tests"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndGaussianSmoothingL1",
+        "EndToEndGaussianSmoothedLaw",
+        "EndToEndDensityTests"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndGaussianSmoothing": {
+      "source_sha256": "6aa9852440d2b2fb2e63ad58323163624ac446f4fc0e3a075be0d5c8b15fc54a",
+      "declarations": [
+        "Asakura.EndToEnd.gaussian_smoothing_pointwise"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter12GaussianMixtureFourier",
+        "EndToEndDensityL1",
+        "Mathlib.MeasureTheory.Measure.CharacteristicFunction.TaylorExpansion"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndGaussianSmoothingL1": {
+      "source_sha256": "52070f431383c3e4f4a951133bbe23e93791ec16fa31b77926bb10c5ef944927",
+      "declarations": [
+        "Asakura.EndToEnd.density_integral_one",
+        "Asakura.EndToEnd.gaussian_mixture_probability_density",
+        "Asakura.EndToEnd.gaussian_smoothing_L1"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndGaussianSmoothing"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMAECoefficients": {
+      "source_sha256": "a9a4a1dbf7986388e06e05e6679cd5c1145a55ee66042f1809b1faffcb92c715",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_finite_maturity_ae_coefficients"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndFiniteCoefficientRepair"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMAEGlobal": {
+      "source_sha256": "2c595ff1f5074f2198967a0e67744bedd56dc285dc2a0b685e21ac25c38cb17b",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_global_ae_drift"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndNullMask"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMAEModel": {
+      "source_sha256": "2f9759976937a0b5943785832ad04e369dab94c1855c889a192d5b3ca3324544",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_finite_maturity_ae_model"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndFiniteCoefficientRepair",
+        "EndToEndHJMFiniteModel"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMAEModelComplete": {
+      "source_sha256": "6599a4b3319dd45f482ad1287aab45bd6565884196fe0cafe55ba0b234064ddf",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_global_ae_model"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMAEGlobal",
+        "EndToEndHJMExponentialLocal"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMConstructed": {
+      "source_sha256": "0b15bb897eb044b5aa186b94648f365962f847b17b5a8fd9757b26687fa2679f",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_integrated_drift_constructed"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndParameterItoConstructed",
+        "EndToEndHJMOriginalForward"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMConstructedGlobal": {
+      "source_sha256": "278a9bed5f985b91d0e3e152c39d8a6038056d881af1f12752eb4181be4e6f33",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_constructed"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMAEModelComplete",
+        "EndToEndParameterItoGlobal"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMExhaustion": {
+      "source_sha256": "db0a9ed74807361c4d27df3f8ece120e9801570439088134e1a0042947540e7c",
+      "declarations": [
+        "Asakura.EndToEnd.positive_quadrant_ae_of_boxes"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMOriginalDrift"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMExponential": {
+      "source_sha256": "bd427e13531164432f461186ed28a883452c0b5679c005ce124f0f29c9f820dc",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_exponential_from_forward_integrals"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter13HJMDriftSubstitution",
+        "Chapter13HJMParameterExponent",
+        "EndToEndHJMUnstoppedFubini",
+        "Chapter13DeterministicParameterFubini",
+        "Chapter13FixedTimeLocalTransfer"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMExponentialLocal": {
+      "source_sha256": "6537763ace4137d834932420828d608db9bb304d6374b681b328048620c4654d",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_exponential_local_bounds"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMRandomInitial",
+        "EndToEndFiniteParameterExtension"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMFiniteGiven": {
+      "source_sha256": "9cd5aba261810993384d2e5b90a467160dc19aa27cfb22bf4d159bf2003d46ff",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_finite_drift_given"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMExponential",
+        "EndToEndFiniteMaturityDrift"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMFiniteLocalBounds": {
+      "source_sha256": "31a632a4c1c4152962151ddb7d91b464fdeebd25434d2e6d3ccdd0e508321b5c",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_finite_drift_local_bounds"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMFiniteGiven",
+        "EndToEndFiniteParameterExtension"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMFiniteMaturity": {
+      "source_sha256": "d202288fc5315515135c88000b9667e279301a886c23b786cafa766dc013e6a9",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_finite_maturity_constructed"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMRestrictions",
+        "EndToEndFiniteMaturityDrift"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMFiniteModel": {
+      "source_sha256": "5aeb9d8668e1308a60f0782e8f5c7f9878cb843f4715e2b8d4249da42e68fbea",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_finite_maturity_model"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMFiniteMaturity",
+        "EndToEndHJMExponential"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMGlobalOriginal": {
+      "source_sha256": "367ea6bcfd22dc67b63d668f9911cb460c2d66c80df73c1f0b6bdeb089686b68",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_global_original_drift"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMFiniteLocalBounds",
+        "EndToEndHJMExhaustion"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMGlobalRandom": {
+      "source_sha256": "f0bf4fabd5ff61207b68174197b63f5b14ff2cdeff4cbad7ab9f37a48ba6356b",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_global_random_drift"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMRandomLocalBounds",
+        "EndToEndHJMExhaustion"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMInitialCurve": {
+      "source_sha256": "ec50f0921b52a2b283fb114e41b41b45a099cc0162728f74dae9ac202956c08b",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_piecewise_initial_constructed"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMAEModelComplete",
+        "EndToEndPiecewiseParameter"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMModel": {
+      "source_sha256": "acd33c5118b2d95b20628c5da5b8e28bd990374bf3ff067f9846b48a84c78030",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_model_constructed"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndParameterItoConstructed",
+        "EndToEndHJMExponential"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMOriginalDrift": {
+      "source_sha256": "48d4283396fdd12c98b2a04d2c388d1bdb35d38055fd26bf15acc92a0cfc2851",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_finite_maturity_original_drift"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMAEModel"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMOriginalForward": {
+      "source_sha256": "999058dd7c4f377a234717bea4fde73aa0e949e5aef261d1b59b92e645c91a59",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_drift_from_forward_integrals_ae"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter13HJMParameterExponent",
+        "EndToEndHJMUnstoppedFubini",
+        "Chapter13DeterministicParameterFubini",
+        "Chapter13FixedTimeLocalTransfer"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMRandomGiven": {
+      "source_sha256": "ec37be45c32eb0fedb8d1965be2368c2a4e810f32b1e48966247885abfe707c4",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_finite_random_drift_given"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMRandomInitial",
+        "EndToEndFiniteMaturityDrift"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMRandomInitial": {
+      "source_sha256": "291f184cdc288a7e9488975b612d2d097a098e60e0469477f4c30a55d885891d",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_exponential_random_initial"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter13HJMDriftSubstitution",
+        "Chapter13HJMParameterExponent",
+        "EndToEndHJMUnstoppedFubini",
+        "Chapter13DeterministicParameterFubini",
+        "Chapter13FixedTimeLocalTransfer"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMRandomLocalBounds": {
+      "source_sha256": "6b00e339e373d44531eb91a348e52255a4d04795de372e1f8ce647904d9a4dcb",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_finite_random_drift_local_bounds"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMRandomGiven",
+        "EndToEndFiniteParameterExtension"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMRestrictions": {
+      "source_sha256": "7d87237a89440347e12a02063e345b8f3300cbb40bd66a5a9234cbdd313f6273",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_restricted_drift_constructed"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndParameterItoConstructed",
+        "EndToEndHJMOriginalForward"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHJMUnstoppedFubini": {
+      "source_sha256": "956664d0016248794df350104ba02e4341c41768cbb0569b772445488718b272",
+      "declarations": [
+        "Asakura.EndToEnd.hjm_unstopped_fubini_ae"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter13LocalParameterFubini",
+        "Chapter13StoppedIntegralIdentification",
+        "Chapter13M2EvaluationAE",
+        "Chapter13ParameterIntegralCoefficients"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndHilbertRepresentation": {
+      "source_sha256": "3e95068b05580f83febbdfca2415b31e01b2735ec51731172328673a8b7db2ad",
+      "declarations": [
+        "Asakura.EndToEnd.hilbert_representation_written"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "FullAuditOrthogonalDecomposition",
+        "Mathlib.Analysis.Normed.Operator.Basic"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndIndependentBrownianSystem": {
+      "source_sha256": "1ef0128282b40b27350985202486be65f04703ce817165725f437248da76d153",
+      "declarations": [
+        "Asakura.EndToEnd.independentBrownianSystem",
+        "Asakura.EndToEnd.independentBrownianSystem_first",
+        "Asakura.EndToEnd.independentBrownianSystem_second"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndGaussianBrownianSystem"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndIndependentGaussianPair": {
+      "source_sha256": "4c1e96a44d50a9abd921717720b3245a4ea30ab37730e67acc19220f531107ae",
+      "declarations": [
+        "Asakura.EndToEnd.independent_gaussian_pair"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "GaussianCopies",
+        "Mathlib.Probability.Distributions.Gaussian.IsGaussianProcess.Independence"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndInitialInformationTransfer": {
+      "source_sha256": "4f29a1434f534bc9cd390b80f07062f3986f0849036421ef5953691a561eccc5",
+      "declarations": [
+        "Asakura.EndToEnd.zero_one_information_transfer",
+        "Asakura.EndToEnd.bond_initial_price_under_risk_neutral_measure"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndBondApplications"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndJointConvergence": {
+      "source_sha256": "6c26f8e92101e2830d3e70138eb3ebadabb7f9d8d740526a393e2714639a7712",
+      "declarations": [
+        "Asakura.EndToEnd.joint_probability_distribution"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter7JointClockTests",
+        "Mathlib.MeasureTheory.Function.ConvergenceInDistribution"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndJointGaussianMartingale": {
+      "source_sha256": "aa2e43e03536c2266c69093ff227ffd973b123a35e2421c9200d73e90cfc7a76",
+      "declarations": [
+        "Asakura.EndToEnd.gaussian_joint_martingale"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndBrownianJointPast",
+        "FullAuditNaturalFiltration",
+        "Mathlib.Probability.ConditionalExpectation"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndJointGaussianProduct": {
+      "source_sha256": "e8cf049f30592516346f9aedf3da9cf4143ee68f5ef718ab08dd1b32ea45590c",
+      "declarations": [
+        "Asakura.EndToEnd.joint_increment_product_mean",
+        "Asakura.EndToEnd.gaussian_joint_product_martingale"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndJointGaussianMartingale",
+        "Mathlib.MeasureTheory.Function.ConditionalExpectation.PullOut"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndL2Restriction": {
+      "source_sha256": "f3f26d1e1ea11d87f574187512fc8eaef17dcba183f33e8425a458e46bd6d129",
+      "declarations": [
+        "Asakura.EndToEnd.L2Restriction",
+        "Asakura.EndToEnd.positive_restriction_inner"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter12LpZeroExtension",
+        "WienerIntegralInterface"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndLocalItoCoordinates": {
+      "source_sha256": "dac497d0d067978671f3cb607d0060e45e55d2f902930173d234163e89f2291b",
+      "declarations": [
+        "Asakura.EndToEnd.local_ito_joint_coordinate"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndM2Representative",
+        "Chapter13LocalParameterFubini",
+        "Chapter13StoppedIntegralIdentification",
+        "Chapter13BoundedCoefficient"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndLocalItoPaths": {
+      "source_sha256": "664cc7b9c726eda68244a5c50f90757762cd0d9fd5c52a2e7d1a192618370b97",
+      "declarations": [
+        "Asakura.EndToEnd.local_ito_joint_paths"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndLocalItoCoordinates",
+        "EndToEndPathReconstruction"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndLocalItoRepresentative": {
+      "source_sha256": "3ae1cc3c36851810ec7643cbec14c43dc202c44c068e041840f2e14b713e4309",
+      "declarations": [
+        "Asakura.EndToEnd.local_ito_joint_representative"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndLocalItoPaths",
+        "Chapter3OpenProcessRegularity",
+        "Chapter3SemimartingaleFiniteSums",
+        "Chapter2StochasticFubiniPrinted"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndLpRepresentative": {
+      "source_sha256": "654c700b12058b32223a12fb0d6209b8f3c21576da8aff839392ab9b1180b424",
+      "declarations": [
+        "Asakura.EndToEnd.simple_lp_joint_measurable",
+        "Asakura.EndToEnd.lp_joint_representative"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Mathlib.MeasureTheory.Function.LpSpace.InfiniteSum",
+        "Mathlib.MeasureTheory.Constructions.Polish.StronglyMeasurable",
+        "Mathlib.Analysis.SpecificLimits.Normed"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndM2Representative": {
+      "source_sha256": "206247911b28a71ccd10fcfbd980cb65a3e00fc0b342fa8254067a4bb7ae058d",
+      "declarations": [
+        "Asakura.EndToEnd.m2_joint_representative",
+        "Asakura.EndToEnd.m2_joint_representative_ae"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndContinuousPathRepresentative",
+        "Chapter13M2Evaluation"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndMVNIntegrands": {
+      "source_sha256": "a8746e8cd778f91a4d4a4df7c893448f8fbf232bbcac636805b65bdf7bc9d902",
+      "declarations": [
+        "Asakura.EndToEnd.restricted_mvn_future_formula",
+        "Asakura.EndToEnd.restricted_mvn_past_formula"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndL2Restriction",
+        "MVNProcess"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndMVNWritten": {
+      "source_sha256": "808f440a5d85045ef7832f8f3102c96cf0df5efe29ae061d09624c5befff02a0",
+      "declarations": [
+        "Asakura.EndToEnd.mandelbrot_van_ness_from_independent_brownian"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndIndependentBrownianSystem",
+        "EndToEndTwoItoIntegrals",
+        "EndToEndMVNIntegrands",
+        "MandelbrotVanNess"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndMalliavinConstruction": {
+      "source_sha256": "2b118ec536988c71888882132f8452839cf594c7a2d259cad965aef4046baeab",
+      "declarations": [
+        "Asakura.EndToEnd.malliavin_constructed_domain"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter12ClosedCylinderGraphFromData"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndMandelbrotVanNess": {
+      "source_sha256": "005007a4708a934a0a5a7267f49af738bbd47e0aa54c2573cb352a4b1df63369",
+      "declarations": [
+        "Asakura.EndToEnd.mandelbrot_van_ness_from_brownian_system"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndWienerActualIntegrals",
+        "MandelbrotVanNess"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndMonotoneProbability": {
+      "source_sha256": "fbc7fd925918fb4c8c0caa963e37d07dceaafc6ac0096829508feccff2a3c9d9",
+      "declarations": [
+        "Asakura.EndToEnd.monotone_uniform_probability",
+        "Asakura.EndToEnd.monotone_sup_probability"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter7MonotoneClockProbability",
+        "Mathlib.Topology.UniformSpace.HeineCantor"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndNaturalBrownianDensity": {
+      "source_sha256": "9f72ea6b4495b6eaaf2d3c54f81c1f47213779f2e5aad952b0880fa4b723f418",
+      "declarations": [
+        "Asakura.EndToEnd.natural_brownian_positive_smooth_density"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndBrownianDensity",
+        "Chapter12VectorNaturalInformation"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndNaturalDivergence": {
+      "source_sha256": "82bd01674d6b5f36ac829c49c9cd7fc42198b75632be2bbd6446600034f8c23a",
+      "declarations": [
+        "Asakura.EndToEnd.natural_brownian_divergence_ito"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter12DivergenceItoConstructed",
+        "Chapter12VectorNaturalInformation",
+        "Chapter12BasketNaturalSelfFinancing"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndNullMask": {
+      "source_sha256": "c98b029243f8e9c65ea45973de3523dd2ae0b42ad4e5477ffddbf4eb0029f6ba",
+      "declarations": [
+        "Asakura.EndToEnd.local_martingale_null_mask",
+        "Asakura.EndToEnd.ito_null_mask",
+        "Asakura.EndToEnd.coefficient_null_mask"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMGlobalRandom",
+        "Chapter7ItoCommonIntegrand"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndOUReverse": {
+      "source_sha256": "06e35d95135a3d4b4c5bb01745cc43b0231c00ff8f921f51a6d226c9657dd96a",
+      "declarations": [
+        "Asakura.EndToEnd.ou_reverse_constructed"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter9OURandomInitial",
+        "Chapter9OUReverseLocalTest",
+        "Chapter9BrownianBefore",
+        "Chapter9ReverseLogEquation"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndParameterItoConstructed": {
+      "source_sha256": "957b79a3c95b5a400cd852618d99c48d33055d23830f221ee85f7c2020df5a36",
+      "declarations": [
+        "Asakura.EndToEnd.parameter_ito_constructed"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndLocalItoRepresentative",
+        "Chapter5LocalPathBrownianIntegral"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndParameterItoGlobal": {
+      "source_sha256": "4ab81b723cdb0913180ee8eb6909404309cf19f41c86393e4b507660832b0ced",
+      "declarations": [
+        "Asakura.EndToEnd.parameter_ito_global"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndParameterItoConstructed",
+        "EndToEndFiniteCoefficientRepair",
+        "Chapter7ItoCommonIntegrand",
+        "Mathlib.MeasureTheory.Function.Floor"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndPathReconstruction": {
+      "source_sha256": "1200836bb4bb66dbdcf3623b8c08b253c8304181e53107d2a3918c0a15c16f85",
+      "declarations": [
+        "Asakura.EndToEnd.real_continuous_path_polish",
+        "Asakura.EndToEnd.path_from_countable_coordinates"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndContinuousPathRepresentative",
+        "EndToEndContinuousFSpace"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndPiecewiseParameter": {
+      "source_sha256": "ef392d0c3e9f76fac17c1c3fd22dec8355d5da36acde0cbd244a469d2fbc3f82",
+      "declarations": [
+        "Asakura.EndToEnd.piecewise_parameter_measurable",
+        "Asakura.EndToEnd.piecewise_initial_integral_measurable"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndHJMConstructedGlobal"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndProbabilityTests": {
+      "source_sha256": "1fe20282e579569a6f5ff37b5b2804753fc3ca46b82f6424981d99f4f945ae28",
+      "declarations": [
+        "Asakura.EndToEnd.probability_test_limit"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter2BoundedProbabilityMean",
+        "Mathlib.MeasureTheory.Function.ConvergenceInMeasure"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndRandomSDEExistence": {
+      "source_sha256": "5b27ad08991fa3b32e430e893c5a81ea24312a704cee52530a5bee70fc59d9e4",
+      "declarations": [
+        "Asakura.EndToEnd.random_sde_exists"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter4DeterministicSDEFamily",
+        "Chapter4ClassicalSolutionData"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndSDEPathCoordinates": {
+      "source_sha256": "8d751a1ff20506717745358f919a6c3f8220ff1f50ec90069ddd000ad6ad9cf3",
+      "declarations": [
+        "Asakura.EndToEnd.sde_coordinate_path"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter4SDEEndpointMoment",
+        "Chapter8SDERandomLinearCoordinates"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndSignedTruncation": {
+      "source_sha256": "4f5cebf88cdaa823714747fa901c826e208a867503a3dda86401fc4aa5c45a0c",
+      "declarations": [
+        "Asakura.EndToEnd.signed_decomposition_truncation"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter2SignedDifferenceIntegral",
+        "Chapter2TruncationLimit"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndSmallMassCoefficients": {
+      "source_sha256": "247f4e4d3a90321611b9126bf2ff8e9182c76754224821885e534182fd9e265c",
+      "declarations": [
+        "Asakura.EndToEnd.newton_mass_lipschitz",
+        "Asakura.EndToEnd.overdamped_drift_lipschitz"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter8NewtonMatrixDriftLipschitz",
+        "EndToEndSDEPathCoordinates"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndSmallMassConstructed": {
+      "source_sha256": "c593209f8d08cd45af9478968eaf3fe77a0526377d64a8a57ce6ce90650eb134",
+      "declarations": [
+        "Asakura.EndToEnd.small_mass_constructed"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndSmallMassSDE",
+        "EndToEndRandomSDEExistence"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndSmallMassPosition": {
+      "source_sha256": "7c05d4fe59188d8d71ffddfef28b0609d0c06bd0b9724eebd6dc910a6f84a6a2",
+      "declarations": [
+        "Asakura.EndToEnd.small_mass_position_limit"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter8SmallMassConvergence",
+        "Chapter8SmallMassUniformInputs",
+        "Chapter8SmallMassUniformPosition",
+        "Chapter8PositionKernel",
+        "Chapter8OverdampedDifference"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndSmallMassSDE": {
+      "source_sha256": "82de8a16bf61816f8f890085605a13db82a44df4e8db8ffe5c28d9232f126e94",
+      "declarations": [
+        "Asakura.EndToEnd.small_mass_sde_limit"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndSmallMassPosition",
+        "EndToEndSmallMassCoefficients",
+        "Chapter8NewtonActualPosition"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndSmoothingTestBound": {
+      "source_sha256": "2ba14669bed6d11e55946dedea702ea5f086475fe2bfdb525a2b76f7f1171365",
+      "declarations": [
+        "Asakura.EndToEnd.smoothing_test_bound"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter12ConvolutionWeakLimit"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndSwapMeasure": {
+      "source_sha256": "41c0ee1b62a764e307104f53ed2cc0b35336474430c3c98be6f71678e0a38ebe",
+      "declarations": [
+        "Asakura.EndToEnd.BondMarket.swap_numeraire"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndBondAnnuity"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndSwapRates": {
+      "source_sha256": "00391baa41b0a1d905918923ee60540f9858131548ca3efcced1e120eee73d2e",
+      "declarations": [
+        "Asakura.EndToEnd.BondMarket.swap_rate_martingale"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndSwapMeasure"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndTrivialInformation": {
+      "source_sha256": "b42fd00ed2754ad5d6b5581b2ea75e1b95cadfced9ca7cc544e1d3ed7945c378",
+      "declarations": [
+        "Asakura.EndToEnd.conditional_of_zero_one"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter13BondNumeraire"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndTwoItoIntegrals": {
+      "source_sha256": "8da5cfd03a8d2a8175952e8fc6fac755be54917c31f55df64f1480a4b8a62787",
+      "declarations": [
+        "Asakura.EndToEnd.independent_wiener_two_ito_integrals"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndWienerActualIntegrals",
+        "Chapter2M2TimeContinuity"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndTwoPointIsometry": {
+      "source_sha256": "32f67b41800dba45d67e2cf7cbd48c3ebe5b1a9deed648ef9b2e06cb6fe2e6fc",
+      "declarations": [
+        "Asakura.EndToEnd.twoPointEquiv"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "Chapter1TwoPointProjection",
+        "Mathlib.MeasureTheory.Function.L2Space",
+        "Mathlib.Analysis.InnerProductSpace.PiL2"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndWienerActualIntegrals": {
+      "source_sha256": "616e019333bd3b977262027c27c3364b3fdef26784fa0a405774445e535cd691",
+      "declarations": [
+        "Asakura.EndToEnd.independent_wiener_actual_integrals"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndWienerInterface"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "EndToEndWienerInterface": {
+      "source_sha256": "af9d6f031c7983bda36f72da6171d8af58f735a5bfe2291e3e0aee47cd05d86e",
+      "declarations": [
+        "Asakura.EndToEnd.independent_wiener_integrals_exist",
+        "Asakura.EndToEnd.wiener_interface_from_isometry"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "EndToEndL2Restriction",
+        "Chapter12VectorWienerExists",
+        "Chapter12WienerCoordinates",
+        "Chapter12SingleCoordinateIsometry"
+      ],
+      "verification": "Incremental compilation and transitive axiom audit; included in the whole-library simultaneous import."
+    },
+    "FullAuditOrthogonalDecomposition": {
+      "source_sha256": "8f482e5b91b3db04051bb83f51fd5280d0cce31f080706c138daaaeee684470a",
+      "declarations": [
+        "Asakura.FullAudit.writtenPerp_closed",
+        "Asakura.FullAudit.writtenPerp_inter_zero",
+        "Asakura.FullAudit.orthogonal_decomposition_written",
+        "Asakura.FullAudit.orthogonal_decomposition_norm",
+        "Asakura.FullAudit.orthogonal_projection_linear_continuous"
+      ],
+      "chapter_records": [],
+      "imports": [
+        "ManuscriptProjection"
+      ],
+      "verification": "Fresh compilation and axiom audit of the orthogonal-decomposition dependency."
     }
   },
   "chapters": [
@@ -65951,5 +67131,11 @@
       "app1.tex": "a6fd8c09a1381fac59424e875f5d3eba153884c24dcb378ee3afe117152741b5",
       "app2.tex": "9608cd8a9936bc697124f9aa54f7ef2cc4fd5a1d9950dfd94fc8ff1284d4ed7d"
     }
+  },
+  "constructed_interfaces": {
+    "new_modules": 94,
+    "registered_declarations": 6777,
+    "whole_library_import_passed": true,
+    "clean_build": false
   }
 }

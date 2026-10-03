@@ -182,5 +182,7 @@ import Chapter3WrittenMultivariate
 import Chapter3WrittenObstructions
 import Chapter3WrittenRegularization
 import Chapter3WrittenTaylor
+import Chapter4C12ClockIto
+import Chapter4C12ItoConstructed
 
 /-! 第3章: 伊藤の公式。命題の仮定と検証範囲は docs/chapters を参照。 -/

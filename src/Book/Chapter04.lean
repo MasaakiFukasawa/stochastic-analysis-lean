@@ -83,5 +83,6 @@ import FullAuditChapter4Gronwall
 import FullAuditGeometricBrownian
 import FullAuditMarkovSemigroup
 import FullAuditOUKernel
+import EndToEndRandomSDEExistence
 
 /-! 第4章: 確率微分方程式。命題の仮定と検証範囲は docs/chapters を参照。 -/
