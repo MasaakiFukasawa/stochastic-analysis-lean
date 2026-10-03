@@ -63152,7 +63152,7 @@
         "FullAuditStoppingExercises"
       ],
       "whole_chapter_verified": true,
-      "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
     },
     {
       "chapter": 2,
@@ -63592,7 +63592,7 @@
         "Chapter2ItoConstructionUniversalCovariance"
       ],
       "whole_chapter_verified": true,
-      "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
     },
     {
       "chapter": 3,
@@ -63785,7 +63785,7 @@
         "Chapter3ReverseIntegralCounterexample"
       ],
       "whole_chapter_verified": true,
-      "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
     },
     {
       "chapter": 4,
@@ -63879,7 +63879,7 @@
         "Chapter4SDENoiseInformation"
       ],
       "whole_chapter_verified": true,
-      "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
     },
     {
       "chapter": 5,
@@ -64139,7 +64139,7 @@
         "Chapter5BurgersFeynmanKacConnected"
       ],
       "whole_chapter_verified": true,
-      "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
     },
     {
       "chapter": 6,
@@ -64346,7 +64346,7 @@
         "Chapter6LinearGrowthCorollaryWritten"
       ],
       "whole_chapter_verified": true,
-      "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
     },
     {
       "chapter": 7,
@@ -64577,7 +64577,7 @@
         "Chapter7ScaleWeakSolutionCommon"
       ],
       "whole_chapter_verified": true,
-      "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
     },
     {
       "chapter": 8,
@@ -64912,7 +64912,7 @@
         "FullAuditTimeProductIntegrability"
       ],
       "whole_chapter_verified": true,
-      "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
     },
     {
       "chapter": 9,
@@ -65089,7 +65089,7 @@
         "Chapter9ReversePastInformation"
       ],
       "whole_chapter_verified": true,
-      "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
     },
     {
       "chapter": 10,
@@ -65363,7 +65363,7 @@
         "FullAuditKyleProfitExercise"
       ],
       "whole_chapter_verified": true,
-      "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
     },
     {
       "chapter": 11,
@@ -65582,7 +65582,7 @@
         "FullAuditMertonVerification"
       ],
       "whole_chapter_verified": true,
-      "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
     },
     {
       "chapter": 12,
@@ -66506,7 +66506,7 @@
         "FullAuditMalliavinBrownianExercise"
       ],
       "whole_chapter_verified": true,
-      "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
     },
     {
       "chapter": 13,
@@ -66601,7 +66601,7 @@
         "Chapter13UnitNoiseBrownian"
       ],
       "whole_chapter_verified": true,
-      "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
     }
   ],
   "appendix_record": {

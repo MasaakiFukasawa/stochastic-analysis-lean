@@ -92,7 +92,7 @@
       "Chapter13UnitNoiseBrownian"
     ],
     "whole_chapter_verified": true,
-    "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
   },
   "inventory": {
     "chapter": 13,
@@ -823,7 +823,7 @@
         "audit_status": "checked"
       }
     ],
-    "review_scope": "全17項目について、原稿の証明段階とLean命題を照合。coverageは証明部品と接続の範囲であり、単一の金融モデル型による章全体の形式化を意味しない。",
+    "review_scope": "全17項目について、Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明段階との対応を別途確認した。",
     "proof_review_complete": true
   },
   "verification": {

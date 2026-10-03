@@ -38,7 +38,7 @@
       "FullAuditStoppingExercises"
     ],
     "whole_chapter_verified": true,
-    "scope": "原稿の証明部品と接続の対応確認。単一の金融モデル等による章全体の一括形式化を意味しない。"
+    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
   },
   "inventory": {
     "chapter": 1,
