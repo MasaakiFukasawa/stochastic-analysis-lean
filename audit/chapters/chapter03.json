@@ -189,18 +189,17 @@
       "Chapter3ShrinkingStrategy",
       "Chapter3ReverseIntegralCounterexample"
     ],
-    "whole_chapter_verified": true,
     "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
     "constructed_modules": [
       "Chapter4C12ClockIto",
       "Chapter4C12ItoConstructed"
-    ]
+    ],
+    "historical_whole_chapter_verified": true
   },
   "inventory": {
     "chapter": "第3章 伊藤の公式",
     "source": "chap2.tex",
     "chapter_source_sha256": "bd007ee1617d04a726292955f5d5b1a2d1ad680325af5476fa7f343655d00a4e",
-    "whole_chapter_verified": true,
     "items": [
       {
         "id": "lem:adiff",
@@ -211,7 +210,21 @@
           "Asakura.Chapter3Complete.stopped_increment_lemma",
           "Asakura.Chapter3Complete.stopped_increment_common_bound"
         ],
-        "coverage_complete": true
+        "coverage_complete": true,
+        "current_manuscript_locations": [
+          {
+            "id": "3.1.lem.1",
+            "chapter": "3",
+            "section": 1,
+            "environment": "lem",
+            "labels": [
+              "lem:adiff"
+            ],
+            "line": 3412,
+            "end_line": 3423,
+            "environment_sha256": "04b8d165f38d00f379c78ac84e55698a64a1eaf6c524dd5778f08a7813ad870e"
+          }
+        ]
       },
       {
         "id": "prop:qcv",
@@ -231,7 +244,23 @@
           "Asakura.Chapter3Complete.general_covariation_approximation",
           "Asakura.Chapter3Complete.covariation_approximation_from_essential_bounds"
         ],
-        "coverage_complete": true
+        "coverage_complete": true,
+        "current_manuscript_locations": [
+          {
+            "id": "3.1.prop.1",
+            "chapter": "3",
+            "section": 1,
+            "environment": "prop",
+            "labels": [
+              "prop:qcv",
+              "Cn",
+              "Cnc"
+            ],
+            "line": 3438,
+            "end_line": 3453,
+            "environment_sha256": "4bbf7bedd195a754c5c8389eddae5b2c3544fe2d04f85b7d1d7bf03b7bec1392"
+          }
+        ]
       },
       {
         "id": "prop:Karandikar",
@@ -255,7 +284,23 @@
           "Asakura.Chapter3Complete.general_ito_approximation",
           "Asakura.Chapter3Complete.ito_approximation_from_essential_bounds"
         ],
-        "coverage_complete": true
+        "coverage_complete": true,
+        "current_manuscript_locations": [
+          {
+            "id": "3.1.prop.2",
+            "chapter": "3",
+            "section": 1,
+            "environment": "prop",
+            "labels": [
+              "prop:Karandikar",
+              "Rn",
+              "Rnc"
+            ],
+            "line": 3549,
+            "end_line": 3562,
+            "environment_sha256": "7ad47164c2c1038e671438d1d0f8ed18d472e44ca3acac5192d1d555c9e6fa7e"
+          }
+        ]
       },
       {
         "id": "prop:qcv2",
@@ -266,7 +311,21 @@
           "Asakura.Chapter3Complete.semimartingale_covariation_approximation",
           "Asakura.Chapter3Complete.partition_cross_cauchy_schwarz"
         ],
-        "coverage_complete": true
+        "coverage_complete": true,
+        "current_manuscript_locations": [
+          {
+            "id": "3.1.prop.3",
+            "chapter": "3",
+            "section": 1,
+            "environment": "prop",
+            "labels": [
+              "prop:qcv2"
+            ],
+            "line": 3599,
+            "end_line": 3609,
+            "environment_sha256": "8d85fbafdd29ed74eceb5ee3d4f31e674855df940b64f186c4692455f5f41099"
+          }
+        ]
       },
       {
         "id": "prop:Karandikar2",
@@ -277,7 +336,21 @@
           "Asakura.Chapter3Complete.variation_integral_approximation",
           "Asakura.Chapter3Complete.semimartingale_integral_approximation"
         ],
-        "coverage_complete": true
+        "coverage_complete": true,
+        "current_manuscript_locations": [
+          {
+            "id": "3.1.prop.4",
+            "chapter": "3",
+            "section": 1,
+            "environment": "prop",
+            "labels": [
+              "prop:Karandikar2"
+            ],
+            "line": 3647,
+            "end_line": 3654,
+            "environment_sha256": "428bb50430d54f87e84d7596b9df4ce097882423f3284effaa2d106c5e43a528"
+          }
+        ]
       },
       {
         "id": "rem271",
@@ -288,7 +361,21 @@
           "Asakura.Chapter3Complete.semimartingale_integral_path_locality",
           "Asakura.Chapter3Complete.covariation_integral_path_locality"
         ],
-        "coverage_complete": true
+        "coverage_complete": true,
+        "current_manuscript_locations": [
+          {
+            "id": "3.1.rem.1",
+            "chapter": "3",
+            "section": 1,
+            "environment": "rem",
+            "labels": [
+              "rem271"
+            ],
+            "line": 3671,
+            "end_line": 3690,
+            "environment_sha256": "71f7b63943906f2bb150c55833a4be4b9506904e65c5df57708ceb7051ea99e3"
+          }
+        ]
       },
       {
         "id": "chapter3-thm-7",
@@ -301,14 +388,64 @@
           "Asakura.Chapter3Complete.common_oscillation_partition",
           "Asakura.Chapter3Complete.multivariate_ito_formula"
         ],
-        "coverage_complete": true
+        "coverage_complete": true,
+        "current_manuscript_locations": [
+          {
+            "id": "3.2.thm.1",
+            "chapter": "3",
+            "section": 2,
+            "environment": "thm",
+            "labels": [],
+            "line": 3705,
+            "end_line": 3715,
+            "environment_sha256": "d5e473b630bee0a4c9c2c78d37c61c76ff3301e4770faf58206ba0c5627374d9"
+          }
+        ]
+      },
+      {
+        "id": "rem:ito-time-c12",
+        "environment": "rem",
+        "coverage_complete": true,
+        "proved_declarations": [
+          "Asakura.Chapter4.c12_time_space_ito_constructed"
+        ],
+        "step_modules": [
+          "Chapter4C12ItoConstructed"
+        ],
+        "correspondence_note": "時間1回・空間2回の連続微分から時間依存伊藤公式の各積分を構成する。原稿の補足に対応。",
+        "current_manuscript_locations": [
+          {
+            "id": "3.2.rem.2",
+            "chapter": "3",
+            "section": 2,
+            "environment": "rem",
+            "labels": [
+              "rem:ito-time-c12"
+            ],
+            "line": 3800,
+            "end_line": 3820,
+            "environment_sha256": "284bd6c2423ad8da556fe74308f97bec8bf26448fe37b96a20eb023504585a5d"
+          }
+        ]
       },
       {
         "id": "chapter3-defn-8",
         "environment": "defn",
         "line": 2221,
         "status": "definition; no_proof_required",
-        "coverage_complete": true
+        "coverage_complete": true,
+        "current_manuscript_locations": [
+          {
+            "id": "3.2.defn.1",
+            "chapter": "3",
+            "section": 2,
+            "environment": "defn",
+            "labels": [],
+            "line": 3822,
+            "end_line": 3833,
+            "environment_sha256": "43e56b6396412cad6c912baf7b6664562ca87ae9dc767738f195ba829fe0f274"
+          }
+        ]
       },
       {
         "id": "ito2",
@@ -321,7 +458,21 @@
           "Asakura.Chapter3Complete.c3_gradient_covariance",
           "Asakura.Chapter3Complete.stratonovich_chain_rule_constructed"
         ],
-        "coverage_complete": true
+        "coverage_complete": true,
+        "current_manuscript_locations": [
+          {
+            "id": "3.2.thm.2",
+            "chapter": "3",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "ito2"
+            ],
+            "line": 3834,
+            "end_line": 3842,
+            "environment_sha256": "f2336e67533578db8996efff2afb04481552726e7a12ffb55b1343d939351efe"
+          }
+        ]
       },
       {
         "id": "exercise-ito2",
@@ -334,7 +485,19 @@
           "Asakura.Chapter3Complete.c3_gradient_covariance",
           "Asakura.Chapter3Complete.stratonovich_chain_rule_constructed"
         ],
-        "coverage_complete": true
+        "coverage_complete": true,
+        "current_manuscript_locations": [
+          {
+            "id": "3.2.rep.1",
+            "chapter": "3",
+            "section": 2,
+            "environment": "rep",
+            "labels": [],
+            "line": 3843,
+            "end_line": 3845,
+            "environment_sha256": "39fe2c4b40059c50345e85b782202bbbd1b9438a36cf8c8b8a0d1455c2b5762d"
+          }
+        ]
       },
       {
         "id": "chapter3-rem-10",
@@ -349,7 +512,19 @@
           "Asakura.Chapter3Complete.brownian_spike_reverse_not_convergent",
           "Asakura.Chapter3Complete.reverse_integral_counterexample_exists"
         ],
-        "coverage_complete": true
+        "coverage_complete": true,
+        "current_manuscript_locations": [
+          {
+            "id": "3.2.rem.3",
+            "chapter": "3",
+            "section": 2,
+            "environment": "rem",
+            "labels": [],
+            "line": 3846,
+            "end_line": 3854,
+            "environment_sha256": "1a47e095232532e40877ecebe4a947a16d2e530f903db6eaec71d0b7b55c8800"
+          }
+        ]
       },
       {
         "id": "BDG",
@@ -424,7 +599,21 @@
           "Asakura.Chapter3Complete.bdg_original_constants_positive",
           "Asakura.Chapter3Complete.bdg_original_inequality"
         ],
-        "coverage_complete": true
+        "coverage_complete": true,
+        "current_manuscript_locations": [
+          {
+            "id": "3.3.thm.3",
+            "chapter": "3",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "BDG"
+            ],
+            "line": 3861,
+            "end_line": 3871,
+            "environment_sha256": "032da443b5c90c74aa77c1bae3433e9460252b84c8de37ecfe9f9cae5e72f7ec"
+          }
+        ]
       },
       {
         "id": "thm:p/2",
@@ -436,7 +625,21 @@
           "Asakura.Chapter3Complete.stopped_martingale_of_path_memLp",
           "Asakura.Chapter3Complete.stopped_Mp_of_variation_moment"
         ],
-        "coverage_complete": true
+        "coverage_complete": true,
+        "current_manuscript_locations": [
+          {
+            "id": "3.3.thm.4",
+            "chapter": "3",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "thm:p/2"
+            ],
+            "line": 4072,
+            "end_line": 4075,
+            "environment_sha256": "f97aae9269cf99458770afa0bbd78dddfccf41590bc6ddf5b641d6811b7898d7"
+          }
+        ]
       }
     ],
     "modules": [
@@ -637,14 +840,25 @@
       "部分積分公式",
       "BDG の局所化解除"
     ],
-    "manuscript_correspondence_reviewed": true
+    "manuscript_correspondence_reviewed": true,
+    "historical_whole_chapter_verified": true
   },
   "verification": {
-    "whole_chapter_verified": true,
     "scope": "Manuscript proof correspondence, exact chapter hash, dependency compilation and axiom audit.",
-    "chapter_source_matches": true,
     "manuscript_correspondence_reviewed": true,
     "missing_declarations": {},
-    "toolchain": "leanprover/lean4:v4.34.0"
+    "toolchain": "leanprover/lean4:v4.34.0",
+    "historical_chapter_source_matches": true,
+    "historical_whole_chapter_verified": true,
+    "current_manuscript_index_matches": true,
+    "current_manuscript_exhaustive_semantic_review_completed": false
+  },
+  "current_manuscript_record": {
+    "source_file": "asakura2e_v4.tex",
+    "source_sha256": "89b7d3558791a864d76de980ca48451fe29c011835697cb00a772304eb26a039",
+    "index": "audit/manuscript-v4-index.json",
+    "numbered_environment_count": 14,
+    "proof_record_scope": "Existing proof evidence linked to the current environments; not a new exhaustive mathematical review of every formal hypothesis.",
+    "historical_line_numbers": "The original line fields refer to earlier split source files. Use current_manuscript_locations for this version."
   }
 }

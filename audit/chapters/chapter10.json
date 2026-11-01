@@ -270,8 +270,8 @@
       "Chapter10WeightedStateEquation",
       "FullAuditKyleProfitExercise"
     ],
-    "whole_chapter_verified": true,
-    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+    "historical_whole_chapter_verified": true
   },
   "inventory": {
     "chapter": 10,
@@ -612,7 +612,23 @@
           "Asakura.Chapter10.covariance_trace_contraction",
           "Asakura.Chapter10.covariance_sharp_trace_bound"
         ],
-        "correspondence_record": "review.md: 2026-10-01：最終対応点検"
+        "correspondence_record": "review.md: 2026-10-01：最終対応点検",
+        "current_manuscript_locations": [
+          {
+            "id": "10.1.thm.1",
+            "chapter": "10",
+            "section": 1,
+            "environment": "thm",
+            "labels": [
+              "thm:kalman-bucy",
+              "eq:kb-riccati",
+              "eq:kb-mean"
+            ],
+            "line": 8398,
+            "end_line": 8416,
+            "environment_sha256": "a4b7d50340668c869dbd6ed45b1197ddc496c8ee65d48855d433fb6bb242b013"
+          }
+        ]
       },
       {
         "stable_id": "kalman-error-covariance",
@@ -713,7 +729,23 @@
           "Asakura.Chapter10.kalman_initial_error",
           "Asakura.Chapter10.original_innovation_identity"
         ],
-        "correspondence_record": "review.md: 2026-10-01：最終対応点検"
+        "correspondence_record": "review.md: 2026-10-01：最終対応点検",
+        "current_manuscript_locations": [
+          {
+            "id": "10.1.thm.1",
+            "chapter": "10",
+            "section": 1,
+            "environment": "thm",
+            "labels": [
+              "thm:kalman-bucy",
+              "eq:kb-riccati",
+              "eq:kb-mean"
+            ],
+            "line": 8398,
+            "end_line": 8416,
+            "environment_sha256": "a4b7d50340668c869dbd6ed45b1197ddc496c8ee65d48855d433fb6bb242b013"
+          }
+        ]
       },
       {
         "stable_id": "innovation-filtration",
@@ -826,7 +858,23 @@
           "Asakura.Chapter10.kalman_actual_filter_identification",
           "Asakura.Chapter10.original_innovation_identity"
         ],
-        "correspondence_record": "review.md: 2026-10-01：最終対応点検"
+        "correspondence_record": "review.md: 2026-10-01：最終対応点検",
+        "current_manuscript_locations": [
+          {
+            "id": "10.1.thm.1",
+            "chapter": "10",
+            "section": 1,
+            "environment": "thm",
+            "labels": [
+              "thm:kalman-bucy",
+              "eq:kb-riccati",
+              "eq:kb-mean"
+            ],
+            "line": 8398,
+            "end_line": 8416,
+            "environment_sha256": "a4b7d50340668c869dbd6ed45b1197ddc496c8ee65d48855d433fb6bb242b013"
+          }
+        ]
       },
       {
         "stable_id": "kalman-history-independence",
@@ -963,7 +1011,23 @@
           "Asakura.Chapter10.centered_gaussian_initial",
           "Asakura.Chapter10.kalman_initial_error"
         ],
-        "correspondence_record": "review.md: 2026-10-01：最終対応点検"
+        "correspondence_record": "review.md: 2026-10-01：最終対応点検",
+        "current_manuscript_locations": [
+          {
+            "id": "10.1.thm.1",
+            "chapter": "10",
+            "section": 1,
+            "environment": "thm",
+            "labels": [
+              "thm:kalman-bucy",
+              "eq:kb-riccati",
+              "eq:kb-mean"
+            ],
+            "line": 8398,
+            "end_line": 8416,
+            "environment_sha256": "a4b7d50340668c869dbd6ed45b1197ddc496c8ee65d48855d433fb6bb242b013"
+          }
+        ]
       },
       {
         "stable_id": "kalman-conditional-law",
@@ -992,7 +1056,23 @@
           "Asakura.Chapter10.kalman_conditional_identification",
           "Asakura.Chapter10.kalman_actual_filter_identification"
         ],
-        "correspondence_record": "review.md: 2026-10-01：最終対応点検"
+        "correspondence_record": "review.md: 2026-10-01：最終対応点検",
+        "current_manuscript_locations": [
+          {
+            "id": "10.1.thm.1",
+            "chapter": "10",
+            "section": 1,
+            "environment": "thm",
+            "labels": [
+              "thm:kalman-bucy",
+              "eq:kb-riccati",
+              "eq:kb-mean"
+            ],
+            "line": 8398,
+            "end_line": 8416,
+            "environment_sha256": "a4b7d50340668c869dbd6ed45b1197ddc496c8ee65d48855d433fb6bb242b013"
+          }
+        ]
       },
       {
         "stable_id": "innovation-brownian",
@@ -1064,7 +1144,21 @@
           "Asakura.Chapter10.kalman_observation_innovation_brownian",
           "Asakura.Chapter10.original_innovation_identity"
         ],
-        "correspondence_record": "review.md: 2026-10-01：最終対応点検"
+        "correspondence_record": "review.md: 2026-10-01：最終対応点検",
+        "current_manuscript_locations": [
+          {
+            "id": "10.1.cor.1",
+            "chapter": "10",
+            "section": 1,
+            "environment": "cor",
+            "labels": [
+              "cor:innovation-brownian"
+            ],
+            "line": 8474,
+            "end_line": 8476,
+            "environment_sha256": "178a8bfb4ff995b8cab6b7a09b05e20767ae86c819d7462c882c213e3f9e3e0a"
+          }
+        ]
       },
       {
         "stable_id": "static-filter",
@@ -1151,7 +1245,21 @@
           "Asakura.Chapter10.continuous_brownian_integral_martingale",
           "Asakura.Chapter10.scaled_integrator_identity"
         ],
-        "correspondence_record": "review.md: 2026-10-01：最終対応点検"
+        "correspondence_record": "review.md: 2026-10-01：最終対応点検",
+        "current_manuscript_locations": [
+          {
+            "id": "10.2.thm.2",
+            "chapter": "10",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "thm:kyle-back-equilibrium"
+            ],
+            "line": 8694,
+            "end_line": 8705,
+            "environment_sha256": "98fd331fde55fb93c10aaa4495aab2abf03d6806d24dafd716f41edbfc0ff81b"
+          }
+        ]
       },
       {
         "stable_id": "kyle-filter-transform",
@@ -1185,7 +1293,21 @@
           "Asakura.Chapter10.kyle_finite_filter_back_transform",
           "Asakura.Chapter10.compact_coefficient_extension"
         ],
-        "correspondence_record": "review.md: 2026-10-01：最終対応点検"
+        "correspondence_record": "review.md: 2026-10-01：最終対応点検",
+        "current_manuscript_locations": [
+          {
+            "id": "10.2.thm.2",
+            "chapter": "10",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "thm:kyle-back-equilibrium"
+            ],
+            "line": 8694,
+            "end_line": 8705,
+            "environment_sha256": "98fd331fde55fb93c10aaa4495aab2abf03d6806d24dafd716f41edbfc0ff81b"
+          }
+        ]
       },
       {
         "stable_id": "kyle-rationality-iff",
@@ -1224,7 +1346,21 @@
           "Asakura.Chapter10.kyle_actual_gain_sufficiency",
           "Asakura.Chapter10.compact_coefficient_extension"
         ],
-        "correspondence_record": "review.md: 2026-10-01：最終対応点検"
+        "correspondence_record": "review.md: 2026-10-01：最終対応点検",
+        "current_manuscript_locations": [
+          {
+            "id": "10.2.thm.2",
+            "chapter": "10",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "thm:kyle-back-equilibrium"
+            ],
+            "line": 8694,
+            "end_line": 8705,
+            "environment_sha256": "98fd331fde55fb93c10aaa4495aab2abf03d6806d24dafd716f41edbfc0ff81b"
+          }
+        ]
       },
       {
         "stable_id": "kyle-equilibrium",
@@ -1280,7 +1416,21 @@
           "Asakura.Chapter10.kyle_actual_gain_sufficiency",
           "Asakura.Chapter10.compact_coefficient_extension"
         ],
-        "correspondence_record": "review.md: 2026-10-01：最終対応点検"
+        "correspondence_record": "review.md: 2026-10-01：最終対応点検",
+        "current_manuscript_locations": [
+          {
+            "id": "10.2.thm.2",
+            "chapter": "10",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "thm:kyle-back-equilibrium"
+            ],
+            "line": 8694,
+            "end_line": 8705,
+            "environment_sha256": "98fd331fde55fb93c10aaa4495aab2abf03d6806d24dafd716f41edbfc0ff81b"
+          }
+        ]
       },
       {
         "stable_id": "kyle-economic-identities",
@@ -1307,7 +1457,21 @@
           "Asakura.Chapter10.kalman_observation_innovation_brownian",
           "Asakura.Chapter10.brownian_terminal_characteristic"
         ],
-        "correspondence_record": "review.md: 2026-10-01：最終対応点検"
+        "correspondence_record": "review.md: 2026-10-01：最終対応点検",
+        "current_manuscript_locations": [
+          {
+            "id": "10.2.thm.2",
+            "chapter": "10",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "thm:kyle-back-equilibrium"
+            ],
+            "line": 8694,
+            "end_line": 8705,
+            "environment_sha256": "98fd331fde55fb93c10aaa4495aab2abf03d6806d24dafd716f41edbfc0ff81b"
+          }
+        ]
       },
       {
         "stable_id": "kyle-remaining-profit",
@@ -1324,7 +1488,19 @@
           "Asakura.Chapter10.kyle_actual_remaining_profit",
           "Asakura.Chapter10.kyle_ito_interval_profit_identity"
         ],
-        "correspondence_record": "review.md: 2026-10-01：最終対応点検"
+        "correspondence_record": "review.md: 2026-10-01：最終対応点検",
+        "current_manuscript_locations": [
+          {
+            "id": "10.2.rep.1",
+            "chapter": "10",
+            "section": 2,
+            "environment": "rep",
+            "labels": [],
+            "line": 8778,
+            "end_line": 8782,
+            "environment_sha256": "acb142dfc9db74b5fca47b4aa8ad6994a5f676eb1d7f7e8daf6b5d3ebd641310"
+          }
+        ]
       },
       {
         "stable_id": "kyle-moving-value",
@@ -1364,14 +1540,24 @@
           "Asakura.Chapter10.kyle_finite_filter_back_transform",
           "Asakura.Chapter10.compact_coefficient_extension"
         ],
-        "correspondence_record": "review.md: 2026-10-01：最終対応点検"
+        "correspondence_record": "review.md: 2026-10-01：最終対応点検",
+        "current_manuscript_locations": [
+          {
+            "id": "10.2.rep.2",
+            "chapter": "10",
+            "section": 2,
+            "environment": "rep",
+            "labels": [],
+            "line": 8784,
+            "end_line": 8806,
+            "environment_sha256": "4ac3b6a55c2292ec5d96d504b1bfa2fc0c81b2bb997aeeefc85ff499c052b2d3"
+          }
+        ]
       }
     ],
     "coverage_scope": "All 15 manuscript proof stages, examples, and exercises, with manually reviewed correspondence to constructed Lean theorem chains. This is not automatic TeX translation or a single monolithic theorem."
   },
   "verification": {
-    "whole_chapter_verified": true,
-    "chapter_source_matches": true,
     "review_complete": true,
     "formal_coverage_complete": true,
     "missing_passed_evidence_modules": [],
@@ -1379,6 +1565,18 @@
     "items_without_evidence": [],
     "scope": "Current chapter manuscript correspondence in inventory.json and review.md; constructed proof connections, exercises, dependency build, and axiom audit.",
     "toolchain": "leanprover/lean4:v4.34.0",
-    "all_selected_modules_passed": true
+    "all_selected_modules_passed": true,
+    "historical_chapter_source_matches": true,
+    "historical_whole_chapter_verified": true,
+    "current_manuscript_index_matches": true,
+    "current_manuscript_exhaustive_semantic_review_completed": false
+  },
+  "current_manuscript_record": {
+    "source_file": "asakura2e_v4.tex",
+    "source_sha256": "89b7d3558791a864d76de980ca48451fe29c011835697cb00a772304eb26a039",
+    "index": "audit/manuscript-v4-index.json",
+    "numbered_environment_count": 5,
+    "proof_record_scope": "Existing proof evidence linked to the current environments; not a new exhaustive mathematical review of every formal hypothesis.",
+    "historical_line_numbers": "The original line fields refer to earlier split source files. Use current_manuscript_locations for this version."
   }
 }

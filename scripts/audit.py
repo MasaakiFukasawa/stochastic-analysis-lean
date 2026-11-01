@@ -92,6 +92,53 @@ def check_sources(snapshot):
     return sorted(external)
 
 
+def check_manuscript_index(snapshot):
+    record = snapshot.get('current_manuscript_record')
+    if not record:
+        raise RuntimeError('Missing current manuscript record')
+    index = json.loads((ROOT/record['index']).read_text())
+    if index['source_sha256'] != record['source_sha256']:
+        raise RuntimeError('Manuscript index and source snapshot identify different files')
+    modules = set(snapshot['modules'])
+    declarations = {n for v in snapshot['modules'].values() for n in v['declarations']}
+    ids = set()
+    chapters = {str(n): json.loads((ROOT/f'audit/chapters/chapter{n:02}.json').read_text())
+                for n in range(1, 14)}
+    for item in index['items']:
+        if item['id'] in ids:
+            raise RuntimeError('Duplicate manuscript environment ID: '+item['id'])
+        ids.add(item['id'])
+        if not (1 <= item['line'] <= item['end_line']) or len(item['environment_sha256']) != 64:
+            raise RuntimeError('Invalid manuscript location/hash: '+item['id'])
+        for module in item.get('evidence_modules', []):
+            if module not in modules:
+                raise RuntimeError('Unknown manuscript evidence module: '+module)
+        for declaration in item.get('proved_declarations', []):
+            if declaration not in declarations:
+                raise RuntimeError('Unknown manuscript evidence declaration: '+declaration)
+        chapter = chapters.get(item['chapter'])
+        if chapter:
+            local = chapter['current_manuscript_record']
+            if local['source_sha256'] != index['source_sha256']:
+                raise RuntimeError('Chapter manuscript fingerprint differs: '+item['chapter'])
+            inventory = {v.get('stable_id', v.get('id')): v for v in chapter['inventory']['items']}
+            for ref in item.get('proof_record_ids', []):
+                if ref not in inventory:
+                    raise RuntimeError('Unknown manuscript proof record: '+ref)
+                locations = inventory[ref].get('current_manuscript_locations', [])
+                if not any(v['id'] == item['id'] and v['environment_sha256'] == item['environment_sha256']
+                           for v in locations):
+                    raise RuntimeError('Chapter/index correspondence differs: '+item['id'])
+            if (item['environment'] not in {'defn', 'rem'}
+                    and not item.get('evidence_modules') and not item.get('proved_declarations')):
+                raise RuntimeError('Missing proof evidence for numbered environment: '+item['id'])
+    for number, chapter in chapters.items():
+        count = sum(v['chapter'] == number for v in index['items'])
+        if count != chapter['current_manuscript_record']['numbered_environment_count']:
+            raise RuntimeError('Chapter environment count differs: '+number)
+    return index
+
+
 def write_report(report):
     report.setdefault('date_utc', time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()))
     path = ROOT/'audit/latest-run.json'
@@ -103,6 +150,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check-only', action='store_true', help='only source hashes / imports / forbidden tokens')
     parser.add_argument('--skip-build', action='store_true', help='audit after a separately completed lake build')
+    parser.add_argument('--manuscript', type=Path, help='optionally verify the exact local v4 manuscript fingerprint; the manuscript is never published')
     args = parser.parse_args()
     stage = 'source_checks'
     report = None
@@ -111,6 +159,13 @@ def main():
     try:
         snapshot = json.loads((ROOT/'audit/verified-snapshot.json').read_text())
         check_sources(snapshot)
+        index = check_manuscript_index(snapshot)
+        if args.manuscript:
+            actual_hash = hashlib.sha256(args.manuscript.read_bytes()).hexdigest()
+            if actual_hash != index['source_sha256']:
+                raise RuntimeError('Local manuscript differs from the indexed v4 source')
+            print('Local manuscript fingerprint matches the current index', flush=True)
+        print(f"Manuscript index checks passed: {len(index['items'])} environments", flush=True)
         print(f"Source/package checks passed: {len(snapshot['modules'])} modules", flush=True)
         if args.check_only: return
         stage = 'build'

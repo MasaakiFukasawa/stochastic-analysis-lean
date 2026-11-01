@@ -256,8 +256,8 @@
       "Chapter5RevisedBurgersExample",
       "Chapter5BurgersFeynmanKacConnected"
     ],
-    "whole_chapter_verified": true,
-    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+    "historical_whole_chapter_verified": true
   },
   "inventory": {
     "review_complete": true,
@@ -538,7 +538,23 @@
           "Chapter5RevisedRepresentationLemma"
         ],
         "scope": "C²かつ一次・二次偏導関数有界という仮定から、有限観測の整列、ガウス後退帰納、停止した過去座標への伊藤公式、有界・左連続・適合な被積分過程、成分ごとのM²伊藤積分、有限終端の同定、L²性と期待値による中心化まで接続。関数自身の有界性、コンパクト台、結論の積分表示は仮定していない。",
-        "revision_note": "一次・二次偏導関数の有界性を仮定した命題と、その証明の接続を検証した。"
+        "revision_note": "一次・二次偏導関数の有界性を仮定した命題と、その証明の接続を検証した。",
+        "current_manuscript_locations": [
+          {
+            "id": "5.1.lem.1",
+            "chapter": "5",
+            "section": 1,
+            "environment": "lem",
+            "labels": [
+              "lem:martrep",
+              "hteq1",
+              "hteq2"
+            ],
+            "line": 5107,
+            "end_line": 5176,
+            "environment_sha256": "825544f1d0d6c280024cb7977cfa8aaa84ea6ce6ac729f024cfe964cf5c7d769"
+          }
+        ]
       },
       {
         "id": "chap3.tex:rep:1",
@@ -554,7 +570,21 @@
           "Chapter5HeatGradient",
           "Chapter5CylinderTerminalLimit"
         ],
-        "scope": "有界な一次微分だけで熱方程式、勾配の有界連続延長、共同終端極限を確認。"
+        "scope": "有界な一次微分だけで熱方程式、勾配の有界連続延長、共同終端極限を確認。",
+        "current_manuscript_locations": [
+          {
+            "id": "5.1.rep.1",
+            "chapter": "5",
+            "section": 1,
+            "environment": "rep",
+            "labels": [
+              "rephteq"
+            ],
+            "line": 5178,
+            "end_line": 5187,
+            "environment_sha256": "d5d283e274aaaea6a588434be386600b50dc67d674db7bfe8af756f21a478ac1"
+          }
+        ]
       },
       {
         "id": "chap3.tex:thm:1",
@@ -568,7 +598,19 @@
         "evidence_modules": [
           "Chapter5ItoRepresentationActual"
         ],
-        "scope": "コンパクト台近似、実際の確率積分、等長性と閉性、L²密度を接続。"
+        "scope": "コンパクト台近似、実際の確率積分、等長性と閉性、L²密度を接続。",
+        "current_manuscript_locations": [
+          {
+            "id": "5.1.thm.1",
+            "chapter": "5",
+            "section": 1,
+            "environment": "thm",
+            "labels": [],
+            "line": 5214,
+            "end_line": 5223,
+            "environment_sha256": "ac1c0461274ec567d61d0fd3b6b4bce357472afa76b26a63257ba9a41129edfd"
+          }
+        ]
       },
       {
         "id": "chap3.tex:thm:2",
@@ -582,7 +624,21 @@
         "evidence_modules": [
           "Chapter5NaturalMartingaleRepresentation"
         ],
-        "scope": "有限時刻L²マルチンゲールから局所伊藤表現を構成。n≥1を仮定する。"
+        "scope": "有限時刻L²マルチンゲールから局所伊藤表現を構成。n≥1を仮定する。",
+        "current_manuscript_locations": [
+          {
+            "id": "5.2.thm.2",
+            "chapter": "5",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "thm:martrep"
+            ],
+            "line": 5268,
+            "end_line": 5270,
+            "environment_sha256": "f234b203e0579ab06b262c6aaaab0ae4fc5dd0ec3459db351f9e28d0d00f3c10"
+          }
+        ]
       },
       {
         "id": "chap3.tex:rem:1",
@@ -596,7 +652,19 @@
         "evidence_modules": [
           "Chapter5NaturalMartingaleRepresentation"
         ],
-        "scope": "元のYの連続性を仮定せず連続な修正を構成。"
+        "scope": "元のYの連続性を仮定せず連続な修正を構成。",
+        "current_manuscript_locations": [
+          {
+            "id": "5.2.rem.1",
+            "chapter": "5",
+            "section": 2,
+            "environment": "rem",
+            "labels": [],
+            "line": 5289,
+            "end_line": 5292,
+            "environment_sha256": "69343682d111a3260d8b8c9a06b25eea8aabae85f4651e01b1fec55a5592247e"
+          }
+        ]
       },
       {
         "id": "chap3.tex:ass:1",
@@ -611,7 +679,21 @@
           "Chapter5GeneratorL2",
           "Chapter5FrozenProgressive"
         ],
-        "scope": "C≥0、β≥0、生成項の可測性・L²性、ξの条件との区別を照合。"
+        "scope": "C≥0、β≥0、生成項の可測性・L²性、ξの条件との区別を照合。",
+        "current_manuscript_locations": [
+          {
+            "id": "5.2.ass.1",
+            "chapter": "5",
+            "section": 2,
+            "environment": "ass",
+            "labels": [
+              "ass1"
+            ],
+            "line": 5338,
+            "end_line": 5355,
+            "environment_sha256": "c47019cde3c8f2fa8a560a85e737b399f5e64462811f221a3f7f4e8444d7fc66"
+          }
+        ]
       },
       {
         "id": "chap3.tex:thm:3",
@@ -626,7 +708,21 @@
           "Chapter5TwoBSDEApriori",
           "Chapter5AprioriConstructed"
         ],
-        "scope": "実際のBSDEデータから伊藤公式と可積分性を経て最終評価を導出。"
+        "scope": "実際のBSDEデータから伊藤公式と可積分性を経て最終評価を導出。",
+        "current_manuscript_locations": [
+          {
+            "id": "5.2.thm.3",
+            "chapter": "5",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "apriori"
+            ],
+            "line": 5365,
+            "end_line": 5388,
+            "environment_sha256": "4f8a765dffe051d50265635813aa085633bb75aa225903eeaf28ee73faeac664"
+          }
+        ]
       },
       {
         "id": "chap3.tex:thm:4",
@@ -643,7 +739,21 @@
           "Chapter5NonlinearBSDEDriverData",
           "Chapter5SolutionClassUniqueness"
         ],
-        "scope": "凍結解の構成、完備空間の不動点、積分方程式、解の同値類の一意性を接続。C≥0の仮定に対応。"
+        "scope": "凍結解の構成、完備空間の不動点、積分方程式、解の同値類の一意性を接続。C≥0の仮定に対応。",
+        "current_manuscript_locations": [
+          {
+            "id": "5.2.thm.4",
+            "chapter": "5",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "thm:BSDEwellposed"
+            ],
+            "line": 5493,
+            "end_line": 5496,
+            "environment_sha256": "6d9c66aab6e19269f159a44f00a7a7adc18a98dc40cca843866d60adfe463731"
+          }
+        ]
       },
       {
         "id": "chap3.tex:thm:5",
@@ -657,7 +767,19 @@
         "evidence_modules": [
           "Chapter5PerturbationConstructed"
         ],
-        "scope": "解と全反復解の構成から三つの誤差率を導出。λ>0の仮定に対応。"
+        "scope": "解と全反復解の構成から三つの誤差率を導出。λ>0の仮定に対応。",
+        "current_manuscript_locations": [
+          {
+            "id": "5.3.thm.5",
+            "chapter": "5",
+            "section": 3,
+            "environment": "thm",
+            "labels": [],
+            "line": 5578,
+            "end_line": 5589,
+            "environment_sha256": "ece95be74b8508dd64fcae7bb21421a0ab685fba31c0de92ab3a12994ea11323"
+          }
+        ]
       },
       {
         "id": "chap3.tex:thm:6",
@@ -672,7 +794,19 @@
           "Chapter5NonlinearFeynmanKacOpen",
           "Chapter5FiniteHorizonFeynmanKac"
         ],
-        "scope": "有限区間上の係数の零延長、開近傍上C²から伊藤公式と実際のBSDE等式を導出。"
+        "scope": "有限区間上の係数の零延長、開近傍上C²から伊藤公式と実際のBSDE等式を導出。",
+        "current_manuscript_locations": [
+          {
+            "id": "5.4.thm.6",
+            "chapter": "5",
+            "section": 4,
+            "environment": "thm",
+            "labels": [],
+            "line": 5644,
+            "end_line": 5662,
+            "environment_sha256": "98e6fdc79c9feea05f16bf40a9fa8bcda5078aeaff0da1b60b46aad6165a7681"
+          }
+        ]
       },
       {
         "id": "chap3.tex:ex:1",
@@ -694,19 +828,41 @@
           "Chapter5BurgersFeynmanKacConnected"
         ],
         "scope": "有界な滑らかな原始関数から指数関数の全階微分の有界性、負時間側の三次式によるC³延長、正値開集合上のwのC³・vのC²、時刻0を含むPDEと初期条件を導出。時間反転後の実際の一階・二階微分をファインマン・カッツへ接続し、二つのBSDEの伊藤積分を構成。正値条件付き期待値・対数BSDE・同じ解の熱核表示も検証。",
-        "revision_note": "開近傍の正則性・PDE・終端適用を未証明の入力にはせず、三次式の延長から導出。"
+        "revision_note": "開近傍の正則性・PDE・終端適用を未証明の入力にはせず、三次式の延長から導出。",
+        "current_manuscript_locations": [
+          {
+            "id": "5.4.ex.1",
+            "chapter": "5",
+            "section": 4,
+            "environment": "ex",
+            "labels": [],
+            "line": 5665,
+            "end_line": 5749,
+            "environment_sha256": "f652c53768c9f98e297d7dd11fca72982c757a84ba41399ca811d1a187b8dc6e"
+          }
+        ]
       }
     ],
     "formal_coverage_complete": true
   },
   "verification": {
-    "whole_chapter_verified": true,
-    "chapter_source_matches": true,
     "review_complete": true,
     "formal_coverage_complete": true,
     "missing_passed_evidence_modules": [],
     "scope": "Revised chapter manuscript correspondence in coverage.json, constructed proof connections, dependency build, and axiom audit. The claim applies to the strengthened manuscript, not its superseded assumptions.",
     "toolchain": "leanprover/lean4:v4.34.0",
-    "all_selected_modules_passed": true
+    "all_selected_modules_passed": true,
+    "historical_chapter_source_matches": true,
+    "historical_whole_chapter_verified": true,
+    "current_manuscript_index_matches": true,
+    "current_manuscript_exhaustive_semantic_review_completed": false
+  },
+  "current_manuscript_record": {
+    "source_file": "asakura2e_v4.tex",
+    "source_sha256": "89b7d3558791a864d76de980ca48451fe29c011835697cb00a772304eb26a039",
+    "index": "audit/manuscript-v4-index.json",
+    "numbered_environment_count": 11,
+    "proof_record_scope": "Existing proof evidence linked to the current environments; not a new exhaustive mathematical review of every formal hypothesis.",
+    "historical_line_numbers": "The original line fields refer to earlier split source files. Use current_manuscript_locations for this version."
   }
 }

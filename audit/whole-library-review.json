@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "status": "completed",
+  "date_utc": "2026-11-01T12:48:12Z",
+  "modules": 3835,
+  "declarations": 6787,
+  "missing_declarations": [],
+  "unexpected_axioms": {},
+  "scope": "Lean statements and transitive axioms; not automatic verification of TeX prose.",
+  "proof_source_commit": "28205c48a125c7e85d7a85fc209e3167d43243f4",
+  "additional_all_theorem_constants_checked": 11790,
+  "additional_check_scope": "All theorem constants imported from project proof modules, including private/generated proofs; allowed axioms only.",
+  "current_manuscript_index": "audit/manuscript-v4-index.json",
+  "exhaustive_current_manuscript_semantic_review_completed": false
+}

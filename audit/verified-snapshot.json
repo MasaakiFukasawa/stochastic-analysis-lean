@@ -63054,14 +63054,14 @@
         "FullAuditSmoothCutoff",
         "FullAuditStoppingExercises"
       ],
-      "whole_chapter_verified": true,
       "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
       "constructed_modules": [
         "EndToEndConditionalL1",
         "EndToEndConditionalL2",
         "EndToEndDiscreteVariation",
         "EndToEndTwoPointIsometry"
-      ]
+      ],
+      "historical_whole_chapter_verified": true
     },
     {
       "chapter": 2,
@@ -63500,11 +63500,11 @@
         "Chapter2ModificationMeasurable",
         "Chapter2ItoConstructionUniversalCovariance"
       ],
-      "whole_chapter_verified": true,
       "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
       "constructed_modules": [
         "EndToEndParameterItoGlobal"
-      ]
+      ],
+      "historical_whole_chapter_verified": true
     },
     {
       "chapter": 3,
@@ -63696,12 +63696,12 @@
         "Chapter3ShrinkingStrategy",
         "Chapter3ReverseIntegralCounterexample"
       ],
-      "whole_chapter_verified": true,
       "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
       "constructed_modules": [
         "Chapter4C12ClockIto",
         "Chapter4C12ItoConstructed"
-      ]
+      ],
+      "historical_whole_chapter_verified": true
     },
     {
       "chapter": 4,
@@ -63794,11 +63794,11 @@
         "Chapter4SDETransitionLipschitz",
         "Chapter4SDENoiseInformation"
       ],
-      "whole_chapter_verified": true,
       "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
       "constructed_modules": [
         "EndToEndRandomSDEExistence"
-      ]
+      ],
+      "historical_whole_chapter_verified": true
     },
     {
       "chapter": 5,
@@ -64057,8 +64057,8 @@
         "Chapter5RevisedBurgersExample",
         "Chapter5BurgersFeynmanKacConnected"
       ],
-      "whole_chapter_verified": true,
-      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+      "historical_whole_chapter_verified": true
     },
     {
       "chapter": 6,
@@ -64259,8 +64259,8 @@
         "Chapter6LinearGrowthPositiveDensityWritten",
         "Chapter6LinearGrowthCorollaryWritten"
       ],
-      "whole_chapter_verified": true,
-      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+      "historical_whole_chapter_verified": true
     },
     {
       "chapter": 7,
@@ -64490,8 +64490,8 @@
         "Chapter7RightClockStopping",
         "Chapter7ScaleWeakSolutionCommon"
       ],
-      "whole_chapter_verified": true,
-      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+      "historical_whole_chapter_verified": true
     },
     {
       "chapter": 8,
@@ -64825,11 +64825,11 @@
         "FullAuditTimeAverageCoupling",
         "FullAuditTimeProductIntegrability"
       ],
-      "whole_chapter_verified": true,
       "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
       "constructed_modules": [
         "EndToEndSmallMassConstructed"
-      ]
+      ],
+      "historical_whole_chapter_verified": true
     },
     {
       "chapter": 9,
@@ -65005,11 +65005,11 @@
         "Chapter9ReverseLogScore",
         "Chapter9ReversePastInformation"
       ],
-      "whole_chapter_verified": true,
       "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
       "constructed_modules": [
         "EndToEndOUReverse"
-      ]
+      ],
+      "historical_whole_chapter_verified": true
     },
     {
       "chapter": 10,
@@ -65282,8 +65282,8 @@
         "Chapter10WeightedStateEquation",
         "FullAuditKyleProfitExercise"
       ],
-      "whole_chapter_verified": true,
-      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+      "historical_whole_chapter_verified": true
     },
     {
       "chapter": 11,
@@ -65501,8 +65501,8 @@
         "FullAuditMertonIntegrability",
         "FullAuditMertonVerification"
       ],
-      "whole_chapter_verified": true,
-      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+      "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+      "historical_whole_chapter_verified": true
     },
     {
       "chapter": 12,
@@ -66425,12 +66425,12 @@
         "FullAuditCylinderOriginal",
         "FullAuditMalliavinBrownianExercise"
       ],
-      "whole_chapter_verified": true,
       "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
       "constructed_modules": [
         "EndToEndNaturalBrownianDensity",
         "EndToEndNaturalDivergence"
-      ]
+      ],
+      "historical_whole_chapter_verified": true
     },
     {
       "chapter": 13,
@@ -66524,7 +66524,6 @@
         "Chapter13TerminalRateLimit",
         "Chapter13UnitNoiseBrownian"
       ],
-      "whole_chapter_verified": true,
       "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
       "constructed_modules": [
         "EndToEndHJMInitialCurve",
@@ -66532,15 +66531,16 @@
         "EndToEndHJMAEModelComplete",
         "EndToEndBondApplications",
         "EndToEndSwapRates"
-      ]
+      ],
+      "historical_whole_chapter_verified": true
     }
   ],
   "appendix_record": {
-    "scope": "Base appendix proof modules and their explicitly stated hypotheses. EndToEndMVNWritten additionally constructs the actual Ito integrals from independent Brownian motions.",
+    "scope": "Base appendix proof modules and their explicitly stated hypotheses. EndToEndMVNWritten additionally constructs the actual Ito integrals from independent Brownian motions. Appendix A.5 is included; per-environment relinking of the remaining historical appendix catalogue is not claimed.",
     "lean_toolchain": "leanprover/lean4:v4.34.0",
     "mathlib_commit": "5ed2965256430c3649e86755f9576b54eca72435",
-    "verified_module_count": 84,
-    "verified_theorem_count": 340,
+    "verified_module_count": 85,
+    "verified_theorem_count": 346,
     "modules": [
       "Appendix",
       "Extended",
@@ -66625,7 +66625,8 @@
       "ManuscriptInnerProduct",
       "ManuscriptPiLambda",
       "ManuscriptMeasurability",
-      "ManuscriptProjection"
+      "ManuscriptProjection",
+      "AppendixProductFubini"
     ],
     "theorems": [
       "pi_lambda",
@@ -66967,7 +66968,13 @@
       "manuscript_measurable_vector_sum_dot",
       "manuscript_projection_exists",
       "manuscript_projection_unique",
-      "manuscript_projection_orthogonal"
+      "manuscript_projection_orthogonal",
+      "AppendixProduct.measurable_sections",
+      "AppendixProduct.measurable_function_sections",
+      "AppendixProduct.product_measure_properties",
+      "AppendixProduct.product_measure_sections",
+      "AppendixProduct.tonelli",
+      "AppendixProduct.fubini"
     ],
     "axiom_audit": "Only propext, Classical.choice, Quot.sound (or no axioms)",
     "sha256": {
@@ -67060,7 +67067,8 @@
       "lean/check.py": "efc58ed8940836e3aff721d47d9ca903785d42a9001dbd73ebe4c31251038ecc",
       "app0.tex": "53828806be9e43a5ad7a8065b47f4cc8038cf7b43fa141e98beb20935379a38b",
       "app1.tex": "a6fd8c09a1381fac59424e875f5d3eba153884c24dcb378ee3afe117152741b5",
-      "app2.tex": "9608cd8a9936bc697124f9aa54f7ef2cc4fd5a1d9950dfd94fc8ff1284d4ed7d"
+      "app2.tex": "9608cd8a9936bc697124f9aa54f7ef2cc4fd5a1d9950dfd94fc8ff1284d4ed7d",
+      "lean/AppendixProductFubini.lean": "663c209d29b0a4e694894e8b1a5bf183d4d7c78b75822f571d35575bf93c9e49"
     },
     "constructed_modules": [
       "EndToEndMVNWritten",
@@ -67071,7 +67079,8 @@
       "EndToEndSignedTruncation",
       "EndToEndFiniteIntegral",
       "EndToEndMonotoneProbability"
-    ]
+    ],
+    "current_manuscript_index": "audit/manuscript-v4-index.json"
   },
   "constructed_interfaces": {
     "new_modules": 94,
@@ -67088,5 +67097,11 @@
     ],
     "scope": "Canonical revised proofs. Superseded entropy/uniform-integrability proof modules removed; historical versions remain in Git history.",
     "appendix_module": "AppendixProductFubini"
+  },
+  "current_manuscript_record": {
+    "source_file": "asakura2e_v4.tex",
+    "source_sha256": "89b7d3558791a864d76de980ca48451fe29c011835697cb00a772304eb26a039",
+    "index": "audit/manuscript-v4-index.json",
+    "exhaustive_semantic_review_completed": false
   }
 }

@@ -331,11 +331,11 @@
       "FullAuditTimeAverageCoupling",
       "FullAuditTimeProductIntegrability"
     ],
-    "whole_chapter_verified": true,
     "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
     "constructed_modules": [
       "EndToEndSmallMassConstructed"
-    ]
+    ],
+    "historical_whole_chapter_verified": true
   },
   "inventory": {
     "chapter": 8,
@@ -773,6 +773,20 @@
           "Asakura.Chapter8.positive_quadratic_bounds",
           "Asakura.Chapter8.quadratic_potential_derivatives",
           "Asakura.Chapter4.sde_finite_path_memLp"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "8.1.prop.1",
+            "chapter": "8",
+            "section": 1,
+            "environment": "prop",
+            "labels": [
+              "prop:newton-small-mass"
+            ],
+            "line": 7097,
+            "end_line": 7108,
+            "environment_sha256": "ef25af3748ba921d35243731fa3fc89bc1b4b4c2c240fc76fd4ecbc1cae0543e"
+          }
         ]
       },
       {
@@ -782,7 +796,19 @@
         "coverage_complete": true,
         "step_modules": [],
         "proved_declarations": [],
-        "correspondence_note": "不変分布の定義のみで、証明を要求する主張はない。flowLaw による法則の保存を後続の形式化で使用。定理の証明完了数には含めない。"
+        "correspondence_note": "不変分布の定義のみで、証明を要求する主張はない。flowLaw による法則の保存を後続の形式化で使用。定理の証明完了数には含めない。",
+        "current_manuscript_locations": [
+          {
+            "id": "8.2.defn.1",
+            "chapter": "8",
+            "section": 2,
+            "environment": "defn",
+            "labels": [],
+            "line": 7221,
+            "end_line": 7224,
+            "environment_sha256": "3ff7da03df8c76e594618384a9709a1a9e8d3de1fbbb6612ac7c0277b739b419"
+          }
+        ]
       },
       {
         "stable_id": "thm:langevin-contraction",
@@ -803,7 +829,22 @@
           "Asakura.Chapter8.sde_additive_equation",
           "Asakura.Chapter8.sde_canonical_identification"
         ],
-        "correspondence_note": "g=∇U、H=∇²U と読む。C²と有界ヘッセ行列を根拠とする HasFDerivAt と作用素ノルム上界から連続外力の積分方程式を実際に構成し、同じ外力が差で消えることから原稿の単調性仮定による標本路収縮、共通雑音によるカップリングの持ち上げ、全カップリングの下限まで証明した。任意の連続可測外力に成立するため、ΣWの非退化性や正規分布性は不要。定数係数SDEとの積分方程式としての同定と一意性、二乗モーメントの保存も接続済み。"
+        "correspondence_note": "g=∇U、H=∇²U と読む。C²と有界ヘッセ行列を根拠とする HasFDerivAt と作用素ノルム上界から連続外力の積分方程式を実際に構成し、同じ外力が差で消えることから原稿の単調性仮定による標本路収縮、共通雑音によるカップリングの持ち上げ、全カップリングの下限まで証明した。任意の連続可測外力に成立するため、ΣWの非退化性や正規分布性は不要。定数係数SDEとの積分方程式としての同定と一意性、二乗モーメントの保存も接続済み。",
+        "current_manuscript_locations": [
+          {
+            "id": "8.3.thm.1",
+            "chapter": "8",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "thm:langevin-contraction",
+              "eq:langevin-wasserstein-contraction"
+            ],
+            "line": 7253,
+            "end_line": 7260,
+            "environment_sha256": "f1c3e9fa075e66ccc984e4f6928f4a1a0e3b36b203383b0143aa383c74d90569"
+          }
+        ]
       },
       {
         "stable_id": "thm:langevin-invariant-existence",
@@ -834,6 +875,21 @@
           "Asakura.Chapter8.pullback_geometric_limit",
           "Asakura.Chapter8.random_L2_fixed_point",
           "Asakura.Chapter8.sde_flow_commutation"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "8.3.thm.2",
+            "chapter": "8",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "thm:langevin-invariant-existence",
+              "eq:langevin-geometric-convergence"
+            ],
+            "line": 7280,
+            "end_line": 7288,
+            "environment_sha256": "af7c1d648204a2a2d1cfef8bdad1cc8f366b70d3b8b86b1f6065e28ad88b33d8"
+          }
         ]
       },
       {
@@ -868,6 +924,18 @@
           "Asakura.Chapter8.vector_ou_gaussian_invariant",
           "Asakura.Chapter8.vector_ou_gaussian_invariant_time",
           "Asakura.Chapter8.vector_ou_invariance_convergence"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "8.3.ex.1",
+            "chapter": "8",
+            "section": 3,
+            "environment": "ex",
+            "labels": [],
+            "line": 7325,
+            "end_line": 7334,
+            "environment_sha256": "0f425a335493649806e9db94cabffa7f510df1b7b675abc280fd86a19b55e6e8"
+          }
         ]
       },
       {
@@ -921,7 +989,22 @@
           "Asakura.Chapter8.actual_synchronous_contraction",
           "Asakura.Chapter8.langevin_time_average_manuscript"
         ],
-        "correspondence_note": "langevin_time_average_manuscript は実際の定数拡散係数SDEと一様単調性、不変分布πの定義を出発点に、二乗誤差2 Lf² m2/(κT)、有界リプシッツ関数の全時間での概収束、確定的初期値への移行を証明。実際の解の同時刻収縮、定常法則、可積分な関数の条件付きマルコフ公式も導出済み。独立な初期値とブラウン運動の積空間での構成も別補題で確認。不変分布自体の存在は直前の別定理の証明義務であり、そちらの完了を意味しない。"
+        "correspondence_note": "langevin_time_average_manuscript は実際の定数拡散係数SDEと一様単調性、不変分布πの定義を出発点に、二乗誤差2 Lf² m2/(κT)、有界リプシッツ関数の全時間での概収束、確定的初期値への移行を証明。実際の解の同時刻収縮、定常法則、可積分な関数の条件付きマルコフ公式も導出済み。独立な初期値とブラウン運動の積空間での構成も別補題で確認。不変分布自体の存在は直前の別定理の証明義務であり、そちらの完了を意味しない。",
+        "current_manuscript_locations": [
+          {
+            "id": "8.4.thm.3",
+            "chapter": "8",
+            "section": 4,
+            "environment": "thm",
+            "labels": [
+              "thm:langevin-time-average",
+              "eq:ergodic-average-bound"
+            ],
+            "line": 7339,
+            "end_line": 7348,
+            "environment_sha256": "a1311a06bebca3693d92452d4643580385de8e2fa8c9c373304b890a7e48972f"
+          }
+        ]
       },
       {
         "stable_id": "thm:gibbs-invariance",
@@ -1090,7 +1173,21 @@
           "Asakura.Chapter8.potential_drift_regularity",
           "Asakura.Chapter8.gibbs_manuscript_invariance"
         ],
-        "coverage_note": "Chapter8GibbsManuscript.gibbs_manuscript_invariance constructs an actual Brownian-driven SDE family and proves invariance of its normalized Gibbs law from C3 U, bounded second/third derivatives, the manuscript weighted Euclidean second moment, symmetry and Einstein relation. All flow regularity, actual-SDE identification, generator equations, integration by parts, and smooth-test measure determination are proved dependencies. No convexity or ellipticity is assumed."
+        "coverage_note": "Chapter8GibbsManuscript.gibbs_manuscript_invariance constructs an actual Brownian-driven SDE family and proves invariance of its normalized Gibbs law from C3 U, bounded second/third derivatives, the manuscript weighted Euclidean second moment, symmetry and Einstein relation. All flow regularity, actual-SDE identification, generator equations, integration by parts, and smooth-test measure determination are proved dependencies. No convexity or ellipticity is assumed.",
+        "current_manuscript_locations": [
+          {
+            "id": "8.5.thm.4",
+            "chapter": "8",
+            "section": 5,
+            "environment": "thm",
+            "labels": [
+              "thm:gibbs-invariance"
+            ],
+            "line": 7433,
+            "end_line": 7443,
+            "environment_sha256": "ad86d1bf0d697c609a515f2a65e424baa504b50a9fcce2f52f657dadf7df6c81"
+          }
+        ]
       },
       {
         "stable_id": "chapter8-ex-8",
@@ -1109,6 +1206,18 @@
           "Asakura.Chapter8.frozen_coordinate_invariance",
           "Asakura.Chapter8.frozen_coordinate_nonunique",
           "Asakura.Chapter8.frozen_ou_product_invariant"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "8.5.ex.2",
+            "chapter": "8",
+            "section": 5,
+            "environment": "ex",
+            "labels": [],
+            "line": 7519,
+            "end_line": 7529,
+            "environment_sha256": "eec306077065caa2a3d875a61eabf693a6600f988cd17e8ada61215de52a44eb"
+          }
         ]
       },
       {
@@ -1125,7 +1234,19 @@
           "Asakura.Chapter8.scalar_einstein_variance_iff",
           "Asakura.Chapter8.scalar_einstein_exercise"
         ],
-        "correspondence_note": "actual ItoCovarianceFormula から構成したOU解、その正規遷移法則、定常ガウス分布の保存、分散がギブス分散に一致することとアインシュタイン関係の同値性を統合して証明。"
+        "correspondence_note": "actual ItoCovarianceFormula から構成したOU解、その正規遷移法則、定常ガウス分布の保存、分散がギブス分散に一致することとアインシュタイン関係の同値性を統合して証明。",
+        "current_manuscript_locations": [
+          {
+            "id": "8.5.rep.1",
+            "chapter": "8",
+            "section": 5,
+            "environment": "rep",
+            "labels": [],
+            "line": 7531,
+            "end_line": 7537,
+            "environment_sha256": "33c6ee80b4c35ad5429c196aeb9e113cb661ec6224d9796874d8482748a9697a"
+          }
+        ]
       },
       {
         "stable_id": "prop:newton-gibbs-maxwell",
@@ -1185,7 +1306,21 @@
           "Asakura.Chapter8.maxwell_density",
           "Asakura.Chapter8.newton_gibbs_maxwell_manuscript"
         ],
-        "coverage_note": "Chapter8NewtonGibbsMaxwell.newton_gibbs_maxwell_manuscript constructs the actual Newton SDE, proves invariant phase Gibbs law, and identifies it under volume-preserving phase coordinates with position Gibbs times independent Gaussian velocity of variance (beta*m)^(-1). C3 regularity and phase moments are derived from the original U assumptions, and generator cancellation is derived from Hessian symmetry."
+        "coverage_note": "Chapter8NewtonGibbsMaxwell.newton_gibbs_maxwell_manuscript constructs the actual Newton SDE, proves invariant phase Gibbs law, and identifies it under volume-preserving phase coordinates with position Gibbs times independent Gaussian velocity of variance (beta*m)^(-1). C3 regularity and phase moments are derived from the original U assumptions, and generator cancellation is derived from Hessian symmetry.",
+        "current_manuscript_locations": [
+          {
+            "id": "8.6.prop.2",
+            "chapter": "8",
+            "section": 6,
+            "environment": "prop",
+            "labels": [
+              "prop:newton-gibbs-maxwell"
+            ],
+            "line": 7589,
+            "end_line": 7593,
+            "environment_sha256": "40d2b83e097934e60f5c19d5ed70610fbe613abafb569419a9685c0a687c7d6c"
+          }
+        ]
       },
       {
         "stable_id": "thm:newton-uniformly-convex",
@@ -1276,6 +1411,23 @@
           "Asakura.Chapter8.transport_coordinate_comparison",
           "Asakura.Chapter8.transport_map_bound",
           "Asakura.Chapter8.vector_newton_contraction"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "8.6.thm.5",
+            "chapter": "8",
+            "section": 6,
+            "environment": "thm",
+            "labels": [
+              "thm:newton-uniformly-convex",
+              "eq:newton-convex-friction",
+              "eq:newton-convex-contraction",
+              "eq:newton-convex-convergence"
+            ],
+            "line": 7633,
+            "end_line": 7657,
+            "environment_sha256": "35b60ce445ad8b4bc7e3ac4b74f157b044ffab68a737c0612d079bda5ba36844"
+          }
         ]
       },
       {
@@ -1309,6 +1461,21 @@
           "Asakura.Chapter8.quadratic_newton_sde_physical_convergence",
           "Asakura.Chapter8.quadratic_newton_sde_transport",
           "Asakura.Chapter8.quadratic_potential_derivatives"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "8.6.cor.1",
+            "chapter": "8",
+            "section": 6,
+            "environment": "cor",
+            "labels": [
+              "prop:newton-geometric-convergence",
+              "eq:newton-wasserstein-convergence"
+            ],
+            "line": 7737,
+            "end_line": 7749,
+            "environment_sha256": "0e8a06965b3bde5e9dadc02e7238482740fd81c276e87abe04a3092bc4fd327d"
+          }
         ]
       },
       {
@@ -1502,6 +1669,22 @@
           "Asakura.Chapter8.langevin_mle_manuscript",
           "Asakura.Chapter8.information_scaled_square_root",
           "Asakura.Chapter8.changed_brownian_actual_sde"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "8.7.thm.6",
+            "chapter": "8",
+            "section": 7,
+            "environment": "thm",
+            "labels": [
+              "thm:langevin-mle-clt",
+              "eq:langevin-limiting-information",
+              "eq:langevin-mle-clt"
+            ],
+            "line": 7807,
+            "end_line": 7831,
+            "environment_sha256": "e4f1fe11d11d2bf261404119faad4ff371ab4f947b9ae7ca9b1f1da9e2621a17"
+          }
         ]
       },
       {
@@ -1532,6 +1715,18 @@
           "Asakura.Chapter8.scalar_ou_written_limit",
           "Asakura.Chapter8.square_semimartingale_integral",
           "Asakura.Chapter8.ou_terminal_integral"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "8.7.ex.3",
+            "chapter": "8",
+            "section": 7,
+            "environment": "ex",
+            "labels": [],
+            "line": 7927,
+            "end_line": 7946,
+            "environment_sha256": "a67edf34a8275cc1511eabadb2fa230037b30059527a41154598b21cd9222409"
+          }
         ]
       },
       {
@@ -1662,8 +1857,6 @@
     ]
   },
   "verification": {
-    "whole_chapter_verified": true,
-    "chapter_source_matches": true,
     "review_complete": true,
     "formal_coverage_complete": true,
     "missing_passed_evidence_modules": [],
@@ -1671,6 +1864,18 @@
     "items_without_evidence": [],
     "scope": "Current chapter manuscript correspondence in inventory.json and review.md; constructed proof connections, exercises, dependency build, and axiom audit.",
     "toolchain": "leanprover/lean4:v4.34.0",
-    "all_selected_modules_passed": true
+    "all_selected_modules_passed": true,
+    "historical_chapter_source_matches": true,
+    "historical_whole_chapter_verified": true,
+    "current_manuscript_index_matches": true,
+    "current_manuscript_exhaustive_semantic_review_completed": false
+  },
+  "current_manuscript_record": {
+    "source_file": "asakura2e_v4.tex",
+    "source_sha256": "89b7d3558791a864d76de980ca48451fe29c011835697cb00a772304eb26a039",
+    "index": "audit/manuscript-v4-index.json",
+    "numbered_environment_count": 14,
+    "proof_record_scope": "Existing proof evidence linked to the current environments; not a new exhaustive mathematical review of every formal hypothesis.",
+    "historical_line_numbers": "The original line fields refer to earlier split source files. Use current_manuscript_locations for this version."
   }
 }

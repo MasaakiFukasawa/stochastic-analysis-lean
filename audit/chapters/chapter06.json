@@ -205,8 +205,8 @@
       "Chapter6LocalizedDensityData",
       "Chapter6SurvivalDensity"
     ],
-    "whole_chapter_verified": true,
-    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+    "historical_whole_chapter_verified": true
   },
   "inventory": {
     "chapter": 6,
@@ -434,6 +434,20 @@
         ],
         "proved_declarations": [
           "Asakura.FullAudit.bayes_real_density"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "6.1.lem.1",
+            "chapter": "6",
+            "section": 1,
+            "environment": "lem",
+            "labels": [
+              "lem:bayes"
+            ],
+            "line": 5787,
+            "end_line": 5794,
+            "environment_sha256": "6bbc6337766eb67870634432e8fdd4c4af20417c1bf089f60a056f220975e5f5"
+          }
         ]
       },
       {
@@ -455,7 +469,22 @@
         "proved_declarations": [
           "Asakura.Chapter6.density_criterion_written"
         ],
-        "proof_connection": "正値条件付き密度のランダムな初期値を除いた局所マルチンゲール、確率対数と伊藤積分の逆変換、実際の共変分のスティルチェス積分による補正を構成。両方向を接続。原稿の積の公式の初期項省略はreviewに記録。"
+        "proof_connection": "正値条件付き密度のランダムな初期値を除いた局所マルチンゲール、確率対数と伊藤積分の逆変換、実際の共変分のスティルチェス積分による補正を構成。両方向を接続。原稿の積の公式の初期項省略はreviewに記録。",
+        "current_manuscript_locations": [
+          {
+            "id": "6.1.lem.2",
+            "chapter": "6",
+            "section": 1,
+            "environment": "lem",
+            "labels": [
+              "lem:QP",
+              "def:M"
+            ],
+            "line": 5821,
+            "end_line": 5840,
+            "environment_sha256": "da8a4f776c1fe3745a521a10edec293cafeffbf2294ef26ad0ab037ead44dd50"
+          }
+        ]
       },
       {
         "stable_id": "6.1.prop.1",
@@ -476,7 +505,21 @@
         "proved_declarations": [
           "Asakura.Chapter6.semimartingale_density_equivalence"
         ],
-        "proof_connection": "PからQへの保存を一般の正値密度から構成し、逆密度の可積分性・条件付き期待値・零集合の一致から逆向きを証明。両分解を得た上で既存の同一停止和による二次変分・伊藤積分の不変性に接続。原稿の循環した適用順序はreviewに記録。"
+        "proof_connection": "PからQへの保存を一般の正値密度から構成し、逆密度の可積分性・条件付き期待値・零集合の一致から逆向きを証明。両分解を得た上で既存の同一停止和による二次変分・伊藤積分の不変性に接続。原稿の循環した適用順序はreviewに記録。",
+        "current_manuscript_locations": [
+          {
+            "id": "6.1.prop.1",
+            "chapter": "6",
+            "section": 1,
+            "environment": "prop",
+            "labels": [
+              "prop:QPequiv"
+            ],
+            "line": 5882,
+            "end_line": 5888,
+            "environment_sha256": "39ae531ffd34de936626089586ed9f28719b5f25bbded8a01817ce28a04aa764"
+          }
+        ]
       },
       {
         "stable_id": "6.1.thm.1",
@@ -494,6 +537,20 @@
         "proved_declarations": [
           "Asakura.Chapter6.girsanov_maruyama_written",
           "Asakura.Chapter6.mean_one_density_probability"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "6.1.thm.1",
+            "chapter": "6",
+            "section": 1,
+            "environment": "thm",
+            "labels": [
+              "thm:GM"
+            ],
+            "line": 5923,
+            "end_line": 5937,
+            "environment_sha256": "c50006a35d70d78684e0dfda072499ff7422facca1e79418274e1859a9acf5da"
+          }
         ]
       },
       {
@@ -510,6 +567,20 @@
         ],
         "proved_declarations": [
           "Asakura.Chapter6.novikov_written"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "6.1.prop.2",
+            "chapter": "6",
+            "section": 1,
+            "environment": "prop",
+            "labels": [
+              "prop:Novikov-type"
+            ],
+            "line": 5951,
+            "end_line": 5959,
+            "environment_sha256": "f2db820613ffcd22d19c5a822c66ea9821e4776daedb1318ff5d7884b97fd516"
+          }
         ]
       },
       {
@@ -528,7 +599,19 @@
           "Asakura.Chapter6.novikov_endpoint_mean",
           "Asakura.Chapter6.novikov_endpoint_written"
         ],
-        "proof_connection": "γ=1/2 の境界条件から平均1および閉じた条件付き期待値の等式を証明。lZに厳密ノビコフを適用し、ヘルダー評価とl→1の極限から元の指数の平均1を導出。"
+        "proof_connection": "γ=1/2 の境界条件から平均1および閉じた条件付き期待値の等式を証明。lZに厳密ノビコフを適用し、ヘルダー評価とl→1の極限から元の指数の平均1を導出。",
+        "current_manuscript_locations": [
+          {
+            "id": "6.1.rem.1",
+            "chapter": "6",
+            "section": 1,
+            "environment": "rem",
+            "labels": [],
+            "line": 5960,
+            "end_line": 5962,
+            "environment_sha256": "08b29e32452fac0c5c3a58eccbd2b9a9d75c60cda5eb7c1192875e65488a31fb"
+          }
+        ]
       },
       {
         "stable_id": "6.1.prop.3",
@@ -544,6 +627,20 @@
         ],
         "proved_declarations": [
           "Asakura.Chapter6.finite_partition_novikov_written"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "6.1.prop.3",
+            "chapter": "6",
+            "section": 1,
+            "environment": "prop",
+            "labels": [
+              "prop:Novikov-type2"
+            ],
+            "line": 6013,
+            "end_line": 6021,
+            "environment_sha256": "01d98908b92c9406cd57f4fe48d9a6e862c1fa3cd696dfd317b1a340ccf3b324"
+          }
         ]
       },
       {
@@ -617,7 +714,19 @@
           "Asakura.Chapter6.finite_coefficient_extension_progressive",
           "Asakura.Chapter6.linear_bsde_written"
         ],
-        "proof_connection": "linear_bsde_written は有限区間上の有界連続適合係数・自然フィルトレーション・L2終端値から実際の解を構成。指数密度の平均1・L2性、実際の測度変更、積分因子、可積分な一様上界による局所化除去、条件付き期待値からの因子の引き出しを通して原稿の表示式を導出。共変動∫Z dsも同じ解から構成。linear_bsde_solution_unique は具体的線形ドライバーを前章の一意不動点と解の同値類の一意性に接続。区間外の連続性・有界性は入力せず定数延長で構成。"
+        "proof_connection": "linear_bsde_written は有限区間上の有界連続適合係数・自然フィルトレーション・L2終端値から実際の解を構成。指数密度の平均1・L2性、実際の測度変更、積分因子、可積分な一様上界による局所化除去、条件付き期待値からの因子の引き出しを通して原稿の表示式を導出。共変動∫Z dsも同じ解から構成。linear_bsde_solution_unique は具体的線形ドライバーを前章の一意不動点と解の同値類の一意性に接続。区間外の連続性・有界性は入力せず定数延長で構成。",
+        "current_manuscript_locations": [
+          {
+            "id": "6.2.thm.2",
+            "chapter": "6",
+            "section": 2,
+            "environment": "thm",
+            "labels": [],
+            "line": 6037,
+            "end_line": 6063,
+            "environment_sha256": "aaf5140f554838570f1a589ca8e926dd9ee57783f190f7fa4d7cdfab11c5d2f4"
+          }
+        ]
       },
       {
         "stable_id": "6.3.rep.1",
@@ -630,6 +739,18 @@
         ],
         "proved_declarations": [
           "Asakura.FullAudit.continuous_adapted_path_measurable"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "6.3.rep.1",
+            "chapter": "6",
+            "section": 3,
+            "environment": "rep",
+            "labels": [],
+            "line": 6130,
+            "end_line": 6135,
+            "environment_sha256": "55b2c65bb889f0550b699ee54e9c2aa4f8d26d2d7e1614a3827cb8f1cb04f676"
+          }
         ]
       },
       {
@@ -652,7 +773,21 @@
           "Asakura.Chapter6.bounded_borel_weak_sde",
           "Asakura.Chapter6.bounded_progressive_girsanov"
         ],
-        "proof_connection": "有界ボレル係数・F₀可測な任意の初期値から代入過程の可測性と進行可測性、伊藤積分、二次変分・交差共変分、ノビコフによる密度の平均1、同値な確率測度、補正ブラウン運動、行列の打消しによるSDE等式を接続。非負時刻の係数はtoNNRealによるBorel延長を別宣言で接続。原フィルトレーションは保持される。"
+        "proof_connection": "有界ボレル係数・F₀可測な任意の初期値から代入過程の可測性と進行可測性、伊藤積分、二次変分・交差共変分、ノビコフによる密度の平均1、同値な確率測度、補正ブラウン運動、行列の打消しによるSDE等式を接続。非負時刻の係数はtoNNRealによるBorel延長を別宣言で接続。原フィルトレーションは保持される。",
+        "current_manuscript_locations": [
+          {
+            "id": "6.3.thm.3",
+            "chapter": "6",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "thm:girsanov-weak-solution"
+            ],
+            "line": 6137,
+            "end_line": 6175,
+            "environment_sha256": "6d4aa368f60dccbb916098b606672c75022ddc005352a5175c14168d5912f90c"
+          }
+        ]
       },
       {
         "stable_id": "6.3.prop.1",
@@ -771,7 +906,23 @@
           "Asakura.Chapter6.covariance_matrix_sqrt_det",
           "Asakura.Chapter6.gaussian_sqrt_power"
         ],
-        "proof_connection": "positive_density_written は有界連続ドリフトから係数の有限時刻延長・伊藤積分・共変動・平均1の指数密度・確率測度を構成し、実際のブラウン終点の積正規密度と行列の変数変換を使ってルベーグ密度を与える。p(Y)=g(Y)E[D|Y]、原稿と同じ定数の指数下界、連続代表元の全点での正値性まで接続。左端点和の正規回帰、条件付きノルム、格子和、実際の伊藤積分への平均二乗収束、L1極限、条件付きイェンセンを導出し、これらを仮定していない。正規因子は変数変換した積密度として形式化し、gaussian_product_formula/covariance_matrix_quadratic/covariance_matrix_sqrt_det/gaussian_sqrt_power が本文の表示への代数変形を検証する。"
+        "proof_connection": "positive_density_written は有界連続ドリフトから係数の有限時刻延長・伊藤積分・共変動・平均1の指数密度・確率測度を構成し、実際のブラウン終点の積正規密度と行列の変数変換を使ってルベーグ密度を与える。p(Y)=g(Y)E[D|Y]、原稿と同じ定数の指数下界、連続代表元の全点での正値性まで接続。左端点和の正規回帰、条件付きノルム、格子和、実際の伊藤積分への平均二乗収束、L1極限、条件付きイェンセンを導出し、これらを仮定していない。正規因子は変数変換した積密度として形式化し、gaussian_product_formula/covariance_matrix_quadratic/covariance_matrix_sqrt_det/gaussian_sqrt_power が本文の表示への代数変形を検証する。",
+        "current_manuscript_locations": [
+          {
+            "id": "6.3.prop.4",
+            "chapter": "6",
+            "section": 3,
+            "environment": "prop",
+            "labels": [
+              "prop:girsanov-positive-density",
+              "eq:girsanov-transition-density",
+              "eq:girsanov-density-lower-bound"
+            ],
+            "line": 6203,
+            "end_line": 6230,
+            "environment_sha256": "bfebad56d5288a8e6c063e7587ae28a4d876381b2b61e06cca4335493c3bda19"
+          }
+        ]
       },
       {
         "stable_id": "6.3.cor.1",
@@ -883,7 +1034,21 @@
           "Asakura.Chapter6.linearGrowthDensityConstant"
         ],
         "proof_connection": "標準名 linear_growth_density_corollary_written は、停止密度と二次モーメント評価、退出確率、生存事象上の一致、単調収束により密度の平均1を証明し、密度表示と正値性まで接続する。旧エントロピー・一様可積分性による証明は削除。",
-        "revision_date": "2026-11-01"
+        "revision_date": "2026-11-01",
+        "current_manuscript_locations": [
+          {
+            "id": "6.3.cor.1",
+            "chapter": "6",
+            "section": 3,
+            "environment": "cor",
+            "labels": [
+              "cor:girsanov-linear-positive-density"
+            ],
+            "line": 6284,
+            "end_line": 6294,
+            "environment_sha256": "db25d6e393df67a95bedb35dc70dc83a706c6d438ec23dacd76a94f5751e245b"
+          }
+        ]
       },
       {
         "stable_id": "6.4.prose.likelihood-mle",
@@ -960,8 +1125,6 @@
     "manuscript_correspondence_reviewed": true
   },
   "verification": {
-    "whole_chapter_verified": true,
-    "chapter_source_matches": true,
     "review_complete": true,
     "formal_coverage_complete": true,
     "missing_passed_evidence_modules": [],
@@ -969,7 +1132,11 @@
     "items_without_evidence": [],
     "scope": "Current chapter manuscript correspondence in inventory.json and review.md; constructed proof connections, exercises, dependency build, and axiom audit.",
     "toolchain": "leanprover/lean4:v4.34.0",
-    "all_selected_modules_passed": true
+    "all_selected_modules_passed": true,
+    "historical_chapter_source_matches": true,
+    "historical_whole_chapter_verified": true,
+    "current_manuscript_index_matches": true,
+    "current_manuscript_exhaustive_semantic_review_completed": false
   },
   "revision_verification": {
     "date": "2026-11-01",
@@ -984,5 +1151,13 @@
     ],
     "entry": "Book.Chapter06",
     "scope": "Targeted revision; prior source line numbers are historical."
+  },
+  "current_manuscript_record": {
+    "source_file": "asakura2e_v4.tex",
+    "source_sha256": "89b7d3558791a864d76de980ca48451fe29c011835697cb00a772304eb26a039",
+    "index": "audit/manuscript-v4-index.json",
+    "numbered_environment_count": 12,
+    "proof_record_scope": "Existing proof evidence linked to the current environments; not a new exhaustive mathematical review of every formal hypothesis.",
+    "historical_line_numbers": "The original line fields refer to earlier split source files. Use current_manuscript_locations for this version."
   }
 }

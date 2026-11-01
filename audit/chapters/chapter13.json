@@ -91,7 +91,6 @@
       "Chapter13TerminalRateLimit",
       "Chapter13UnitNoiseBrownian"
     ],
-    "whole_chapter_verified": true,
     "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
     "constructed_modules": [
       "EndToEndHJMInitialCurve",
@@ -99,7 +98,8 @@
       "EndToEndHJMAEModelComplete",
       "EndToEndBondApplications",
       "EndToEndSwapRates"
-    ]
+    ],
+    "historical_whole_chapter_verified": true
   },
   "inventory": {
     "chapter": 13,
@@ -220,7 +220,19 @@
         "manuscript_claim_verified": true,
         "remaining_connection": null,
         "proof_connection_reviewed": true,
-        "audit_status": "checked"
+        "audit_status": "checked",
+        "current_manuscript_locations": [
+          {
+            "id": "13.2.cor.2",
+            "chapter": "13",
+            "section": 2,
+            "environment": "cor",
+            "labels": [],
+            "line": 10802,
+            "end_line": 10809,
+            "environment_sha256": "b7ba6084f41e0d5f1954544226372c6c9354c7856020641dac59f2a878bfc30b"
+          }
+        ]
       },
       {
         "stable_id": "risk-neutral",
@@ -297,7 +309,29 @@
         "manuscript_claim_verified": true,
         "remaining_connection": null,
         "proof_connection_reviewed": true,
-        "audit_status": "checked"
+        "audit_status": "checked",
+        "current_manuscript_locations": [
+          {
+            "id": "13.2.defn.1",
+            "chapter": "13",
+            "section": 2,
+            "environment": "defn",
+            "labels": [],
+            "line": 10660,
+            "end_line": 10671,
+            "environment_sha256": "8731058d9564e7a1622d0a1e2cee1623cbedb37907be595d73f3700d227ea824"
+          },
+          {
+            "id": "13.2.prop.1",
+            "chapter": "13",
+            "section": 2,
+            "environment": "prop",
+            "labels": [],
+            "line": 10672,
+            "end_line": 10676,
+            "environment_sha256": "f497c941a1b711aca34bf234e68e658982a6515e6c77077225536952b7914dd7"
+          }
+        ]
       },
       {
         "stable_id": "term-martingale",
@@ -326,7 +360,19 @@
         "manuscript_claim_verified": true,
         "remaining_connection": null,
         "proof_connection_reviewed": true,
-        "audit_status": "checked"
+        "audit_status": "checked",
+        "current_manuscript_locations": [
+          {
+            "id": "13.2.cor.1",
+            "chapter": "13",
+            "section": 2,
+            "environment": "cor",
+            "labels": [],
+            "line": 10696,
+            "end_line": 10701,
+            "environment_sha256": "a75333f285db03065071e7733a9aaccee6263fbffc59e2bc7edb723303219fd0"
+          }
+        ]
       },
       {
         "stable_id": "measure-drift",
@@ -356,7 +402,19 @@
         "manuscript_claim_verified": true,
         "remaining_connection": null,
         "proof_connection_reviewed": true,
-        "audit_status": "checked"
+        "audit_status": "checked",
+        "current_manuscript_locations": [
+          {
+            "id": "13.2.prop.2",
+            "chapter": "13",
+            "section": 2,
+            "environment": "prop",
+            "labels": [],
+            "line": 10732,
+            "end_line": 10739,
+            "environment_sha256": "b29aaa847b801a80b0bd3c73d80a2a75ad458d832ce5af94aa493544c03801fc"
+          }
+        ]
       },
       {
         "stable_id": "cumulative-drift",
@@ -391,7 +449,19 @@
         "manuscript_claim_verified": true,
         "remaining_connection": null,
         "proof_connection_reviewed": true,
-        "audit_status": "checked"
+        "audit_status": "checked",
+        "current_manuscript_locations": [
+          {
+            "id": "13.2.prop.3",
+            "chapter": "13",
+            "section": 2,
+            "environment": "prop",
+            "labels": [],
+            "line": 10750,
+            "end_line": 10757,
+            "environment_sha256": "28c876a217da78ed4ba0fa435216b249bac44415aa2aa19de48dd8af670e384e"
+          }
+        ]
       },
       {
         "stable_id": "swap-measure",
@@ -429,7 +499,39 @@
         "manuscript_claim_verified": true,
         "remaining_connection": null,
         "proof_connection_reviewed": true,
-        "audit_status": "checked"
+        "audit_status": "checked",
+        "current_manuscript_locations": [
+          {
+            "id": "13.2.defn.2",
+            "chapter": "13",
+            "section": 2,
+            "environment": "defn",
+            "labels": [],
+            "line": 10765,
+            "end_line": 10773,
+            "environment_sha256": "4368f9af354a16256c1d249137185cc43fc28e45b9a98d6344009b1ed0fbefbd"
+          },
+          {
+            "id": "13.2.prop.4",
+            "chapter": "13",
+            "section": 2,
+            "environment": "prop",
+            "labels": [],
+            "line": 10775,
+            "end_line": 10780,
+            "environment_sha256": "c05db07cd24a4bb238a066584d4e7aa72f920d868c33a41edd2f663055664c95"
+          },
+          {
+            "id": "13.2.cor.2",
+            "chapter": "13",
+            "section": 2,
+            "environment": "cor",
+            "labels": [],
+            "line": 10802,
+            "end_line": 10809,
+            "environment_sha256": "b7ba6084f41e0d5f1954544226372c6c9354c7856020641dac59f2a878bfc30b"
+          }
+        ]
       },
       {
         "stable_id": "hjm-fubini",
@@ -507,7 +609,23 @@
         "manuscript_claim_verified": true,
         "remaining_connection": null,
         "proof_connection_reviewed": true,
-        "audit_status": "checked"
+        "audit_status": "checked",
+        "current_manuscript_locations": [
+          {
+            "id": "13.3.thm.1",
+            "chapter": "13",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "thm:HJM",
+              "HJM",
+              "HJM2"
+            ],
+            "line": 10878,
+            "end_line": 10891,
+            "environment_sha256": "6280eb78b82b52157b0b70b348a6966c42ed1741c3df3b5ef046336f166b8598"
+          }
+        ]
       },
       {
         "stable_id": "hjm-drift",
@@ -570,7 +688,23 @@
         "manuscript_claim_verified": true,
         "remaining_connection": null,
         "proof_connection_reviewed": true,
-        "audit_status": "checked"
+        "audit_status": "checked",
+        "current_manuscript_locations": [
+          {
+            "id": "13.3.thm.1",
+            "chapter": "13",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "thm:HJM",
+              "HJM",
+              "HJM2"
+            ],
+            "line": 10878,
+            "end_line": 10891,
+            "environment_sha256": "6280eb78b82b52157b0b70b348a6966c42ed1741c3df3b5ef046336f166b8598"
+          }
+        ]
       },
       {
         "stable_id": "term-sde",
@@ -600,7 +734,21 @@
         "manuscript_claim_verified": true,
         "remaining_connection": null,
         "proof_connection_reviewed": true,
-        "audit_status": "checked"
+        "audit_status": "checked",
+        "current_manuscript_locations": [
+          {
+            "id": "13.3.thm.2",
+            "chapter": "13",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "ftr"
+            ],
+            "line": 10929,
+            "end_line": 10940,
+            "environment_sha256": "13c74ae33641c830a244d9b61d5eeb94c5ea4f0b2ca744b77ebe7b26f381dc08"
+          }
+        ]
       },
       {
         "stable_id": "cheyette-state",
@@ -834,10 +982,8 @@
     "proof_review_complete": true
   },
   "verification": {
-    "whole_chapter_verified": true,
     "proof_audit_complete": true,
     "items_with_findings": [],
-    "chapter_source_matches": true,
     "review_complete": true,
     "formal_coverage_complete": true,
     "missing_passed_evidence_modules": [],
@@ -845,6 +991,18 @@
     "items_without_evidence": [],
     "scope": "Current chapter manuscript correspondence in inventory.json and review.md; constructed proof connections, exercises, dependency build, and axiom audit.",
     "toolchain": "leanprover/lean4:v4.34.0",
-    "all_selected_modules_passed": true
+    "all_selected_modules_passed": true,
+    "historical_chapter_source_matches": true,
+    "historical_whole_chapter_verified": true,
+    "current_manuscript_index_matches": true,
+    "current_manuscript_exhaustive_semantic_review_completed": false
+  },
+  "current_manuscript_record": {
+    "source_file": "asakura2e_v4.tex",
+    "source_sha256": "89b7d3558791a864d76de980ca48451fe29c011835697cb00a772304eb26a039",
+    "index": "audit/manuscript-v4-index.json",
+    "numbered_environment_count": 10,
+    "proof_record_scope": "Existing proof evidence linked to the current environments; not a new exhaustive mathematical review of every formal hypothesis.",
+    "historical_line_numbers": "The original line fields refer to earlier split source files. Use current_manuscript_locations for this version."
   }
 }

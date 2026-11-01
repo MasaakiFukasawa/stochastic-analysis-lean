@@ -227,8 +227,8 @@
       "Chapter7RightClockStopping",
       "Chapter7ScaleWeakSolutionCommon"
     ],
-    "whole_chapter_verified": true,
-    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+    "historical_whole_chapter_verified": true
   },
   "inventory": {
     "chapter": 7,
@@ -481,7 +481,22 @@
           "Asakura.Chapter7.stopped_space_ae_eq",
           "Asakura.Chapter7.dds_written_with_filtration"
         ],
-        "proof_connection": "原稿の局所マルチンゲールと実際の二次変分、a.e.発散からBrownianSystemを構成。共通零集合を除いて二次変分を単調な代表元にし、その逆時計と元の逆時計のa.e.一致も証明。右連続化した停止σ代数をBrownianSystemのフィルトレーションとして明示し、B=X∘τ、X=B∘C、C各時刻が変更後の停止時刻となることを接続。停止σ代数のa.e.代表元独立性はstopped_space_ae_eqで別途証明。"
+        "proof_connection": "原稿の局所マルチンゲールと実際の二次変分、a.e.発散からBrownianSystemを構成。共通零集合を除いて二次変分を単調な代表元にし、その逆時計と元の逆時計のa.e.一致も証明。右連続化した停止σ代数をBrownianSystemのフィルトレーションとして明示し、B=X∘τ、X=B∘C、C各時刻が変更後の停止時刻となることを接続。停止σ代数のa.e.代表元独立性はstopped_space_ae_eqで別途証明。",
+        "current_manuscript_locations": [
+          {
+            "id": "7.1.thm.1",
+            "chapter": "7",
+            "section": 1,
+            "environment": "thm",
+            "labels": [
+              "thm:dds",
+              "bradiv"
+            ],
+            "line": 6512,
+            "end_line": 6529,
+            "environment_sha256": "0c8fd33f2cc07e765485931e491fc3463a1e1313c1ddf4d188dd3e4982ce336b"
+          }
+        ]
       },
       {
         "stable_id": "7.1.rep.1",
@@ -502,7 +517,21 @@
           "Asakura.Chapter7.generalized_inverse_endpoint_extension",
           "Asakura.Chapter7.lower_inverse_endpoint_removal"
         ],
-        "proof_connection": "ClosedTime T に終端値 F_* を付加し、上限としての終端条件を保持。半開区間で定義した4逆関数との一致も証明済み。右連続の場合の1–4,6,7と、連続の場合の5,8を区別して接続。"
+        "proof_connection": "ClosedTime T に終端値 F_* を付加し、上限としての終端条件を保持。半開区間で定義した4逆関数との一致も証明済み。右連続の場合の1–4,6,7と、連続の場合の5,8を区別して接続。",
+        "current_manuscript_locations": [
+          {
+            "id": "7.1.rep.1",
+            "chapter": "7",
+            "section": 1,
+            "environment": "rep",
+            "labels": [
+              "rep:tc"
+            ],
+            "line": 6596,
+            "end_line": 6640,
+            "environment_sha256": "9747d927fe8dceb2431a9d4898c2f8e4cf641767e57b0c7e90b4403b70431c70"
+          }
+        ]
       },
       {
         "stable_id": "7.2.thm.1",
@@ -531,7 +560,21 @@
           "Asakura.Chapter7.strict_inverse_clock_right_filtration",
           "Asakura.Chapter7.coefficient_nonnegative_time_extension"
         ],
-        "proof_connection": "原稿の時計ODEから逆時計、局所マルチンゲールと二次変分、相反係数の伊藤積分W、時計の等長評価、X=ξ+σ(X,t)·Wを構成。ξは可測性のみ。原フィルトレーションの右連続性からraw停止σ代数の右連続性を別宣言で証明。非負時刻係数の実時刻への定数延長は連続性と非零性を保つことも証明し、原仮定に照合済み。"
+        "proof_connection": "原稿の時計ODEから逆時計、局所マルチンゲールと二次変分、相反係数の伊藤積分W、時計の等長評価、X=ξ+σ(X,t)·Wを構成。ξは可測性のみ。原フィルトレーションの右連続性からraw停止σ代数の右連続性を別宣言で証明。非負時刻係数の実時刻への定数延長は連続性と非零性を保つことも証明し、原仮定に照合済み。",
+        "current_manuscript_locations": [
+          {
+            "id": "7.2.thm.2",
+            "chapter": "7",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "thm:sdebytc"
+            ],
+            "line": 6658,
+            "end_line": 6679,
+            "environment_sha256": "90f509219c0f9444ff43cfff21dd5caa33904568f7c4bb083c30a1b873bbdc1c"
+          }
+        ]
       },
       {
         "stable_id": "7.2.lem.1",
@@ -548,7 +591,21 @@
           "Asakura.Chapter7.brownian_infinite_occupation_written",
           "Asakura.Chapter7.brownian_positive_clock_infinite"
         ],
-        "proof_connection": "原仮定から原点への到達、有限な帰還停止時刻列、強マルコフ性、最大不等式、次の停止時刻での可測性、条件付き確率の反復、互いに素な区間の体積まで接続。正値連続関数の積分発散も証明。"
+        "proof_connection": "原仮定から原点への到達、有限な帰還停止時刻列、強マルコフ性、最大不等式、次の停止時刻での可測性、条件付き確率の反復、互いに素な区間の体積まで接続。正値連続関数の積分発散も証明。",
+        "current_manuscript_locations": [
+          {
+            "id": "7.2.lem.1",
+            "chapter": "7",
+            "section": 2,
+            "environment": "lem",
+            "labels": [
+              "lem:brownian-infinite-occupation"
+            ],
+            "line": 6719,
+            "end_line": 6726,
+            "environment_sha256": "50ed6f50220a8524e1d4945afbe5e0eeb429887f74fb972695edf375c1a45e66"
+          }
+        ]
       },
       {
         "stable_id": "7.2.ex.1",
@@ -562,7 +619,19 @@
         "proved_declarations": [
           "Asakura.Chapter7.scale_weak_solution_exists"
         ],
-        "proof_connection": "尺度関数の一次・二次微分、正値性と単調性、全射性からの逆関数とC²性を導出。無限滞在から自律係数の逆時計の発散を証明し、時計の適合性・導関数を実際の時間積分から構成。ドリフトのない弱解を時刻変更で作り、実際の伊藤積分・二次変分・伊藤の公式・積分の結合則から逆尺度変換後の元のSDEを共通の確率1の事象で得る。Brownian確率空間も既存の存在定理から構成。原稿の区間上の全単射性は全域の全射性を含意する。"
+        "proof_connection": "尺度関数の一次・二次微分、正値性と単調性、全射性からの逆関数とC²性を導出。無限滞在から自律係数の逆時計の発散を証明し、時計の適合性・導関数を実際の時間積分から構成。ドリフトのない弱解を時刻変更で作り、実際の伊藤積分・二次変分・伊藤の公式・積分の結合則から逆尺度変換後の元のSDEを共通の確率1の事象で得る。Brownian確率空間も既存の存在定理から構成。原稿の区間上の全単射性は全域の全射性を含意する。",
+        "current_manuscript_locations": [
+          {
+            "id": "7.2.ex.1",
+            "chapter": "7",
+            "section": 2,
+            "environment": "ex",
+            "labels": [],
+            "line": 6777,
+            "end_line": 6811,
+            "environment_sha256": "9b5ae8c22ddb1b7242ee2fbd36c95e6a79ed51b914429bf01fb5dadeb8781179"
+          }
+        ]
       },
       {
         "stable_id": "7.3.thm.1",
@@ -597,7 +666,22 @@
           "Asakura.Chapter7.finite_martingale_clt_written",
           "Asakura.Chapter7.zero_horizon_path_limit"
         ],
-        "proof_connection": "無限時間区間の主張を原仮定から接続。独立Brownian空間、積空間への移送、時刻n後のBrownian延長、DDS、Brownian経路法則の一致、時計の分布収束、元の法則への復帰を証明。有限閉区間についても終端までの連続性から局所マルチンゲールと二次変分を延長して接続済み。終端の適合性は連続性から導出。時刻0のみの区間は零経路の法則として別証明済み。"
+        "proof_connection": "無限時間区間の主張を原仮定から接続。独立Brownian空間、積空間への移送、時刻n後のBrownian延長、DDS、Brownian経路法則の一致、時計の分布収束、元の法則への復帰を証明。有限閉区間についても終端までの連続性から局所マルチンゲールと二次変分を延長して接続済み。終端の適合性は連続性から導出。時刻0のみの区間は零経路の法則として別証明済み。",
+        "current_manuscript_locations": [
+          {
+            "id": "7.3.thm.3",
+            "chapter": "7",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "thm:martingale-clt",
+              "ucp"
+            ],
+            "line": 6822,
+            "end_line": 6833,
+            "environment_sha256": "0b5814d4f774e68c6c21f780dad6e3f7d83a346e199f2b7b31ba8d8acaa71f94"
+          }
+        ]
       },
       {
         "stable_id": "7.3.thm.2",
@@ -757,14 +841,29 @@
           "Asakura.Chapter7.brownian_quadratic_statistic_clt",
           "Asakura.Chapter7.covariance_estimator_written"
         ],
-        "proof_connection": "原観測過程の推定量から、実際の伊藤積分・二次変分・平均分散評価・マルチンゲールCLT・ドリフト除去・退化の場合・ガウス行列構成・線形結合からの同時収束・ノルム確率収束まで接続。有限区間上の連続適合有界ドリフトを用い、独立ブラウン空間も構成。依存閉包の最終監査と原稿対応レビューを完了。"
+        "proof_connection": "原観測過程の推定量から、実際の伊藤積分・二次変分・平均分散評価・マルチンゲールCLT・ドリフト除去・退化の場合・ガウス行列構成・線形結合からの同時収束・ノルム確率収束まで接続。有限区間上の連続適合有界ドリフトを用い、独立ブラウン空間も構成。依存閉包の最終監査と原稿対応レビューを完了。",
+        "current_manuscript_locations": [
+          {
+            "id": "7.3.thm.4",
+            "chapter": "7",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "thm:diffusion-covariance-clt",
+              "eq:diffusion-covariance-estimator",
+              "eq:diffusion-covariance-clt",
+              "eq:diffusion-covariance-limit"
+            ],
+            "line": 6910,
+            "end_line": 6932,
+            "environment_sha256": "592061c86d95702ab3691a7b2a8fb7fe364af13e68aa303958580d8b9d9623d8"
+          }
+        ]
       }
     ],
     "manuscript_correspondence_reviewed": true
   },
   "verification": {
-    "whole_chapter_verified": true,
-    "chapter_source_matches": true,
     "review_complete": true,
     "formal_coverage_complete": true,
     "missing_passed_evidence_modules": [],
@@ -772,6 +871,18 @@
     "items_without_evidence": [],
     "scope": "Current chapter manuscript correspondence in inventory.json and review.md; constructed proof connections, exercises, dependency build, and axiom audit.",
     "toolchain": "leanprover/lean4:v4.34.0",
-    "all_selected_modules_passed": true
+    "all_selected_modules_passed": true,
+    "historical_chapter_source_matches": true,
+    "historical_whole_chapter_verified": true,
+    "current_manuscript_index_matches": true,
+    "current_manuscript_exhaustive_semantic_review_completed": false
+  },
+  "current_manuscript_record": {
+    "source_file": "asakura2e_v4.tex",
+    "source_sha256": "89b7d3558791a864d76de980ca48451fe29c011835697cb00a772304eb26a039",
+    "index": "audit/manuscript-v4-index.json",
+    "numbered_environment_count": 7,
+    "proof_record_scope": "Existing proof evidence linked to the current environments; not a new exhaustive mathematical review of every formal hypothesis.",
+    "historical_line_numbers": "The original line fields refer to earlier split source files. Use current_manuscript_locations for this version."
   }
 }

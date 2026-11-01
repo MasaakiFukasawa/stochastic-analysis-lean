@@ -175,11 +175,11 @@
       "Chapter9ProbabilityFlowMarginals",
       "Chapter9OUAffineDensity"
     ],
-    "whole_chapter_verified": true,
     "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
     "constructed_modules": [
       "EndToEndOUReverse"
-    ]
+    ],
+    "historical_whole_chapter_verified": true
   },
   "inventory": {
     "chapter": 9,
@@ -423,6 +423,20 @@
           "Asakura.Chapter9.standard_ou_normal_approximation",
           "Asakura.Chapter9.standard_ou_unique_invariant",
           "Asakura.Chapter9.standard_ou_constructed"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "9.1.prop.1",
+            "chapter": "9",
+            "section": 1,
+            "environment": "prop",
+            "labels": [
+              "prop:langevin-invariant"
+            ],
+            "line": 8014,
+            "end_line": 8016,
+            "environment_sha256": "7090daab77bffb92285d4950b02c502fb68dbb6079e7232fc39e9d348ffd9faa"
+          }
         ]
       },
       {
@@ -515,6 +529,21 @@
           "Asakura.Chapter9.ou_gaussian_mixture_smooth",
           "Asakura.Chapter9.ou_gaussian_mixture_derivative",
           "Asakura.Chapter9.smooth_mixture_taylor"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "9.2.prop.2",
+            "chapter": "9",
+            "section": 2,
+            "environment": "prop",
+            "labels": [
+              "prop:linear-density-regularity",
+              "eq:linear-mixture-density"
+            ],
+            "line": 8044,
+            "end_line": 8051,
+            "environment_sha256": "8f7051101ec6f2ec043de42a353cdb6c287829f6a759fcd558c669842d464500"
+          }
         ]
       },
       {
@@ -795,6 +824,21 @@
           "Asakura.Chapter9.reverse_brownian_log_sde",
           "Asakura.Chapter9.ou_reverse_drift_log_score",
           "Asakura.Chapter9.reversed_information_as_past"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "9.2.thm.1",
+            "chapter": "9",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "thm:reverse-drift",
+              "eq:reverse-sde"
+            ],
+            "line": 8091,
+            "end_line": 8099,
+            "environment_sha256": "aed5ac5754c5821d1496e706046e7b63249ced27322e40ef94247a00bf1488be"
+          }
         ]
       },
       {
@@ -815,6 +859,18 @@
           "Asakura.Chapter9.reversed_path_endpoint",
           "Asakura.Chapter9.point_initial_reverse_drift",
           "Asakura.Chapter9.stationary_two_time_laws_differ"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "9.2.ex.1",
+            "chapter": "9",
+            "section": 2,
+            "environment": "ex",
+            "labels": [],
+            "line": 8173,
+            "end_line": 8181,
+            "environment_sha256": "1e524779863ccd91bc0451e163d4f4d98d54fb540bec32e05e7973212b1e7237"
+          }
         ]
       },
       {
@@ -921,6 +977,20 @@
           "Asakura.Chapter9.component_score_noise",
           "Asakura.Chapter9.gaussian_score_observable",
           "Asakura.Chapter9.gaussian_training_loss"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "9.3.prop.3",
+            "chapter": "9",
+            "section": 3,
+            "environment": "prop",
+            "labels": [
+              "prop:denoising-loss"
+            ],
+            "line": 8241,
+            "end_line": 8247,
+            "environment_sha256": "3ec5a66914fa2fd170e8638446e1a8be839e650b041cb95d7bc6fb0fe2c6299c"
+          }
         ]
       },
       {
@@ -1090,7 +1160,22 @@
         ],
         "revised_statement_id": "thm:probability-flow-marginals",
         "proof_connection": "正の時刻区間の確率流と逆流による密度の輸送、一意性、ガウス結合と輸送密度の一致を接続し、同じ密度の初期分布へのW2収束まで証明。",
-        "revision_date": "2026-11-01"
+        "revision_date": "2026-11-01",
+        "current_manuscript_locations": [
+          {
+            "id": "9.3.thm.2",
+            "chapter": "9",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "thm:probability-flow-marginals",
+              "eq:reverse-probability-flow"
+            ],
+            "line": 8299,
+            "end_line": 8322,
+            "environment_sha256": "4981f9e2a64229a9e31f51d15b6d0762a817cb934070f5030a7d5d95626da1f4"
+          }
+        ]
       },
       {
         "stable_id": "stationary-flow-exercise",
@@ -1120,13 +1205,23 @@
           "Asakura.Chapter9.reversed_path_endpoint",
           "Asakura.Chapter9.point_initial_reverse_drift",
           "Asakura.Chapter9.stationary_two_time_laws_differ"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "9.3.rep.1",
+            "chapter": "9",
+            "section": 3,
+            "environment": "rep",
+            "labels": [],
+            "line": 8361,
+            "end_line": 8366,
+            "environment_sha256": "e7b2923d9c4e37967609e682d24ba1088ec67c52e885980bf1900e8bbc81c430"
+          }
         ]
       }
     ]
   },
   "verification": {
-    "whole_chapter_verified": true,
-    "chapter_source_matches": true,
     "review_complete": true,
     "formal_coverage_complete": true,
     "missing_passed_evidence_modules": [],
@@ -1134,7 +1229,11 @@
     "items_without_evidence": [],
     "scope": "Current chapter manuscript correspondence in inventory.json and review.md; constructed proof connections, exercises, dependency build, and axiom audit.",
     "toolchain": "leanprover/lean4:v4.34.0",
-    "all_selected_modules_passed": true
+    "all_selected_modules_passed": true,
+    "historical_chapter_source_matches": true,
+    "historical_whole_chapter_verified": true,
+    "current_manuscript_index_matches": true,
+    "current_manuscript_exhaustive_semantic_review_completed": false
   },
   "revision_verification": {
     "date": "2026-11-01",
@@ -1144,5 +1243,13 @@
     ],
     "entry": "Book.Chapter09",
     "scope": "Targeted revision; prior source line numbers are historical."
+  },
+  "current_manuscript_record": {
+    "source_file": "asakura2e_v4.tex",
+    "source_sha256": "89b7d3558791a864d76de980ca48451fe29c011835697cb00a772304eb26a039",
+    "index": "audit/manuscript-v4-index.json",
+    "numbered_environment_count": 8,
+    "proof_record_scope": "Existing proof evidence linked to the current environments; not a new exhaustive mathematical review of every formal hypothesis.",
+    "historical_line_numbers": "The original line fields refer to earlier split source files. Use current_manuscript_locations for this version."
   }
 }

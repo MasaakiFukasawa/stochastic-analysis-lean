@@ -48,6 +48,8 @@ import Book.Chapter13
 | `audit/verified-snapshot.json` | 検証済みソースのハッシュと定理一覧 |
 | `scripts/audit.py` | ビルド・公理依存の再検査 |
 
+現行原稿の位置・ラベルと証明記録の対応は [原稿索引](audit/manuscript-v4-index.json) を参照してください。これは対応記録であり、全項目の数学的な再査読完了を意味しません。詳しくは [検証範囲](docs/coverage.md)を参照してください。
+
 章を選ぶ際は **`Book.ChapterXX` と案内表** を使ってください。複数の章で共有する補題は同じ証明ファイルから読み込みます。
 
 ## 改訂原稿への対応（2026-11-01）

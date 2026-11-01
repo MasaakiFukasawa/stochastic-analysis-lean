@@ -436,15 +436,14 @@
       "Chapter2ModificationMeasurable",
       "Chapter2ItoConstructionUniversalCovariance"
     ],
-    "whole_chapter_verified": true,
     "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
     "constructed_modules": [
       "EndToEndParameterItoGlobal"
-    ]
+    ],
+    "historical_whole_chapter_verified": true
   },
   "inventory": {
     "chapter": "第2章 伊藤積分",
-    "whole_chapter_verified": true,
     "source_sha256": "a73a6ca991265b075b44e01c47367a789c92de2be300115f35a3af6d60df98b9",
     "note": "Completion combines the separate manuscript correspondence review with the checked Lean dependency closure.",
     "items": [
@@ -458,7 +457,19 @@
           "FullAuditProgressive.lean"
         ],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.1.lem.1",
+            "chapter": "2",
+            "section": 1,
+            "environment": "lem",
+            "labels": [],
+            "line": 1647,
+            "end_line": 1649,
+            "environment_sha256": "337ed4853d85f8c5cadecff607a2c096f9cd3c72fc4fd21316876141c5dc365f"
+          }
+        ]
       },
       {
         "id": "2.1.thm.1",
@@ -471,7 +482,21 @@
           "FullAuditContinuousDoobStrong.lean"
         ],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.1.thm.1",
+            "chapter": "2",
+            "section": 1,
+            "environment": "thm",
+            "labels": [
+              "doob2"
+            ],
+            "line": 1693,
+            "end_line": 1709,
+            "environment_sha256": "5edb3ec01ef16bea4cd73c7a42882141057b15fb3493ff3d1aab9d465fb3da21"
+          }
+        ]
       },
       {
         "id": "2.1.prop.1",
@@ -483,7 +508,21 @@
           "FullAuditClosedHitting.lean"
         ],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.1.prop.1",
+            "chapter": "2",
+            "section": 1,
+            "environment": "prop",
+            "labels": [
+              "prop:hitting"
+            ],
+            "line": 1739,
+            "end_line": 1748,
+            "environment_sha256": "9ce40a9f30ee6cbf67dd98e8dbeb6f1980a64162ba8b6e23703e312cd84f599a"
+          }
+        ]
       },
       {
         "id": "2.2.rep.1",
@@ -495,7 +534,19 @@
           "FullAuditStepSumExercise.lean"
         ],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.2.rep.1",
+            "chapter": "2",
+            "section": 2,
+            "environment": "rep",
+            "labels": [],
+            "line": 1786,
+            "end_line": 1795,
+            "environment_sha256": "2720cb37ebb9e9b0f479f4d55cd6892dac1c266b1c31d146a5547e5707c953e0"
+          }
+        ]
       },
       {
         "id": "2.2.rep.2",
@@ -507,7 +558,21 @@
           "FullAuditBrownianMartingaleExercise.lean"
         ],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.2.rep.2",
+            "chapter": "2",
+            "section": 2,
+            "environment": "rep",
+            "labels": [
+              "rep:bm"
+            ],
+            "line": 1797,
+            "end_line": 1803,
+            "environment_sha256": "f0d5c70f795f2f56424b39b7e4c9f0c42287d7aab401121fec6ade168f767782"
+          }
+        ]
       },
       {
         "id": "2.2.thm.1",
@@ -519,7 +584,21 @@
           "FullAuditContinuousOptional.lean"
         ],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.2.thm.2",
+            "chapter": "2",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "opt2"
+            ],
+            "line": 1804,
+            "end_line": 1808,
+            "environment_sha256": "ee04a4662cd8515eab81e6a0be6d09434977d948155ba253fee4d10ab26ac929"
+          }
+        ]
       },
       {
         "id": "2.2.rep.3",
@@ -533,6 +612,18 @@
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
         "new_candidate_modules": [
           "Chapter2UncappedHittingExercise.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.2.rep.3",
+            "chapter": "2",
+            "section": 2,
+            "environment": "rep",
+            "labels": [],
+            "line": 1848,
+            "end_line": 1854,
+            "environment_sha256": "a1dffc8f0cd68c6e65f150985e35096e36f54f7379401c6d905f2723dd65af97"
+          }
         ]
       },
       {
@@ -545,7 +636,21 @@
           "FullAuditStoppedMeanExercise.lean"
         ],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.2.rep.4",
+            "chapter": "2",
+            "section": 2,
+            "environment": "rep",
+            "labels": [
+              "rep:stopzero"
+            ],
+            "line": 1856,
+            "end_line": 1866,
+            "environment_sha256": "94882a506b358cc22e106e77ae72541f60d19d81a9ceb872eb17426316c7ebd0"
+          }
+        ]
       },
       {
         "id": "2.3.thm.1",
@@ -557,7 +662,21 @@
           "FullAuditMartingaleHilbert.lean"
         ],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.3.thm.3",
+            "chapter": "2",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "thm:M2c"
+            ],
+            "line": 1876,
+            "end_line": 1882,
+            "environment_sha256": "bc743b97a8471d0e96e1f12f01a611bb9c38bc389cfa146779b6bd6963d60365"
+          }
+        ]
       },
       {
         "id": "2.3.lem.1",
@@ -570,7 +689,22 @@
           "FullAuditPartitionEnergy.lean"
         ],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.3.lem.2",
+            "chapter": "2",
+            "section": 3,
+            "environment": "lem",
+            "labels": [
+              "lem:q20",
+              "Qpi"
+            ],
+            "line": 1961,
+            "end_line": 1970,
+            "environment_sha256": "6882dea493c29f07923bb5ac3cbd9fbe32ac03cc35c31c7678176ab2113df7c3"
+          }
+        ]
       },
       {
         "id": "2.3.ex.1",
@@ -583,6 +717,18 @@
         "new_candidate_modules": [
           "Chapter2DifferentiableVariationExample.lean",
           "Chapter2DifferentiableVariationFormula.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.3.ex.1",
+            "chapter": "2",
+            "section": 3,
+            "environment": "ex",
+            "labels": [],
+            "line": 2036,
+            "end_line": 2044,
+            "environment_sha256": "7ba345265a68b207a0b051b06eb8981ac07a148bf247dd80f647946d448c30f3"
+          }
         ]
       },
       {
@@ -595,7 +741,21 @@
           "FullAuditBVMartingaleWritten.lean"
         ],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.3.prop.2",
+            "chapter": "2",
+            "section": 3,
+            "environment": "prop",
+            "labels": [
+              "prop:uniq_dec"
+            ],
+            "line": 2046,
+            "end_line": 2048,
+            "environment_sha256": "2a5982e2bc3f9630f67a591a364af5b682e9f9ebb2692f33a0433b8230c6163b"
+          }
+        ]
       },
       {
         "id": "2.4.lem.1",
@@ -607,7 +767,21 @@
           "FullAuditQuadraticBound.lean"
         ],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.4.lem.3",
+            "chapter": "2",
+            "section": 4,
+            "environment": "lem",
+            "labels": [
+              "lem:q2"
+            ],
+            "line": 2134,
+            "end_line": 2144,
+            "environment_sha256": "a064d7e01aa51a8847165ac3f2a64770428d93674bab241ff0d039806457f2f8"
+          }
+        ]
       },
       {
         "id": "2.4.thm.1",
@@ -619,7 +793,21 @@
           "FullAuditQuadraticVariation.lean"
         ],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.4.thm.4",
+            "chapter": "2",
+            "section": 4,
+            "environment": "thm",
+            "labels": [
+              "thm:qv_ex"
+            ],
+            "line": 2168,
+            "end_line": 2179,
+            "environment_sha256": "bc8a3ab544f59a9100614374e824cef2ae638abe46e98909aa289b4086ec9ae7"
+          }
+        ]
       },
       {
         "id": "2.4.defn.1",
@@ -629,7 +817,19 @@
         "statement_sha256": "29dcff0b1832e7a24c5826f58c8a042edb13970a309612e7ec7cbf43f7bba199",
         "historical_candidate_modules": [],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.4.defn.1",
+            "chapter": "2",
+            "section": 4,
+            "environment": "defn",
+            "labels": [],
+            "line": 2226,
+            "end_line": 2240,
+            "environment_sha256": "8f20e752974ccf0f8d369c2de4b01aee5f02d74df2af95ec1f5c40e38028ec89"
+          }
+        ]
       },
       {
         "id": "2.4.thm.2",
@@ -645,6 +845,20 @@
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
         "new_candidate_modules": [
           "Chapter2BoundedCovarianceMembership.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.4.thm.5",
+            "chapter": "2",
+            "section": 4,
+            "environment": "thm",
+            "labels": [
+              "thm:cov"
+            ],
+            "line": 2242,
+            "end_line": 2255,
+            "environment_sha256": "f816a887e66a848a00dd75a4c4d3ea0e5c339597a7d41be6fa78a1e7fca74549"
+          }
         ]
       },
       {
@@ -657,7 +871,21 @@
           "FullAuditCovarianceSeparation.lean"
         ],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.4.prop.3",
+            "chapter": "2",
+            "section": 4,
+            "environment": "prop",
+            "labels": [
+              "prop:separation1"
+            ],
+            "line": 2280,
+            "end_line": 2284,
+            "environment_sha256": "e05fb710c7f05a8969c18f5fa3be47278450bf86464b78331b36d413c23b35ec"
+          }
+        ]
       },
       {
         "id": "2.5.prop.1",
@@ -669,6 +897,18 @@
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
         "new_candidate_modules": [
           "Chapter2LevelLocalization.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.5.prop.4",
+            "chapter": "2",
+            "section": 5,
+            "environment": "prop",
+            "labels": [],
+            "line": 2337,
+            "end_line": 2341,
+            "environment_sha256": "e7d50a9b418893a944185a4e97238b4180b53db6d3391fec2dbb86bed5f6b50e"
+          }
         ]
       },
       {
@@ -684,6 +924,20 @@
           "Chapter2ContinuousLocalizers.lean",
           "Chapter2ExplicitLocalizers.lean",
           "Chapter2CanonicalLocalizers.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.5.rep.5",
+            "chapter": "2",
+            "section": 5,
+            "environment": "rep",
+            "labels": [
+              "reploc"
+            ],
+            "line": 2358,
+            "end_line": 2377,
+            "environment_sha256": "65745c83869b73c564419d787b41c99b472a1eff5a81d5ba6950a85111efd3fe"
+          }
         ]
       },
       {
@@ -696,6 +950,20 @@
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
         "new_candidate_modules": [
           "Chapter2LocalProcess.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.5.prop.5",
+            "chapter": "2",
+            "section": 5,
+            "environment": "prop",
+            "labels": [
+              "prop:uniq_dec2"
+            ],
+            "line": 2379,
+            "end_line": 2381,
+            "environment_sha256": "c569647b9df73bcdc1c0bab157bdafff3a1cc799c30623b5c2d3f8e1d945ccdc"
+          }
         ]
       },
       {
@@ -717,6 +985,20 @@
           "Chapter2LocalCovarianceUniqueness.lean",
           "Chapter2RegularCovarianceChoice.lean",
           "Chapter2LocalCovarianceAE.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.5.thm.6",
+            "chapter": "2",
+            "section": 5,
+            "environment": "thm",
+            "labels": [
+              "thm:qv_ex2"
+            ],
+            "line": 2393,
+            "end_line": 2399,
+            "environment_sha256": "6e3694486d96aaf83609556dd480d32830f20c35c27cb75bd753466ea866e1dd"
+          }
         ]
       },
       {
@@ -727,7 +1009,19 @@
         "statement_sha256": "286b72da4537514b0464b151ffd4285aec7f08fd27fd98d29047e47573103b8f",
         "historical_candidate_modules": [],
         "status": "statement_and_proof_route_reviewed_with_lean_audit",
-        "new_candidate_modules": []
+        "new_candidate_modules": [],
+        "current_manuscript_locations": [
+          {
+            "id": "2.5.defn.2",
+            "chapter": "2",
+            "section": 5,
+            "environment": "defn",
+            "labels": [],
+            "line": 2430,
+            "end_line": 2436,
+            "environment_sha256": "286b72da4537514b0464b151ffd4285aec7f08fd27fd98d29047e47573103b8f"
+          }
+        ]
       },
       {
         "id": "2.5.rep.2",
@@ -740,6 +1034,18 @@
         "new_candidate_modules": [
           "Chapter2LocalCovarianceRules.lean",
           "Chapter2LocalQuadraticVariation.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.5.rep.6",
+            "chapter": "2",
+            "section": 5,
+            "environment": "rep",
+            "labels": [],
+            "line": 2438,
+            "end_line": 2442,
+            "environment_sha256": "7676e792fd87c3c791be87539e625681790fcf2c667897809b47c69fbe6c7fd2"
+          }
         ]
       },
       {
@@ -754,6 +1060,20 @@
           "Chapter2LocalSeparation.lean",
           "Chapter2BoundedTestSeparation.lean",
           "Chapter2LocalSeparationPrinted.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.5.prop.6",
+            "chapter": "2",
+            "section": 5,
+            "environment": "prop",
+            "labels": [
+              "prop:separation2"
+            ],
+            "line": 2445,
+            "end_line": 2449,
+            "environment_sha256": "e6505ec5698a29e95b883690240e3b39a2d712573ac64df49cf82762b9ca7e9b"
+          }
         ]
       },
       {
@@ -768,6 +1088,18 @@
           "Chapter2BrownianSquare.lean",
           "Chapter2BrownianFiniteCovariance.lean",
           "Chapter2BrownianHalfLineCovariance.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.5.rep.7",
+            "chapter": "2",
+            "section": 5,
+            "environment": "rep",
+            "labels": [],
+            "line": 2460,
+            "end_line": 2465,
+            "environment_sha256": "333a273b244c952f1b942097bfd53807f9978ed626e71404ce176976de61804a"
+          }
         ]
       },
       {
@@ -785,6 +1117,20 @@
           "Chapter2StoppedEnergy.lean",
           "Chapter2IntegrableVariation.lean",
           "Chapter2StoppedM2Equivalence.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.5.prop.7",
+            "chapter": "2",
+            "section": 5,
+            "environment": "prop",
+            "labels": [
+              "prop244"
+            ],
+            "line": 2468,
+            "end_line": 2482,
+            "environment_sha256": "10f5406df32b548611958e89fac6faba7577b7a10c9a75d1b7d8327e76521ea8"
+          }
         ]
       },
       {
@@ -799,6 +1145,20 @@
           "Chapter2LocalFatou.lean",
           "Chapter2ConditionalFatou.lean",
           "Chapter2LowerBoundedLocal.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.5.prop.8",
+            "chapter": "2",
+            "section": 5,
+            "environment": "prop",
+            "labels": [
+              "prop:fatou"
+            ],
+            "line": 2524,
+            "end_line": 2532,
+            "environment_sha256": "1ac21e3040ca04176e121315688aeb3949244d1e3207062aa5ef0faf6643d031"
+          }
         ]
       },
       {
@@ -812,6 +1172,20 @@
         "new_candidate_modules": [
           "Chapter2Lenglart.lean",
           "Chapter2LenglartConvergence.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.5.prop.9",
+            "chapter": "2",
+            "section": 5,
+            "environment": "prop",
+            "labels": [
+              "lenglart"
+            ],
+            "line": 2580,
+            "end_line": 2600,
+            "environment_sha256": "5edc8cd2b765020d3564ea157c159ff7af1e6cb320d71253bee56579e55cc631"
+          }
         ]
       },
       {
@@ -866,6 +1240,20 @@
           "Chapter2BoundedProbabilityMean.lean",
           "Chapter2IntegrandMetricLimit.lean",
           "Chapter2LocalDensityMetric.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.6.lem.4",
+            "chapter": "2",
+            "section": 6,
+            "environment": "lem",
+            "labels": [
+              "lem:simple"
+            ],
+            "line": 2860,
+            "end_line": 2863,
+            "environment_sha256": "16c5aed22f29254dee5061d6fec74e00926082e06509985ecf2259431b7036c0"
+          }
         ]
       },
       {
@@ -887,6 +1275,20 @@
           "Chapter2OriginalVariationIntegral.lean",
           "Chapter2IntegralPathVariationBound.lean",
           "Chapter2VariationCombinationBound.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.6.rep.8",
+            "chapter": "2",
+            "section": 6,
+            "environment": "rep",
+            "labels": [
+              "rep252"
+            ],
+            "line": 2990,
+            "end_line": 3003,
+            "environment_sha256": "6b9a1e0403bd757d31d0582594c58a2524686c66dac55c8a1f0e8b0847e1ee67"
+          }
         ]
       },
       {
@@ -903,6 +1305,20 @@
           "Chapter2LocalCovarianceIdentification.lean",
           "Chapter2LocalKW.lean",
           "Chapter2CanonicalKW.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.6.prop.10",
+            "chapter": "2",
+            "section": 6,
+            "environment": "prop",
+            "labels": [
+              "KW"
+            ],
+            "line": 3007,
+            "end_line": 3019,
+            "environment_sha256": "4a191eba381f62afb43b2529d3ea7c0c1d882cdba695d1247667e8631d9a0c75"
+          }
         ]
       },
       {
@@ -927,6 +1343,20 @@
           "Chapter2AdaptedStepRefinement.lean",
           "Chapter2RealElementaryEnergy.lean",
           "Chapter2FiniteElementaryEnergy.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.7.thm.7",
+            "chapter": "2",
+            "section": 7,
+            "environment": "thm",
+            "labels": [
+              "thm:simpleint"
+            ],
+            "line": 3102,
+            "end_line": 3107,
+            "environment_sha256": "b3fa47c312523f84736c475450fb3f99161db6951f9f4da6569e9061b03f30ed"
+          }
         ]
       },
       {
@@ -940,6 +1370,18 @@
         "new_candidate_modules": [
           "Chapter2ElementaryCovariance.lean",
           "Chapter2ElementaryLocalCovariance.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.7.rep.9",
+            "chapter": "2",
+            "section": 7,
+            "environment": "rep",
+            "labels": [],
+            "line": 3150,
+            "end_line": 3153,
+            "environment_sha256": "2dd0af3f9a21258b8a28cdd7d69ba067ba5e165db99061d57ac2f3158b16d896"
+          }
         ]
       },
       {
@@ -954,6 +1396,18 @@
           "Chapter2SemimartingaleDecomposition.lean",
           "Chapter2SemimartingaleIntegralIndependence.lean",
           "Chapter2ItoLocalContinuity.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.7.defn.3",
+            "chapter": "2",
+            "section": 7,
+            "environment": "defn",
+            "labels": [],
+            "line": 3155,
+            "end_line": 3184,
+            "environment_sha256": "585f5e95cfcccb5bc78b9da722325f0e479a9883a360dd2776d85e3d809ecb1c"
+          }
         ]
       },
       {
@@ -973,6 +1427,20 @@
           "Chapter2ItoCharacterizedConstruction.lean",
           "Chapter2SignedRestriction.lean",
           "Chapter2ItoCovarianceProcessFormula.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.7.thm.8",
+            "chapter": "2",
+            "section": 7,
+            "environment": "thm",
+            "labels": [
+              "thm:covint"
+            ],
+            "line": 3186,
+            "end_line": 3192,
+            "environment_sha256": "91c8be4a0412cf38a4605f88bbd2dcc45947a45b18defbceb35d5d259aa28a28"
+          }
         ]
       },
       {
@@ -991,6 +1459,20 @@
           "Chapter2ItoConstructionAllTimeEnergy.lean",
           "Chapter2ItoM2Uniqueness.lean",
           "Chapter2ItoGlobalEnergyConstruction.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.7.lem.5",
+            "chapter": "2",
+            "section": 7,
+            "environment": "lem",
+            "labels": [
+              "lem:ito-isometry"
+            ],
+            "line": 3246,
+            "end_line": 3254,
+            "environment_sha256": "0d5e103a8796ace28645b2c89541e5bf083e1030a941d00ae23b5f1bd1191680"
+          }
         ]
       },
       {
@@ -1004,6 +1486,18 @@
         "new_candidate_modules": [
           "Chapter2OneSidedStoppedCovariance.lean",
           "Chapter2SemimartingaleCovarianceStopping.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.7.rep.10",
+            "chapter": "2",
+            "section": 7,
+            "environment": "rep",
+            "labels": [],
+            "line": 3287,
+            "end_line": 3294,
+            "environment_sha256": "bc00d0d069bcd31fe75c5dbea51ee16dd0c2c3cf01654fbb6e388b74b6fab758"
+          }
         ]
       },
       {
@@ -1021,6 +1515,20 @@
           "Chapter2VariationStoppingTimes.lean",
           "Chapter2SemimartingaleStoppingIntegral.lean",
           "Chapter2StoppingIntegrandMembership.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.7.rep.11",
+            "chapter": "2",
+            "section": 7,
+            "environment": "rep",
+            "labels": [
+              "rep263"
+            ],
+            "line": 3297,
+            "end_line": 3307,
+            "environment_sha256": "cc2593b4d5b997326a9ce1b098ed232f8ffe64a2183c1de4492aae808c81a577"
+          }
         ]
       },
       {
@@ -1035,6 +1543,20 @@
           "Chapter2ItoAssociativityConstruction.lean",
           "Chapter2ContinuousSignedAssociativity.lean",
           "Chapter2SemimartingaleAssociativity.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.7.rep.12",
+            "chapter": "2",
+            "section": 7,
+            "environment": "rep",
+            "labels": [
+              "intint"
+            ],
+            "line": 3310,
+            "end_line": 3319,
+            "environment_sha256": "bb2983daf70210458152478e660f923b0ccd26a65cc47785d24a4f3e6bc2df18"
+          }
         ]
       },
       {
@@ -1063,6 +1585,22 @@
           "Chapter2L1BochnerPointwise.lean",
           "Chapter2StochasticFubiniPrinted.lean",
           "Chapter2StochasticFubiniTimeDomain.lean"
+        ],
+        "current_manuscript_locations": [
+          {
+            "id": "2.8.thm.9",
+            "chapter": "2",
+            "section": 8,
+            "environment": "thm",
+            "labels": [
+              "thm:stochastic-fubini",
+              "eq:stochastic-fubini-norm",
+              "eq:stochastic-fubini"
+            ],
+            "line": 3325,
+            "end_line": 3338,
+            "environment_sha256": "939f706aabdf2a4f742c662cdcbce49b1d026679367047f8471873a6aef7f9f8"
+          }
         ]
       }
     ],
@@ -1105,11 +1643,22 @@
       "Chapter2IntegrandMetricEquivalence.lean",
       "Chapter2ExpectedDistance.lean",
       "Chapter2ModificationMeasurable.lean"
-    ]
+    ],
+    "historical_whole_chapter_verified": true
   },
   "verification": {
-    "whole_chapter_verified": true,
     "scope": "Manuscript statements and proof routes reviewed by correspondence; their Lean formalizations and local dependency closure passed kernel and axiom audits.",
-    "toolchain": "leanprover/lean4:v4.34.0"
+    "toolchain": "leanprover/lean4:v4.34.0",
+    "historical_whole_chapter_verified": true,
+    "current_manuscript_index_matches": true,
+    "current_manuscript_exhaustive_semantic_review_completed": false
+  },
+  "current_manuscript_record": {
+    "source_file": "asakura2e_v4.tex",
+    "source_sha256": "89b7d3558791a864d76de980ca48451fe29c011835697cb00a772304eb26a039",
+    "index": "audit/manuscript-v4-index.json",
+    "numbered_environment_count": 40,
+    "proof_record_scope": "Existing proof evidence linked to the current environments; not a new exhaustive mathematical review of every formal hypothesis.",
+    "historical_line_numbers": "The original line fields refer to earlier split source files. Use current_manuscript_locations for this version."
   }
 }

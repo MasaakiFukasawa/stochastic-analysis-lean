@@ -90,11 +90,11 @@
       "Chapter4SDETransitionLipschitz",
       "Chapter4SDENoiseInformation"
     ],
-    "whole_chapter_verified": true,
     "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
     "constructed_modules": [
       "EndToEndRandomSDEExistence"
-    ]
+    ],
+    "historical_whole_chapter_verified": true
   },
   "inventory": {
     "chapter": 4,
@@ -214,7 +214,19 @@
           "Chapter4LevyConstructed",
           "Chapter4VectorLevyConstructed"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.1.rep.1",
+            "chapter": "4",
+            "section": 1,
+            "environment": "rep",
+            "labels": [],
+            "line": 4119,
+            "end_line": 4136,
+            "environment_sha256": "9966c3854175f06daf40e6549192e379e426dbd475016d5730d1faa9b14d2b4a"
+          }
+        ]
       },
       {
         "id": "chap3.tex:44",
@@ -228,7 +240,23 @@
         "coverage_complete": true,
         "proved_declarations": [],
         "step_modules": [],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.1.defn.1",
+            "chapter": "4",
+            "section": 1,
+            "environment": "defn",
+            "labels": [
+              "defsde",
+              "sde",
+              "ssde"
+            ],
+            "line": 4141,
+            "end_line": 4174,
+            "environment_sha256": "50c99ac0e3b03d5295e67ca2237bc14b77bb2272091aff5149c96e3464a960a3"
+          }
+        ]
       },
       {
         "id": "chap3.tex:78",
@@ -242,7 +270,19 @@
         "coverage_complete": true,
         "proved_declarations": [],
         "step_modules": [],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.1.rem.1",
+            "chapter": "4",
+            "section": 1,
+            "environment": "rem",
+            "labels": [],
+            "line": 4175,
+            "end_line": 4191,
+            "environment_sha256": "c7d9d0f8908e9ffe7661f23cba6a32461345998e10eecc404c25f5e6e288125a"
+          }
+        ]
       },
       {
         "id": "chap3.tex:103",
@@ -265,7 +305,22 @@
           "FullAuditGeometricBrownian",
           "Chapter4GeometricGlobal"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.2.ex.1",
+            "chapter": "4",
+            "section": 2,
+            "environment": "ex",
+            "labels": [
+              "ex:gm",
+              "eq:gm"
+            ],
+            "line": 4200,
+            "end_line": 4223,
+            "environment_sha256": "2518452e85d392044f854739fc67b35e10731246f85e9f7218d72606573d659c"
+          }
+        ]
       },
       {
         "id": "chap3.tex:128",
@@ -293,7 +348,19 @@
           "Chapter4ClockVariationIntegral",
           "Chapter4CompleteGeometricExamples"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.2.ex.2",
+            "chapter": "4",
+            "section": 2,
+            "environment": "ex",
+            "labels": [],
+            "line": 4225,
+            "end_line": 4251,
+            "environment_sha256": "2ae6f5cc1596f74412140fe18cb00f7dd7c7db70cc504e6d473b22dc31e8a465"
+          }
+        ]
       },
       {
         "id": "chap3.tex:156",
@@ -323,7 +390,21 @@
           "Chapter4ClockVariationIntegral",
           "Chapter4CompleteGeometricExamples"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.2.ex.3",
+            "chapter": "4",
+            "section": 2,
+            "environment": "ex",
+            "labels": [
+              "sinh"
+            ],
+            "line": 4253,
+            "end_line": 4282,
+            "environment_sha256": "0e78a0cc70742ea9c5fa8ac0b651e799bf5cc6c3da83ad43ad18f60acfa98b89"
+          }
+        ]
       },
       {
         "id": "chap3.tex:187",
@@ -348,7 +429,19 @@
           "FullAuditOUKernel",
           "Chapter4OUConstructed"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.2.ex.4",
+            "chapter": "4",
+            "section": 2,
+            "environment": "ex",
+            "labels": [],
+            "line": 4284,
+            "end_line": 4329,
+            "environment_sha256": "f3984158a0e18456f9ee7398c694450ea91c29c654565150041fac6530ed3d43"
+          }
+        ]
       },
       {
         "id": "chap3.tex:234",
@@ -382,7 +475,23 @@
           "Chapter4SmallMassStochastic",
           "Chapter4MatrixFlowConvolution"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.2.ex.5",
+            "chapter": "4",
+            "section": 2,
+            "environment": "ex",
+            "labels": [
+              "ex:Langevin",
+              "SDElin",
+              "langevin"
+            ],
+            "line": 4331,
+            "end_line": 4399,
+            "environment_sha256": "e4841ced8191ddb80b6b217380de08a0b9ac9d635d96aacc2376578074c8d766"
+          }
+        ]
       },
       {
         "id": "chap3.tex:303",
@@ -419,7 +528,21 @@
           "Chapter4WrittenObstructions",
           "Chapter4Examples"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.2.ex.6",
+            "chapter": "4",
+            "section": 2,
+            "environment": "ex",
+            "labels": [
+              "ode"
+            ],
+            "line": 4400,
+            "end_line": 4489,
+            "environment_sha256": "fd6ad37655603d5ebddaefc981f7e484a2d415d5c3d96b4d6996e1c1889ac7bb"
+          }
+        ]
       },
       {
         "id": "chap3.tex:394",
@@ -442,7 +565,19 @@
           "Chapter4VariationODEConstructed",
           "Chapter4ConstructedODEExample"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.2.rep.2",
+            "chapter": "4",
+            "section": 2,
+            "environment": "rep",
+            "labels": [],
+            "line": 4491,
+            "end_line": 4500,
+            "environment_sha256": "44dd14174f2c61e88f1596ef60777dd6622c28f1588a7842ceaabbfd91b97c37"
+          }
+        ]
       },
       {
         "id": "chap3.tex:407",
@@ -516,7 +651,22 @@
           "Chapter4PicardDifferenceBound",
           "Chapter4PicardPathFixedPoint"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.3.thm.1",
+            "chapter": "4",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "sde:ex",
+              "Lip"
+            ],
+            "line": 4514,
+            "end_line": 4534,
+            "environment_sha256": "2f155b7bdb8e3e1c11836381664e5ae28de6eda2af71daeccd942a0a880dcc32"
+          }
+        ]
       },
       {
         "id": "chap3.tex:501",
@@ -535,7 +685,19 @@
         "step_modules": [
           "FullAuditChapter4Gronwall"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.3.lem.1",
+            "chapter": "4",
+            "section": 3,
+            "environment": "lem",
+            "labels": [],
+            "line": 4608,
+            "end_line": 4619,
+            "environment_sha256": "8034807dfc90dd17b3484ee7f6710814a16e9377ed4b3aede91896b7fba324a3"
+          }
+        ]
       },
       {
         "id": "chap3.tex:529",
@@ -557,7 +719,22 @@
           "Chapter4VectorGlobalManuscriptMoment",
           "Chapter4VectorManuscriptMoment"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.3.thm.2",
+            "chapter": "4",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "sde:mom",
+              "Lin"
+            ],
+            "line": 4636,
+            "end_line": 4651,
+            "environment_sha256": "51685a49a63942dd621d61a8932af8f30263dbe9b19870b77663abd1f896ec9d"
+          }
+        ]
       },
       {
         "id": "chap3.tex:601",
@@ -581,7 +758,21 @@
           "Chapter4ScalarFiniteUniqueness",
           "Chapter4VectorFiniteUniqueness"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.3.thm.3",
+            "chapter": "4",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "sde:uni"
+            ],
+            "line": 4708,
+            "end_line": 4712,
+            "environment_sha256": "ac2f2dda9989580705e9e4c54d45fc5e2822ac7b8f37a90c6e09db4d485b0551"
+          }
+        ]
       },
       {
         "id": "chap3.tex:625",
@@ -611,7 +802,23 @@
           "Chapter4PolynomialPathDomination",
           "Chapter4PolynomialNormComparison"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.4.thm.4",
+            "chapter": "4",
+            "section": 4,
+            "environment": "thm",
+            "labels": [
+              "thm:FC",
+              "pde",
+              "PG"
+            ],
+            "line": 4732,
+            "end_line": 4767,
+            "environment_sha256": "80d3a56efb57bae364c92fcf2ced58bd14657b4d544788e403bc869e334c6990"
+          }
+        ]
       },
       {
         "id": "chap3.tex:700",
@@ -661,7 +868,19 @@
           "Chapter4NormalCDF",
           "Chapter4GaussianPayoff"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.4.rep.3",
+            "chapter": "4",
+            "section": 4,
+            "environment": "rep",
+            "labels": [],
+            "line": 4807,
+            "end_line": 4834,
+            "environment_sha256": "e764341ced28603f3c48fca16e344c785fc97366f1bd2c9c42b027b48d32d2bb"
+          }
+        ]
       },
       {
         "id": "sec_markov_fk.tex:23",
@@ -690,7 +909,22 @@
           "Chapter4FeynmanKacLimits",
           "Chapter4VectorCoefficientBridge"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.5.prop.1",
+            "chapter": "4",
+            "section": 5,
+            "environment": "prop",
+            "labels": [
+              "prop:conditional-fk",
+              "eq:conditional-fk"
+            ],
+            "line": 4863,
+            "end_line": 4872,
+            "environment_sha256": "9a186488eaf9dcb9a7136134c1833fb1c614081cec8d71b66d0fcd8b54aa9287"
+          }
+        ]
       },
       {
         "id": "sec_markov_fk.tex:48",
@@ -704,7 +938,21 @@
         "coverage_complete": true,
         "proved_declarations": [],
         "step_modules": [],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.5.defn.2",
+            "chapter": "4",
+            "section": 5,
+            "environment": "defn",
+            "labels": [
+              "eq:markov-property"
+            ],
+            "line": 4888,
+            "end_line": 4894,
+            "environment_sha256": "6389ec1abb88769045ba932d2377abd3da87a301f7876f3bedd30cd5218af33e"
+          }
+        ]
       },
       {
         "id": "sec_markov_fk.tex:56",
@@ -735,7 +983,21 @@
           "Chapter4SmoothOpenApproximation",
           "Chapter4MarkovBorelExtension"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.5.thm.5",
+            "chapter": "4",
+            "section": 5,
+            "environment": "thm",
+            "labels": [
+              "thm:markov-fk"
+            ],
+            "line": 4896,
+            "end_line": 4900,
+            "environment_sha256": "d9b36eaeb1baf54b63ca587eae7ccdf10990c89eddfd6d23b21a7befc4205091"
+          }
+        ]
       },
       {
         "id": "sec_markov_fk.tex:78",
@@ -769,7 +1031,21 @@
           "Chapter4MarkovInitialLimit",
           "Chapter4MarkovSimpleApproximation"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.5.prop.2",
+            "chapter": "4",
+            "section": 5,
+            "environment": "prop",
+            "labels": [
+              "prop:markov-lipschitz"
+            ],
+            "line": 4918,
+            "end_line": 4920,
+            "environment_sha256": "58619c577d7f06dcea7095afb3be78ed01b9f69950c9854b9189e8a900b72497"
+          }
+        ]
       },
       {
         "id": "sec_markov_fk.tex:104",
@@ -795,7 +1071,21 @@
           "Chapter4MarkovConstructed",
           "FullAuditMarkovSemigroup"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.5.cor.1",
+            "chapter": "4",
+            "section": 5,
+            "environment": "cor",
+            "labels": [
+              "cor:semigroup"
+            ],
+            "line": 4945,
+            "end_line": 4954,
+            "environment_sha256": "6b2fd09171bc29edf25ed3475c542dcd679a9af1c38e45f9b2318b9529d61b2d"
+          }
+        ]
       },
       {
         "id": "sec_markov_fk.tex:123",
@@ -822,7 +1112,19 @@
           "Chapter4DeterministicItoLaw",
           "FullAuditOUKernel"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.5.rep.4",
+            "chapter": "4",
+            "section": 5,
+            "environment": "rep",
+            "labels": [],
+            "line": 4964,
+            "end_line": 4968,
+            "environment_sha256": "9cda7456240c08a6067a75933dfd7e7d48d8ec4948c5cba3f4491ac7b8704c13"
+          }
+        ]
       },
       {
         "id": "sec_euler_maruyama.tex:43",
@@ -881,15 +1183,28 @@
           "Chapter4ConstructedIntegralBound",
           "Chapter4DriftMomentBound"
         ],
-        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence."
+        "module_mapping_scope": "Manuscript proof connections and supporting lemmas; see review.md for the exact correspondence.",
+        "current_manuscript_locations": [
+          {
+            "id": "4.6.thm.6",
+            "chapter": "4",
+            "section": 6,
+            "environment": "thm",
+            "labels": [
+              "thm:euler-maruyama-strong-rate",
+              "eq:euler-maruyama-strong-rate"
+            ],
+            "line": 5014,
+            "end_line": 5028,
+            "environment_sha256": "bdbaaf3f1aae406c46e6aca776fb4a5d5cb7fbebd3f1d00cb3b49276c73e8fc0"
+          }
+        ]
       }
     ],
     "formal_coverage_complete": true,
     "manuscript_correspondence_reviewed": true
   },
   "verification": {
-    "whole_chapter_verified": true,
-    "chapter_source_matches": true,
     "review_complete": true,
     "formal_coverage_complete": true,
     "missing_passed_evidence_modules": [],
@@ -897,6 +1212,18 @@
     "items_without_evidence": [],
     "scope": "Current chapter manuscript correspondence in inventory.json and review.md; constructed proof connections, exercises, dependency build, and axiom audit.",
     "toolchain": "leanprover/lean4:v4.34.0",
-    "all_selected_modules_passed": true
+    "all_selected_modules_passed": true,
+    "historical_chapter_source_matches": true,
+    "historical_whole_chapter_verified": true,
+    "current_manuscript_index_matches": true,
+    "current_manuscript_exhaustive_semantic_review_completed": false
+  },
+  "current_manuscript_record": {
+    "source_file": "asakura2e_v4.tex",
+    "source_sha256": "89b7d3558791a864d76de980ca48451fe29c011835697cb00a772304eb26a039",
+    "index": "audit/manuscript-v4-index.json",
+    "numbered_environment_count": 23,
+    "proof_record_scope": "Existing proof evidence linked to the current environments; not a new exhaustive mathematical review of every formal hypothesis.",
+    "historical_line_numbers": "The original line fields refer to earlier split source files. Use current_manuscript_locations for this version."
   }
 }

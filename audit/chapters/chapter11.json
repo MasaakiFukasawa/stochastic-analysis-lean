@@ -215,8 +215,8 @@
       "FullAuditMertonIntegrability",
       "FullAuditMertonVerification"
     ],
-    "whole_chapter_verified": true,
-    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
+    "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
+    "historical_whole_chapter_verified": true
   },
   "inventory": {
     "chapter": 11,
@@ -451,7 +451,22 @@
           "Asakura.Chapter11.self_financing_product_criterion"
         ],
         "reviewed_steps": "連続セミマルチンゲールである保有量への積の公式から、自己充足条件と保有量調整条件の同値性を検証。一般の発展的可測保有量とは区別した。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.1.defn.1",
+            "chapter": "11",
+            "section": 1,
+            "environment": "defn",
+            "labels": [
+              "def:self-financing",
+              "eq:self-financing"
+            ],
+            "line": 8835,
+            "end_line": 8842,
+            "environment_sha256": "8ecc84f8ecb6d4743fc0ca37910cd6420e79d8b8ef7adaf0bf87c87a29dd41b0"
+          }
+        ]
       },
       {
         "stable_id": "discounted-self-financing",
@@ -495,7 +510,22 @@
           "Asakura.Chapter11.discounted_self_financing_reverse"
         ],
         "reviewed_steps": "銀行口座・逆数の構成、可測保有量の積分領域、積の公式、伊藤積分と有界変動積分の結合則、銀行項の相殺を接続。discounted_self_financing_forward / reverse により両方向の実際の積分等式を検証。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.1.prop.1",
+            "chapter": "11",
+            "section": 1,
+            "environment": "prop",
+            "labels": [
+              "prop:discounted-self-financing",
+              "eq:discounted-self-financing"
+            ],
+            "line": 8865,
+            "end_line": 8871,
+            "environment_sha256": "1eac9032ec5457c5afc006ff05b8a0787b66a62bca3f59eabb32eddb2dac88d8"
+          }
+        ]
       },
       {
         "stable_id": "no-arbitrage",
@@ -569,7 +599,31 @@
           "Asakura.Chapter11.market_variation_increment_transfer"
         ],
         "reviewed_steps": "割引自己充足等式からの損益を、一般の発展的可測被積分過程のまま同値測度の伊藤積分へ接続。二次変分と全変動による同時単純近似、確率収束の移送、連続性による共通零集合、局所化・下限評価による無裁定性を検証。共通二次変分と符号付測度の区間増分は実際の価格分解から導出。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.1.defn.2",
+            "chapter": "11",
+            "section": 1,
+            "environment": "defn",
+            "labels": [],
+            "line": 8889,
+            "end_line": 8895,
+            "environment_sha256": "5da55ec99bef0c796ba08f2aa84f38532de473498f8d648791ebc48b6a7a3760"
+          },
+          {
+            "id": "11.1.prop.2",
+            "chapter": "11",
+            "section": 1,
+            "environment": "prop",
+            "labels": [
+              "prop:finance-no-arbitrage"
+            ],
+            "line": 8898,
+            "end_line": 8901,
+            "environment_sha256": "f74838ba81ff2fd666fa6795ba28639c9484941f1861b8196b46815133dca091"
+          }
+        ]
       },
       {
         "stable_id": "bs-risk-neutral",
@@ -604,7 +658,22 @@
           "Asakura.Chapter11.no_arbitrage_original_gains"
         ],
         "reviewed_steps": "正規分布の指数モーメント・独立増分から正値密度の平均1とマルチンゲール性を検証。同値性、ギルサノフ丸山変換、自然フィルトレーション、割引株価の真のマルチンゲール性、一般無裁定命題への適用を接続。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.2.thm.1",
+            "chapter": "11",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "thm:bs-replication",
+              "eq:bs-valuation"
+            ],
+            "line": 8960,
+            "end_line": 8968,
+            "environment_sha256": "622cc6c06bef8b7ed86201648f12f9dbb7b5e50cac2e8b099bd371c23866e41b"
+          }
+        ]
       },
       {
         "stable_id": "bs-replication",
@@ -708,7 +777,22 @@
           "Asakura.Chapter11.market_variation_increment_transfer"
         ],
         "reviewed_steps": "自然フィルトレーションでの表現定理から有限満期の条件付き価格を構成。保有株数・預金残高の可測性と全積分領域、実際の株式積分への結合則、元の測度の割引損益への同定、逆割引等式による自己充足性、一意性・非負支払いの許容性を接続。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.2.thm.1",
+            "chapter": "11",
+            "section": 2,
+            "environment": "thm",
+            "labels": [
+              "thm:bs-replication",
+              "eq:bs-valuation"
+            ],
+            "line": 8960,
+            "end_line": 8968,
+            "environment_sha256": "622cc6c06bef8b7ed86201648f12f9dbb7b5e50cac2e8b099bd371c23866e41b"
+          }
+        ]
       },
       {
         "stable_id": "european-pde-hedge",
@@ -893,7 +977,23 @@
           "Asakura.Chapter11.market_variation_increment_transfer"
         ],
         "reviewed_steps": "連続非負多項式成長ペイオフのガウス表示、核の微分、PDE、コンパクト上一様な満期極限、条件付き価格、デルタとの一致、満期の有限エネルギーと実際の伊藤積分を検証。共通の複製接続により元の測度の株式・銀行口座の自己充足等式に戻した。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.3.thm.2",
+            "chapter": "11",
+            "section": 3,
+            "environment": "thm",
+            "labels": [
+              "thm:bs-pde-hedge",
+              "eq:bs-pde",
+              "eq:bs-delta"
+            ],
+            "line": 9009,
+            "end_line": 9023,
+            "environment_sha256": "94a5df2df3e007b0a1783f4533ff51e545c6540b96142474aa5707f536b1e5bf"
+          }
+        ]
       },
       {
         "stable_id": "call-put-delta",
@@ -924,7 +1024,23 @@
           "Asakura.Chapter4.bs_put_pde"
         ],
         "reviewed_steps": "実際の正規分布によるコール・プット積分、価格式、パリティ、正規密度の恒等式、デルタを検証。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.3.prop.3",
+            "chapter": "11",
+            "section": 3,
+            "environment": "prop",
+            "labels": [
+              "prop:bs-call-put",
+              "eq:bs-call",
+              "eq:bs-put"
+            ],
+            "line": 9059,
+            "end_line": 9066,
+            "environment_sha256": "af33857904acaeb6ab86fb8f0361c14d4d02a4fe3ebc4f4700463fb398cfb4ab"
+          }
+        ]
       },
       {
         "stable_id": "forward-exercise",
@@ -956,7 +1072,19 @@
           "Asakura.Chapter11.constant_holdings_self_financing"
         ],
         "reviewed_steps": "構成済み幾何ブラウン運動のSDE、満期支払い、初期価値0の先渡し価格、割引資産の下限を検証。constant_holdings_self_financing により、一株と定数個の銀行口座保有を実際のセミマルチンゲール・スティルチェス積分へ接続。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.3.rep.1",
+            "chapter": "11",
+            "section": 3,
+            "environment": "rep",
+            "labels": [],
+            "line": 9098,
+            "end_line": 9101,
+            "environment_sha256": "241278d2262df44cdbf2460dd0b0c7505b1e9346d177a87d9aa52eb80e2d206a"
+          }
+        ]
       },
       {
         "stable_id": "barrier-construction",
@@ -1049,7 +1177,23 @@
           "Asakura.Chapter11.stock_barrier_unique_with_corner"
         ],
         "reviewed_steps": "本文のコール・デジタル価格の組合せから反射公式、PDE、非負性・有界性、下端と上端の境界値、満期の内部コンパクト上一様収束を検証。barrier_contract_candidate に全ての有界C1,2候補解条件を集約し、満期・バリア交点の値0も本文に一致させた。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.4.thm.3",
+            "chapter": "11",
+            "section": 4,
+            "environment": "thm",
+            "labels": [
+              "thm:barrier-price-hedge",
+              "eq:barrier-hedge",
+              "eq:barrier-conditional-price"
+            ],
+            "line": 9177,
+            "end_line": 9195,
+            "environment_sha256": "b42c80b44e7543c6dea39448f4eed4d77617034cccc284f4182d35c58bf1afc3"
+          }
+        ]
       },
       {
         "stable_id": "barrier-price-hedge",
@@ -1295,7 +1439,23 @@
           "Asakura.Chapter11.market_variation_increment_transfer"
         ],
         "reviewed_steps": "実際の到達時刻、コンパクトで停止した伊藤公式、空間停止の除去、満期角の零確率、L2極限、条件付き価格、満期までの等長性、t<τとt≤τの一致、元の測度の自己充足戦略への接続を検証。一般の有界C1,2候補解の一意性は局所矩形拡張と停止伊藤公式から導出し、任意開始時刻・時刻0・本文で指定した交点の値まで含めた。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.4.thm.3",
+            "chapter": "11",
+            "section": 4,
+            "environment": "thm",
+            "labels": [
+              "thm:barrier-price-hedge",
+              "eq:barrier-hedge",
+              "eq:barrier-conditional-price"
+            ],
+            "line": 9177,
+            "end_line": 9195,
+            "environment_sha256": "b42c80b44e7543c6dea39448f4eed4d77617034cccc284f4182d35c58bf1afc3"
+          }
+        ]
       },
       {
         "stable_id": "barrier-delta",
@@ -1331,7 +1491,23 @@
           "Asakura.Chapter11.barrier_brownian_delta_identity"
         ],
         "reviewed_steps": "コール・デジタル価格の実際の微分、反射項の株価微分、ブラウン運動座標の勾配と本文のデルタの一致を検証。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.4.thm.3",
+            "chapter": "11",
+            "section": 4,
+            "environment": "thm",
+            "labels": [
+              "thm:barrier-price-hedge",
+              "eq:barrier-hedge",
+              "eq:barrier-conditional-price"
+            ],
+            "line": 9177,
+            "end_line": 9195,
+            "environment_sha256": "b42c80b44e7543c6dea39448f4eed4d77617034cccc284f4182d35c58bf1afc3"
+          }
+        ]
       },
       {
         "stable_id": "wealth-exponential-moments",
@@ -1411,7 +1587,34 @@
           "Asakura.Chapter11.investment_solution_self_financing"
         ],
         "reviewed_steps": "有界発展的可測な投資比率から実際の資産SDEと正値指数解を構成。任意の有限期間SDE解について逆積分因子を構成し指数表示への一致を証明。負の次数も含む全実数次数の一様モーメント、有限期間戦略の延長、実際の株式・銀行口座の保有量と自己充足性を接続。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.5.thm.4",
+            "chapter": "11",
+            "section": 5,
+            "environment": "thm",
+            "labels": [
+              "thm:log-optimal"
+            ],
+            "line": 9323,
+            "end_line": 9329,
+            "environment_sha256": "f4177105daaf614275b7cb093226264fe267f96934ccfc25da60092237ff4593"
+          },
+          {
+            "id": "11.5.thm.5",
+            "chapter": "11",
+            "section": 5,
+            "environment": "thm",
+            "labels": [
+              "thm:merton-optimal",
+              "eq:merton-solution"
+            ],
+            "line": 9358,
+            "end_line": 9365,
+            "environment_sha256": "7ef0345af500356a4ad27b3cace006128050f91fcb419565c61f2073f4ef3b77"
+          }
+        ]
       },
       {
         "stable_id": "log-optimal",
@@ -1464,7 +1667,21 @@
           "Asakura.Chapter11.investment_solution_self_financing"
         ],
         "reviewed_steps": "任意の有限期間資産SDE解を指数表示へ同定した上で、確率積分の平均0、期待対数の平方完成、上界と定数戦略による達成を検証。実際の自己充足戦略と有限期間の入力も共通結果で接続。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.5.thm.4",
+            "chapter": "11",
+            "section": 5,
+            "environment": "thm",
+            "labels": [
+              "thm:log-optimal"
+            ],
+            "line": 9323,
+            "end_line": 9329,
+            "environment_sha256": "f4177105daaf614275b7cb093226264fe267f96934ccfc25da60092237ff4593"
+          }
+        ]
       },
       {
         "stable_id": "power-optimal",
@@ -1561,7 +1778,22 @@
           "Asakura.Chapter11.investment_solution_self_financing"
         ],
         "reviewed_steps": "任意の資産SDE解に対するJ(t,V_t)の実際の伊藤分解、負の次数も含むモーメント、M2積分の平均0、ドリフト可積分性、上界と定数戦略による達成を検証。BrownianSystem.shiftで任意開始時刻、零期間、有限期間戦略と実際の自己充足性を接続。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.5.thm.5",
+            "chapter": "11",
+            "section": 5,
+            "environment": "thm",
+            "labels": [
+              "thm:merton-optimal",
+              "eq:merton-solution"
+            ],
+            "line": 9358,
+            "end_line": 9365,
+            "environment_sha256": "7ef0345af500356a4ad27b3cace006128050f91fcb419565c61f2073f4ef3b77"
+          }
+        ]
       },
       {
         "stable_id": "constrained-log-exercise",
@@ -1603,7 +1835,19 @@
           "Asakura.Chapter11.investment_solution_self_financing"
         ],
         "reviewed_steps": "区間[0,1]への切詰め最適比率、任意の有限期間SDE解の期待対数の上界と達成、実際の自己充足戦略への接続を検証。出題ミスは認められない。",
-        "remaining_connections": ""
+        "remaining_connections": "",
+        "current_manuscript_locations": [
+          {
+            "id": "11.5.rep.2",
+            "chapter": "11",
+            "section": 5,
+            "environment": "rep",
+            "labels": [],
+            "line": 9397,
+            "end_line": 9400,
+            "environment_sha256": "7264609bedece6481a8a91714f1229fdb1d1505835ff5c73a631a3e1d38c76c7"
+          }
+        ]
       }
     ],
     "manuscript_correspondence_review_scope": "現原稿の証明・計算・問題15項目を、原稿の仮定、有限期間、実際の伊藤・有界変動積分、測度変更、満期と境界まで照合。接続はreview.mdに記録。単なる補助命題のコンパイルを全章検証とは扱わない。",
@@ -1624,8 +1868,6 @@
     "completed_utc": "2026-10-01T11:30:40.834642+00:00"
   },
   "verification": {
-    "whole_chapter_verified": true,
-    "chapter_source_matches": true,
     "review_complete": true,
     "formal_coverage_complete": true,
     "missing_passed_evidence_modules": [],
@@ -1633,6 +1875,18 @@
     "items_without_evidence": [],
     "scope": "Current chapter manuscript correspondence in inventory.json and review.md; constructed proof connections, exercises, dependency build, and axiom audit.",
     "toolchain": "leanprover/lean4:v4.34.0",
-    "all_selected_modules_passed": true
+    "all_selected_modules_passed": true,
+    "historical_chapter_source_matches": true,
+    "historical_whole_chapter_verified": true,
+    "current_manuscript_index_matches": true,
+    "current_manuscript_exhaustive_semantic_review_completed": false
+  },
+  "current_manuscript_record": {
+    "source_file": "asakura2e_v4.tex",
+    "source_sha256": "89b7d3558791a864d76de980ca48451fe29c011835697cb00a772304eb26a039",
+    "index": "audit/manuscript-v4-index.json",
+    "numbered_environment_count": 12,
+    "proof_record_scope": "Existing proof evidence linked to the current environments; not a new exhaustive mathematical review of every formal hypothesis.",
+    "historical_line_numbers": "The original line fields refer to earlier split source files. Use current_manuscript_locations for this version."
   }
 }
