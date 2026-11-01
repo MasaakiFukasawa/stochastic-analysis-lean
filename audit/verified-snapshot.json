@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-04",
+  "date": "2026-11-01",
   "scope": "Compiled Lean source snapshots with constructed interfaces. Mathematical correspondence, incremental compilation and clean builds are distinct records.",
   "toolchain": "leanprover/lean4:v4.34.0",
   "mathlib_revision": "5ed2965256430c3649e86755f9576b54eca72435",
@@ -63110,6 +63110,82 @@
         "ManuscriptProjection"
       ],
       "verification": "Fresh compilation and axiom audit of the orthogonal-decomposition dependency."
+    },
+    "RevisionAppendixFubini": {
+      "source_sha256": "dd23cbadfb563cd9ff5f835119ed0df423cfec5bbd002d3ab3b3982b14db649a",
+      "declarations": [
+        "Asakura.Revision20261101.measurable_sections",
+        "Asakura.Revision20261101.measurable_function_sections",
+        "Asakura.Revision20261101.product_measure_properties",
+        "Asakura.Revision20261101.product_measure_sections",
+        "Asakura.Revision20261101.tonelli",
+        "Asakura.Revision20261101.fubini"
+      ]
+    },
+    "RevisionAudit": {
+      "source_sha256": "a8e2170fe6e3d3805860c10058b022d26fa0ebcdad9d4a5e90cf0377d496c74f",
+      "declarations": []
+    },
+    "RevisionBrownianStops": {
+      "source_sha256": "ba5869fae05276a54c656cd89092f9610f62457cb4b7f569f97fba5dbabb05bf",
+      "declarations": [
+        "Asakura.Chapter6.brownian_norm_level_stops_survival"
+      ]
+    },
+    "RevisionLinearGrowthCorollary": {
+      "source_sha256": "2cb41d31f333b6ce04f324e28c510a3739b2b73c80d695ba0a0c5c8d19bb494a",
+      "declarations": [
+        "Asakura.Chapter6.linear_growth_density_corollary_written_exit"
+      ]
+    },
+    "RevisionLinearGrowthDensityConstruction": {
+      "source_sha256": "bc37f896283de0f34d65fe4c0f03aa9af95c952dc232112759a462759f5a7a59",
+      "declarations": [
+        "Asakura.Chapter6.revisionLinearGrowthDensityConstant",
+        "Asakura.Chapter6.linear_growth_density_construction_exit"
+      ]
+    },
+    "RevisionLinearGrowthMeanOne": {
+      "source_sha256": "dad1af0de15fc69f5e5f6561941bcd1144db6ee175176964d643fc61c1667042",
+      "declarations": [
+        "Asakura.Chapter6.linear_growth_exponential_mean_one_exit"
+      ]
+    },
+    "RevisionLinearGrowthPositiveDensity": {
+      "source_sha256": "1f7bbd21483acba3579acfae694db40b2e39285806eb763f120ac0d944c982f5",
+      "declarations": [
+        "Asakura.Chapter6.linear_growth_positive_density_written_exit"
+      ]
+    },
+    "RevisionLocalizedDensity": {
+      "source_sha256": "1ed4281c7802cc249aef4cbdcc61c3c4a1160f7031a709c37d7825f05d91aa68",
+      "declarations": [
+        "Asakura.Chapter6.localized_density_data_survival"
+      ]
+    },
+    "RevisionOUDensity": {
+      "source_sha256": "ec6ff158a3bdb30d994332198df256ca20b433c0a1afed83dcc3f0d8f9ce1ec4",
+      "declarations": [
+        "Asakura.Revision20261101.density_toLp",
+        "Asakura.Revision20261101.gaussian_affine_density",
+        "Asakura.Revision20261101.ou_affine_density",
+        "Asakura.Revision20261101.probability_flow_density_cutoff"
+      ]
+    },
+    "RevisionProbabilityFlow": {
+      "source_sha256": "9b5f7b65d6925c0c91c2403565bb3d97a1119ba060eb389580ffbaf676a151d5",
+      "declarations": [
+        "Asakura.Revision20261101.probability_flow_marginals",
+        "Asakura.Revision20261101.reverse_path_endpoints",
+        "Asakura.Revision20261101.probability_flow_uniqueness",
+        "Asakura.Revision20261101.probability_flow_cutoff"
+      ]
+    },
+    "RevisionSurvivalDensity": {
+      "source_sha256": "adf0f9a9fd96e890fdad4a0095ab9ef7ee6d86504c5124b4ea081465a861882f",
+      "declarations": [
+        "Asakura.Revision20261101.mean_one_of_survival"
+      ]
     }
   },
   "chapters": [
@@ -67180,5 +67256,25 @@
     "registered_declarations": 6777,
     "whole_library_import_passed": true,
     "clean_build": false
+  },
+  "revision_record": {
+    "date": "2026-11-01",
+    "entry": "Book.Revisions",
+    "new_theorems": 21,
+    "new_definitions": 1,
+    "modules": [
+      "RevisionAppendixFubini",
+      "RevisionAudit",
+      "RevisionBrownianStops",
+      "RevisionLinearGrowthCorollary",
+      "RevisionLinearGrowthDensityConstruction",
+      "RevisionLinearGrowthMeanOne",
+      "RevisionLinearGrowthPositiveDensity",
+      "RevisionLocalizedDensity",
+      "RevisionOUDensity",
+      "RevisionProbabilityFlow",
+      "RevisionSurvivalDensity"
+    ],
+    "scope": "Appendix A.5; section 6.3 survival-event proof; section 9.3.3 probability-flow theorem and density cutoff. Existing chapter coverage records refer to the prior manuscript; this record describes the targeted revision."
   }
 }

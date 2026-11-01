@@ -3828,6 +3828,17 @@ PowerMomentModification
 RecentItoFubiniBridge
 RecentItoFubiniCheck
 RecentItoTerminalCheck
+RevisionAppendixFubini
+RevisionAudit
+RevisionBrownianStops
+RevisionLinearGrowthCorollary
+RevisionLinearGrowthDensityConstruction
+RevisionLinearGrowthMeanOne
+RevisionLinearGrowthPositiveDensity
+RevisionLocalizedDensity
+RevisionOUDensity
+RevisionProbabilityFlow
+RevisionSurvivalDensity
 SeriesBound
 UnitBrownianExists
 UnitBrownianZero

@@ -171,7 +171,9 @@
       "Chapter9ReverseCovariance",
       "Chapter9ReverseLogEquation",
       "Chapter9ReverseLogScore",
-      "Chapter9ReversePastInformation"
+      "Chapter9ReversePastInformation",
+      "RevisionProbabilityFlow",
+      "RevisionOUDensity"
     ],
     "whole_chapter_verified": true,
     "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。",
@@ -182,7 +184,9 @@
   "inventory": {
     "chapter": 9,
     "sources_sha256": {
-      "chap_diffusion.tex": "0b8d856314d935c178e56562dec21998d0dfafe26527e449358e61a90b7227ac"
+      "chap_diffusion.tex": "0b8d856314d935c178e56562dec21998d0dfafe26527e449358e61a90b7227ac",
+      "RevisionProbabilityFlow": "9b5f7b65d6925c0c91c2403565bb3d97a1119ba060eb389580ffbaf676a151d5",
+      "RevisionOUDensity": "ec6ff158a3bdb30d994332198df256ca20b433c0a1afed83dcc3f0d8f9ce1ec4"
     },
     "modules": [
       "Chapter8VectorOUConstructed",
@@ -352,7 +356,9 @@
       "Chapter9ReverseCovariance",
       "Chapter9ReverseLogEquation",
       "Chapter9ReverseLogScore",
-      "Chapter9ReversePastInformation"
+      "Chapter9ReversePastInformation",
+      "RevisionProbabilityFlow",
+      "RevisionOUDensity"
     ],
     "manuscript_correspondence_reviewed": true,
     "items": [
@@ -946,7 +952,7 @@
       },
       {
         "stable_id": "probability-flow",
-        "environment": "prose",
+        "environment": "thm",
         "line": 341,
         "coverage_complete": true,
         "step_modules": [
@@ -987,7 +993,9 @@
           "Chapter9EuclideanDensityPDE",
           "Chapter9DensityScoreDerivatives",
           "Chapter9ProbabilityContinuityEquation",
-          "Chapter9ProbabilityFlowTransport"
+          "Chapter9ProbabilityFlowTransport",
+          "RevisionProbabilityFlow",
+          "RevisionOUDensity"
         ],
         "proved_declarations": [
           "Asakura.Chapter9.log_density_second_derivative",
@@ -1070,8 +1078,19 @@
           "Asakura.Chapter9.radial_density_score_derivatives",
           "Asakura.Chapter9.trace_continuity_algebra",
           "Asakura.Chapter9.ou_probability_continuity_equation",
-          "Asakura.Chapter9.ou_probability_flow_transport"
-        ]
+          "Asakura.Chapter9.ou_probability_flow_transport",
+          "Asakura.Revision20261101.probability_flow_marginals",
+          "Asakura.Revision20261101.reverse_path_endpoints",
+          "Asakura.Revision20261101.probability_flow_uniqueness",
+          "Asakura.Revision20261101.probability_flow_cutoff",
+          "Asakura.Revision20261101.density_toLp",
+          "Asakura.Revision20261101.gaussian_affine_density",
+          "Asakura.Revision20261101.ou_affine_density",
+          "Asakura.Revision20261101.probability_flow_density_cutoff"
+        ],
+        "revised_statement_id": "thm:probability-flow-marginals",
+        "proof_connection": "正の時刻区間の確率流と逆流による密度の輸送、一意性、ガウス結合と輸送密度の一致を接続し、同じ密度の初期分布へのW2収束まで証明。",
+        "revision_date": "2026-11-01"
       },
       {
         "stable_id": "stationary-flow-exercise",
@@ -1116,5 +1135,14 @@
     "scope": "Current chapter manuscript correspondence in inventory.json and review.md; constructed proof connections, exercises, dependency build, and axiom audit.",
     "toolchain": "leanprover/lean4:v4.34.0",
     "all_selected_modules_passed": true
+  },
+  "revision_verification": {
+    "date": "2026-11-01",
+    "modules": [
+      "RevisionProbabilityFlow",
+      "RevisionOUDensity"
+    ],
+    "entry": "Book.Revisions",
+    "scope": "Targeted revision; prior source line numbers are historical."
   }
 }
