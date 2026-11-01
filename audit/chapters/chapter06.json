@@ -40,10 +40,6 @@
       "Chapter6WeakSDEWritten",
       "Chapter6NonnegativeBorelExtension",
       "Chapter6LikelihoodPushforward",
-      "Chapter6EntropyTail",
-      "Chapter6DensityUniformIntegrability",
-      "Chapter6EntropyUniform",
-      "Chapter6EntropyDensityLimit",
       "Chapter6DensityLowerBound",
       "Chapter6CenteredDensityLocal",
       "Chapter6RandomVariationScalar",
@@ -189,7 +185,6 @@
       "Chapter6ContinuousCoefficientRegular",
       "Chapter6ContinuousVectorCovariance",
       "Chapter6ContinuousVectorConstruction",
-      "Chapter6StoppedEntropyIdentity",
       "Chapter6BrownianEnvelopeBound",
       "Chapter6BrownianLevelStops",
       "Chapter6LocalizedDensityData",
@@ -202,13 +197,13 @@
       "Chapter6LinearGrowthDensityConstruction",
       "Chapter6LinearGrowthPositiveDensityWritten",
       "Chapter6LinearGrowthCorollaryWritten",
-      "RevisionBrownianStops",
-      "RevisionLinearGrowthCorollary",
-      "RevisionLinearGrowthDensityConstruction",
-      "RevisionLinearGrowthMeanOne",
-      "RevisionLinearGrowthPositiveDensity",
-      "RevisionLocalizedDensity",
-      "RevisionSurvivalDensity"
+      "Chapter6BrownianLevelStops",
+      "Chapter6LinearGrowthCorollaryWritten",
+      "Chapter6LinearGrowthDensityConstruction",
+      "Chapter6LinearGrowthMeanOne",
+      "Chapter6LinearGrowthPositiveDensityWritten",
+      "Chapter6LocalizedDensityData",
+      "Chapter6SurvivalDensity"
     ],
     "whole_chapter_verified": true,
     "scope": "Leanに記述した命題とその依存関係を検証し、原稿の仮定・結論・証明との対応を別途確認した。"
@@ -217,13 +212,13 @@
     "chapter": 6,
     "sources_sha256": {
       "chap4.tex": "d07607dfb5db454426337f232e667633294b215c5388a0139b360fbc0d0f2870",
-      "RevisionBrownianStops": "ba5869fae05276a54c656cd89092f9610f62457cb4b7f569f97fba5dbabb05bf",
-      "RevisionLinearGrowthCorollary": "2cb41d31f333b6ce04f324e28c510a3739b2b73c80d695ba0a0c5c8d19bb494a",
-      "RevisionLinearGrowthDensityConstruction": "bc37f896283de0f34d65fe4c0f03aa9af95c952dc232112759a462759f5a7a59",
-      "RevisionLinearGrowthMeanOne": "dad1af0de15fc69f5e5f6561941bcd1144db6ee175176964d643fc61c1667042",
-      "RevisionLinearGrowthPositiveDensity": "1f7bbd21483acba3579acfae694db40b2e39285806eb763f120ac0d944c982f5",
-      "RevisionLocalizedDensity": "1ed4281c7802cc249aef4cbdcc61c3c4a1160f7031a709c37d7825f05d91aa68",
-      "RevisionSurvivalDensity": "adf0f9a9fd96e890fdad4a0095ab9ef7ee6d86504c5124b4ea081465a861882f"
+      "Chapter6BrownianLevelStops": "701c6674ac25da692fd5caac932cef4afcd58a74a6f5b9c6a6a44bebe5dd324d",
+      "Chapter6LinearGrowthCorollaryWritten": "92ccd72d46a4883655d433a46c9013087a3005ba03ad795d5a4a44f23c0dec84",
+      "Chapter6LinearGrowthDensityConstruction": "f2260332404576bd31cf0572b264504404eb0672994072c7269c660134469c79",
+      "Chapter6LinearGrowthMeanOne": "0dd68f5395ab4555ec9faa804b8702387ad83ae5c44c7d22fc27bd39597a694a",
+      "Chapter6LinearGrowthPositiveDensityWritten": "1f49389a0e61df9f91dd194e04f9dd472ed468ae5c2ad9598ea17fa8e052542f",
+      "Chapter6LocalizedDensityData": "bc8123572eb14b7fad4c6df82e03f0448bfada57030fd129fa037d3593bfbc0b",
+      "Chapter6SurvivalDensity": "8d39353ad23931b6b1b479c79b2775edec52ff636ebba88ee09cd164f343f52e"
     },
     "modules": [
       "FullAuditBayes",
@@ -262,10 +257,6 @@
       "Chapter6WeakSDEWritten",
       "Chapter6NonnegativeBorelExtension",
       "Chapter6LikelihoodPushforward",
-      "Chapter6EntropyTail",
-      "Chapter6DensityUniformIntegrability",
-      "Chapter6EntropyUniform",
-      "Chapter6EntropyDensityLimit",
       "Chapter6DensityLowerBound",
       "Chapter6CenteredDensityLocal",
       "Chapter6RandomVariationScalar",
@@ -411,7 +402,6 @@
       "Chapter6ContinuousCoefficientRegular",
       "Chapter6ContinuousVectorCovariance",
       "Chapter6ContinuousVectorConstruction",
-      "Chapter6StoppedEntropyIdentity",
       "Chapter6BrownianEnvelopeBound",
       "Chapter6BrownianLevelStops",
       "Chapter6LocalizedDensityData",
@@ -424,13 +414,13 @@
       "Chapter6LinearGrowthDensityConstruction",
       "Chapter6LinearGrowthPositiveDensityWritten",
       "Chapter6LinearGrowthCorollaryWritten",
-      "RevisionBrownianStops",
-      "RevisionLinearGrowthCorollary",
-      "RevisionLinearGrowthDensityConstruction",
-      "RevisionLinearGrowthMeanOne",
-      "RevisionLinearGrowthPositiveDensity",
-      "RevisionLocalizedDensity",
-      "RevisionSurvivalDensity"
+      "Chapter6BrownianLevelStops",
+      "Chapter6LinearGrowthCorollaryWritten",
+      "Chapter6LinearGrowthDensityConstruction",
+      "Chapter6LinearGrowthMeanOne",
+      "Chapter6LinearGrowthPositiveDensityWritten",
+      "Chapter6LocalizedDensityData",
+      "Chapter6SurvivalDensity"
     ],
     "items": [
       {
@@ -790,10 +780,6 @@
         "label": "cor:girsanov-linear-positive-density",
         "coverage_complete": true,
         "step_modules": [
-          "Chapter6EntropyTail",
-          "Chapter6DensityUniformIntegrability",
-          "Chapter6EntropyUniform",
-          "Chapter6EntropyDensityLimit",
           "Chapter6L2WeightedRegression",
           "Chapter6IndependentResidualSquare",
           "Chapter6ConditionalYoungBound",
@@ -825,7 +811,6 @@
           "Chapter6ContinuousCoefficientRegular",
           "Chapter6ContinuousVectorCovariance",
           "Chapter6ContinuousVectorConstruction",
-          "Chapter6StoppedEntropyIdentity",
           "Chapter6BrownianEnvelopeBound",
           "Chapter6BrownianLevelStops",
           "Chapter6LocalizedDensityData",
@@ -838,18 +823,15 @@
           "Chapter6LinearGrowthDensityConstruction",
           "Chapter6LinearGrowthPositiveDensityWritten",
           "Chapter6LinearGrowthCorollaryWritten",
-          "RevisionBrownianStops",
-          "RevisionLinearGrowthCorollary",
-          "RevisionLinearGrowthDensityConstruction",
-          "RevisionLinearGrowthMeanOne",
-          "RevisionLinearGrowthPositiveDensity",
-          "RevisionLocalizedDensity",
-          "RevisionSurvivalDensity"
+          "Chapter6BrownianLevelStops",
+          "Chapter6LinearGrowthCorollaryWritten",
+          "Chapter6LinearGrowthDensityConstruction",
+          "Chapter6LinearGrowthMeanOne",
+          "Chapter6LinearGrowthPositiveDensityWritten",
+          "Chapter6LocalizedDensityData",
+          "Chapter6SurvivalDensity"
         ],
         "proved_declarations": [
-          "Asakura.Chapter6.entropy_density_tail_bound",
-          "Asakura.Chapter6.entropy_bound_uniform_integrable",
-          "Asakura.Chapter6.entropy_localized_density_limit",
           "Asakura.Chapter6.L2_weighted_conditional_regression",
           "Asakura.Chapter6.independent_residual_conditional_square",
           "Asakura.Chapter6.conditional_inner_young_bound",
@@ -883,7 +865,6 @@
           "Asakura.Chapter6.stopped_continuous_coefficient_regular",
           "Asakura.Chapter6.continuous_vector_integral_covariances",
           "Asakura.Chapter6.continuous_vector_integrals_constructed",
-          "Asakura.Chapter6.stopped_exponential_entropy_identity",
           "Asakura.Chapter6.brownian_path_L2_envelope_bound",
           "Asakura.Chapter6.brownian_norm_level_stops",
           "Asakura.Chapter6.localized_density_data",
@@ -898,16 +879,10 @@
           "Asakura.Chapter6.linear_growth_density_construction",
           "Asakura.Chapter6.linear_growth_positive_density_written",
           "Asakura.Chapter6.linear_growth_density_corollary_written",
-          "Asakura.Chapter6.brownian_norm_level_stops_survival",
-          "Asakura.Chapter6.linear_growth_density_corollary_written_exit",
-          "Asakura.Chapter6.revisionLinearGrowthDensityConstant",
-          "Asakura.Chapter6.linear_growth_density_construction_exit",
-          "Asakura.Chapter6.linear_growth_exponential_mean_one_exit",
-          "Asakura.Chapter6.linear_growth_positive_density_written_exit",
-          "Asakura.Chapter6.localized_density_data_survival",
-          "Asakura.Revision20261101.mean_one_of_survival"
+          "Asakura.Chapter6.mean_one_of_survival",
+          "Asakura.Chapter6.linearGrowthDensityConstant"
         ],
-        "proof_connection": "改訂版の linear_growth_density_corollary_written_exit は、実際の伊藤積分と停止密度を構成し、停止測度下の二次モーメント評価、退出確率、生存事象上の一致、単調収束から指数密度の平均1を導き、密度表示と正値性まで接続する。一様可積分性・エントロピー評価を使う従来の証明は比較用に保存。",
+        "proof_connection": "標準名 linear_growth_density_corollary_written は、停止密度と二次モーメント評価、退出確率、生存事象上の一致、単調収束により密度の平均1を証明し、密度表示と正値性まで接続する。旧エントロピー・一様可積分性による証明は削除。",
         "revision_date": "2026-11-01"
       },
       {
@@ -999,15 +974,15 @@
   "revision_verification": {
     "date": "2026-11-01",
     "modules": [
-      "RevisionBrownianStops",
-      "RevisionLinearGrowthCorollary",
-      "RevisionLinearGrowthDensityConstruction",
-      "RevisionLinearGrowthMeanOne",
-      "RevisionLinearGrowthPositiveDensity",
-      "RevisionLocalizedDensity",
-      "RevisionSurvivalDensity"
+      "Chapter6BrownianLevelStops",
+      "Chapter6SurvivalDensity",
+      "Chapter6LocalizedDensityData",
+      "Chapter6LinearGrowthMeanOne",
+      "Chapter6LinearGrowthDensityConstruction",
+      "Chapter6LinearGrowthPositiveDensityWritten",
+      "Chapter6LinearGrowthCorollaryWritten"
     ],
-    "entry": "Book.Revisions",
+    "entry": "Book.Chapter06",
     "scope": "Targeted revision; prior source line numbers are historical."
   }
 }

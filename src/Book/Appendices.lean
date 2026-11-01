@@ -91,4 +91,4 @@ import EndToEndHilbertRepresentation
 import EndToEndSignedTruncation
 import EndToEndFiniteIntegral
 import EndToEndMonotoneProbability
-import RevisionAppendixFubini
+import AppendixProductFubini

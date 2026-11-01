@@ -88,5 +88,7 @@
     "missing_declarations": [],
     "unexpected_axioms": {},
     "scope": "Lean statements and transitive axioms; not automatic verification of TeX prose."
-  }
+  },
+  "historical_record": true,
+  "current_validation": "audit/latest-run.json"
 }

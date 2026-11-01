@@ -8,6 +8,12 @@ import Book.Chapter09
 
 章を選ぶ際は上の入口を使ってください。依存する前章・付録も自動的に読み込まれます。
 
+## 現在の原稿に対応する定理
+
+9.3.3節には `Asakura.Chapter9.probability_flow_marginals`（順方向・逆方向の密度輸送）、`probability_flow_uniqueness`（一意性）、`probability_flow_density_cutoff`（同じ密度の初期分布へのW2収束）を使います。いずれも `Asakura.Chapter9` 名前空間です。
+
+主な実装は `Chapter9ProbabilityFlowMarginals` と `Chapter9OUAffineDensity` です。
+
 ## 主な証明モジュール
 
 - [Chapter8VectorOUConstructed](../../src/Chapter8VectorOUConstructed.lean)

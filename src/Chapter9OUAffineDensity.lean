@@ -1,9 +1,9 @@
-import RevisionProbabilityFlow
+import Chapter9ProbabilityFlowMarginals
 import Chapter9TransitionDensity
 
 open MeasureTheory ProbabilityTheory Set Filter
 open scoped Topology NNReal ENNReal
-namespace Asakura.Revision20261101
+namespace Asakura.Chapter9
 open Asakura.Chapter9 Asakura.FullAudit
 set_option maxHeartbeats 1800000
 
@@ -78,4 +78,4 @@ theorem probability_flow_density_cutoff {d : ℕ}
   filter_upwards [self_mem_nhdsWithin] with t ht
   rw [ou_affine_density μ t ht]
 
-end Asakura.Revision20261101
+end Asakura.Chapter9

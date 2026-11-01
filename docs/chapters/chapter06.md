@@ -8,6 +8,12 @@ import Book.Chapter06
 
 章を選ぶ際は上の入口を使ってください。依存する前章・付録も自動的に読み込まれます。
 
+## 現在の原稿に対応する定理
+
+6.3節の密度・正値性には `Asakura.Chapter6.linear_growth_density_corollary_written` を使います。証明は停止測度下の二次モーメント評価、退出確率、生存事象と単調収束を経由します。旧エントロピー証明は削除し、改訂版を標準名に統合しました。
+
+主な実装は `Chapter6LinearGrowthMeanOne`、`Chapter6SurvivalDensity`、`Chapter6LinearGrowthCorollaryWritten` です。
+
 ## 主な証明モジュール
 
 - [Chapter6AEClockCross](../../src/Chapter6AEClockCross.lean)
@@ -83,13 +89,9 @@ import Book.Chapter06
 - [Chapter6DensityLowerBound](../../src/Chapter6DensityLowerBound.lean)
 - [Chapter6DensityMartingale](../../src/Chapter6DensityMartingale.lean)
 - [Chapter6DensityProbability](../../src/Chapter6DensityProbability.lean)
-- [Chapter6DensityUniformIntegrability](../../src/Chapter6DensityUniformIntegrability.lean)
 - [Chapter6DriftCovarianceTransfer](../../src/Chapter6DriftCovarianceTransfer.lean)
 - [Chapter6DriftCrossCovariance](../../src/Chapter6DriftCrossCovariance.lean)
 - [Chapter6DriftGridIdentity](../../src/Chapter6DriftGridIdentity.lean)
-- [Chapter6EntropyDensityLimit](../../src/Chapter6EntropyDensityLimit.lean)
-- [Chapter6EntropyTail](../../src/Chapter6EntropyTail.lean)
-- [Chapter6EntropyUniform](../../src/Chapter6EntropyUniform.lean)
 - [Chapter6EuclideanEnergyBound](../../src/Chapter6EuclideanEnergyBound.lean)
 - [Chapter6ExponentialClosed](../../src/Chapter6ExponentialClosed.lean)
 - [Chapter6ExponentialLocal](../../src/Chapter6ExponentialLocal.lean)
@@ -184,7 +186,6 @@ import Book.Chapter06
 - [Chapter6SquareEnvelopeTransfer](../../src/Chapter6SquareEnvelopeTransfer.lean)
 - [Chapter6SquareMeanToL1](../../src/Chapter6SquareMeanToL1.lean)
 - [Chapter6StoppedDensity](../../src/Chapter6StoppedDensity.lean)
-- [Chapter6StoppedEntropyIdentity](../../src/Chapter6StoppedEntropyIdentity.lean)
 - [Chapter6StoppedGrowthClock](../../src/Chapter6StoppedGrowthClock.lean)
 - [Chapter6StoppedGrowthEnergyMoment](../../src/Chapter6StoppedGrowthEnergyMoment.lean)
 - [Chapter6StoppedGrowthPathBound](../../src/Chapter6StoppedGrowthPathBound.lean)

@@ -12,4 +12,4 @@ require mathlib from git
 lean_lib Book where
   srcDir := "src"
   -- Explicit roots keep Mathlib and other dependencies outside this library.
-  roots := ((include_str "audit/module-roots.txt").splitOn "\n").toArray.map Lean.Name.mkSimple
+  roots := (((include_str "audit/module-roots.txt").splitOn "\n").filter (· != "")).toArray.map Lean.Name.mkSimple

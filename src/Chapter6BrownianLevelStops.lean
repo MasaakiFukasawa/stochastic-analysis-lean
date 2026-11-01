@@ -12,13 +12,16 @@ set_option backward.isDefEq.respectTransparency false
 so the Brownian initial value need only equal zero almost surely. -/
 theorem brownian_norm_level_stops {Ω : Type*} {m : MeasurableSpace Ω}
     (P : Measure Ω) [IsProbabilityMeasure P] {d : ℕ} (B : BrownianSystem P d)
-    (R : ℝ) (hR : 0≤R) :
+    (R : ℝ) (hR : 0≤R)
+    (S : Ω → ℝ)
+    (hS : ∀ w t, ‖WithLp.toLp 2 (fun j => B.W j (min (realTimeClamp R) t) w)‖≤S w) :
     ∃ τ : ℕ → Ω → HalfClosedTime,
       (∀ n t,MeasurableSet[B.F t] {w | τ n w≤t}) ∧
       (∀ n w,τ n w≤realTimeClamp R) ∧
       (∀ w,∀ᶠ n in atTop,τ n w=realTimeClamp R) ∧
-      ∀ᵐ w ∂P,∀ n (r : ℝ),0≤r → realTimeClamp r≤τ n w →
-        ‖WithLp.toLp 2 (fun j => B.W j (realTimeClamp r) w)‖≤(n:ℝ)+1 := by
+      (∀ᵐ w ∂P,∀ n (r : ℝ),0≤r → realTimeClamp r≤τ n w →
+        ‖WithLp.toLp 2 (fun j => B.W j (realTimeClamp r) w)‖≤(n:ℝ)+1) ∧
+      ∀ (n : ℕ) w, S w < (n:ℝ)+1 → τ n w=realTimeClamp R := by
   let U := fun t w => ‖WithLp.toLp 2 (fun j => B.W j (min (realTimeClamp R) t) w)‖
   have hRt : (realTimeClamp R : HalfClosedTime)<⊤ := changed_time_finite R hR
   have hUc w : Continuous (fun t => U t w) := by
@@ -33,7 +36,7 @@ theorem brownian_norm_level_stops {Ω : Type*} {m : MeasurableSpace Ω}
   let hit := fun (n : ℕ) w => sInf {t | (n:ℝ)+1≤U t w}
   let τ := fun n w => min (hit n w) (realTimeClamp R)
   have hh n := continuous_hitting_stopping_written B.F B.mono U hUa hUc (Ici ((n:ℝ)+1)) isClosed_Ici
-  refine ⟨τ,?_,fun _ _ => min_le_right _ _,?_,?_⟩
+  refine ⟨τ,?_,fun _ _ => min_le_right _ _,?_,?_,?_⟩
   · intro n
     exact (written_stopping_min_max B.F (hit n) (fun _ => realTimeClamp R) (hh n)
       (fun t => by by_cases h : (realTimeClamp R : HalfClosedTime)≤t <;> simp [h])).1
@@ -58,5 +61,12 @@ theorem brownian_norm_level_stops {Ω : Type*} {m : MeasurableSpace Ω}
       (by rw [hU0]; positivity) (realTimeClamp r) hbefore
     have hrR : realTimeClamp r≤(realTimeClamp R : HalfClosedTime) := hrt.trans (min_le_right _ _)
     simpa only [U,min_eq_right hrR] using hb
+
+  · intro n w hw
+    have hempty : {t | (n:ℝ)+1≤U t w}=∅ := by
+      apply eq_empty_iff_forall_notMem.mpr
+      intro t ht
+      exact (not_le_of_gt hw) (ht.trans (hS w t))
+    simp only [τ,hit,hempty,sInf_empty,min_top_left]
 
 end Asakura.Chapter6

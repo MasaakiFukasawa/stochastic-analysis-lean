@@ -1,4 +1,6 @@
-import Chapter6StoppedEntropyIdentity
+import Chapter6GirsanovBrownian
+import Chapter6NovikovWritten
+import Chapter6BoundedClockExponential
 import Chapter6DensityProbability
 import Chapter2OneSidedStoppedCovariance
 import Chapter4FinitePathLift
@@ -11,7 +13,7 @@ set_option maxHeartbeats 4000000
 set_option backward.isDefEq.respectTransparency false
 
 /-- Stop the actual density martingale. Novikov constructs the probability
-measure; Girsanov constructs the Brownian driver and the entropy identity. -/
+measure; Girsanov constructs the Brownian driver. No entropy identity is used. -/
 theorem localized_density_data {Ω : Type*} {m : MeasurableSpace Ω}
     (P : Measure Ω) [IsProbabilityMeasure P] {d : ℕ} (B : BrownianSystem P d)
     (Z C : HalfClosedTime → Ω → ℝ) (hZ : LocalMProcessWitness P B.F Z)
@@ -30,8 +32,6 @@ theorem localized_density_data {Ω : Type*} {m : MeasurableSpace Ω}
     ∃ (Q : Measure Ω) (hQp : IsProbabilityMeasure Q),
       Q=P.withDensity (fun w => ENNReal.ofReal (D w)) ∧
       (∀ p : Ω → Prop,(∀ᵐ w ∂P,p w) ↔ ∀ᵐ w ∂Q,p w) ∧
-      Integrable (fun w => D w*Real.log (D w)) P ∧
-      (∫ w,D w*Real.log (D w) ∂P)=(∫ w,C (τ w) w ∂Q)/2 ∧
       ∃ BQ : BrownianSystem Q d,BQ.F=B.F ∧
         ∀ᵐ w ∂Q,∀ j (r : ℝ),r∈Icc 0 R →
           BQ.W j (realTimeClamp r) w=B.W j (realTimeClamp r) w-∫ s in 0..min (u w) r,H j (w,s) := by
@@ -52,12 +52,11 @@ theorem localized_density_data {Ω : Type*} {m : MeasurableSpace Ω}
   let Q := P.withDensity (fun w => ENNReal.ofReal (D w))
   haveI hQp : IsProbabilityMeasure Q := mean_one_density_probability P D hi (ae_of_all _ fun _ => (Real.exp_pos _).le) hmean
   have hAE := fun p => positive_real_density_ae_iff P Q D hm (ae_of_all _ fun _ => Real.exp_pos _) rfl p
-  have hE := stopped_exponential_entropy_identity P Q B.F B.mono B.le B.null Z C hZ hC τ hτ R hR hτR K hK hmean rfl
   have hZs := hZ.stopped P B.F B.mono B.le τ hτ
   choose A hA using fun j => local_covariance_witness_exists P B.F B.mono B.le B.null
     (fun t w => Z (min (τ w) t) w) (B.W j) hZs (B.martingale j)
   obtain ⟨BQ,hBQ,hBWe⟩ := girsanov_brownian_vector_driver P Q B Z C hZ hC τ hτ hτt hmean rfl A hA
-  refine ⟨hm,hi,hmean,Q,hQp,rfl,hAE,hE.1,hE.2,BQ,hBQ,?_⟩
+  refine ⟨hm,hi,hmean,Q,hQp,rfl,hAE,BQ,hBQ,?_⟩
   apply (hAE _).mp
   filter_upwards [ae_all_iff.mpr hLe,ae_all_iff.mpr (fun j =>
     local_covariance_one_sided_stopping P B.F B.mono B.le B.null Z (B.W j) (L j) (A j)

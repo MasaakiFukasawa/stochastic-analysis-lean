@@ -28187,65 +28187,6 @@
         "Mathlib.MeasureTheory.Measure.WithDensity"
       ]
     },
-    "Chapter6EntropyTail": {
-      "source_sha256": "84d12cbb56c28c8a10d9b61eba16f79b3eff8312c16e8b340e92b9a4058d33ce",
-      "declarations": [
-        "Asakura.Chapter6.entropy_density_tail_bound",
-        "Asakura.Chapter6.entropy_pointwise_lower"
-      ],
-      "chapter_records": [
-        6,
-        8,
-        12
-      ],
-      "imports": [
-        "Chapter6LikelihoodPushforward",
-        "Mathlib.Analysis.SpecialFunctions.Log.Monotone"
-      ]
-    },
-    "Chapter6DensityUniformIntegrability": {
-      "source_sha256": "75dc557c5bd439566b8c9073b7e46eb89738656114f73ff644658767d9b67298",
-      "declarations": [
-        "Asakura.Chapter6.uniform_integrable_of_nonnegative_tails"
-      ],
-      "chapter_records": [
-        6,
-        8,
-        12
-      ],
-      "imports": [
-        "Chapter6EntropyTail",
-        "Mathlib.MeasureTheory.Function.UniformIntegrable"
-      ]
-    },
-    "Chapter6EntropyUniform": {
-      "source_sha256": "e1b2446546d35f6b534572af0abd0c599aacf1c5d67b742a4701c00963ea0bee",
-      "declarations": [
-        "Asakura.Chapter6.entropy_bound_uniform_integrable"
-      ],
-      "chapter_records": [
-        6,
-        8,
-        12
-      ],
-      "imports": [
-        "Chapter6DensityUniformIntegrability"
-      ]
-    },
-    "Chapter6EntropyDensityLimit": {
-      "source_sha256": "b236c2c431657231da06c9733a3e15c7632583e2570fc208bcdc1c96120fc832",
-      "declarations": [
-        "Asakura.Chapter6.entropy_localized_density_limit"
-      ],
-      "chapter_records": [
-        6,
-        8,
-        12
-      ],
-      "imports": [
-        "Chapter6EntropyUniform"
-      ]
-    },
     "Chapter6DensityLowerBound": {
       "source_sha256": "f13e9908f5e8212cb11fcf8983d68b19b3959324f8155017241b4b39388333ea",
       "declarations": [
@@ -31480,22 +31421,6 @@
         "Chapter5LocalPathBrownianIntegral"
       ]
     },
-    "Chapter6StoppedEntropyIdentity": {
-      "source_sha256": "0e875a7758ef61ed59eb6be5c03eac7a84f81ca00d3542b6fbcf8ef80acdc3a5",
-      "declarations": [
-        "Asakura.Chapter6.stopped_exponential_entropy_identity"
-      ],
-      "chapter_records": [
-        6,
-        8,
-        12
-      ],
-      "imports": [
-        "Chapter6GirsanovBrownian",
-        "Chapter3StoppedMartingaleFromLp",
-        "Chapter6ExponentialSecondMoment"
-      ]
-    },
     "Chapter6BrownianEnvelopeBound": {
       "source_sha256": "eeee3a2cbee59c4fa22f5bcf6471ed486f7af0caa689d10d0334af90c736ac04",
       "declarations": [
@@ -31515,35 +31440,15 @@
       ]
     },
     "Chapter6BrownianLevelStops": {
-      "source_sha256": "29597351bae96224b7900cfd4d1dff9815ecef231331dc5296aaa0c86a30344e",
+      "source_sha256": "701c6674ac25da692fd5caac932cef4afcd58a74a6f5b9c6a6a44bebe5dd324d",
       "declarations": [
         "Asakura.Chapter6.brownian_norm_level_stops"
-      ],
-      "chapter_records": [
-        6,
-        8,
-        12
-      ],
-      "imports": [
-        "Chapter6ContinuousCoefficientRegular",
-        "Chapter4MomentLevelStops"
       ]
     },
     "Chapter6LocalizedDensityData": {
-      "source_sha256": "9275bea9a206f253ab3228e7edabccfde385593a1b54a1928fe2d36292cf5020",
+      "source_sha256": "bc8123572eb14b7fad4c6df82e03f0448bfada57030fd129fa037d3593bfbc0b",
       "declarations": [
         "Asakura.Chapter6.localized_density_data"
-      ],
-      "chapter_records": [
-        6,
-        8,
-        12
-      ],
-      "imports": [
-        "Chapter6StoppedEntropyIdentity",
-        "Chapter6DensityProbability",
-        "Chapter2OneSidedStoppedCovariance",
-        "Chapter4FinitePathLift"
       ]
     },
     "Chapter6StoppedGrowthPathBound": {
@@ -31592,21 +31497,9 @@
       ]
     },
     "Chapter6LinearGrowthMeanOne": {
-      "source_sha256": "77454451118763438c90f523a7f9975732442249e7bbdc59547d1c9af0c99d0e",
+      "source_sha256": "0dd68f5395ab4555ec9faa804b8702387ad83ae5c44c7d22fc27bd39597a694a",
       "declarations": [
         "Asakura.Chapter6.linear_growth_exponential_mean_one"
-      ],
-      "chapter_records": [
-        6,
-        8,
-        12
-      ],
-      "imports": [
-        "Chapter6ContinuousVectorConstruction",
-        "Chapter6StoppedGrowthClock",
-        "Chapter6LocalizedDensityData",
-        "Chapter6StoppedGrowthEnergyMoment",
-        "Chapter6EntropyDensityLimit"
       ]
     },
     "Chapter6AffineLinearGrowth": {
@@ -31644,49 +31537,20 @@
     "Chapter6LinearGrowthDensityConstruction": {
       "source_sha256": "f2260332404576bd31cf0572b264504404eb0672994072c7269c660134469c79",
       "declarations": [
+        "Asakura.Chapter6.linearGrowthDensityConstant",
         "Asakura.Chapter6.linear_growth_density_construction"
-      ],
-      "chapter_records": [
-        6,
-        12
-      ],
-      "imports": [
-        "Chapter6BrownianContinuousCoefficient",
-        "Chapter6ContinuousGivenBrownian",
-        "Chapter6LinearGrowthMeanOne",
-        "Chapter6LinearGrowthDensityConditional",
-        "Chapter6ContinuousCoefficientRegular",
-        "Chapter6ConditionalPushforwardDensity"
       ]
     },
     "Chapter6LinearGrowthPositiveDensityWritten": {
       "source_sha256": "1f49389a0e61df9f91dd194e04f9dd472ed468ae5c2ad9598ea17fa8e052542f",
       "declarations": [
         "Asakura.Chapter6.linear_growth_positive_density_written"
-      ],
-      "chapter_records": [
-        6
-      ],
-      "imports": [
-        "Chapter6LinearGrowthDensityConstruction",
-        "Chapter6PositiveDensityWritten",
-        "Chapter6BrownianEndpointDensity",
-        "Chapter6AffineMarginalBound",
-        "Chapter6ConditionalDensityCoordinate",
-        "Chapter6DensityLowerBound"
       ]
     },
     "Chapter6LinearGrowthCorollaryWritten": {
       "source_sha256": "92ccd72d46a4883655d433a46c9013087a3005ba03ad795d5a4a44f23c0dec84",
       "declarations": [
         "Asakura.Chapter6.linear_growth_density_corollary_written"
-      ],
-      "chapter_records": [
-        6
-      ],
-      "imports": [
-        "Chapter6LinearGrowthPositiveDensityWritten",
-        "Chapter6AffineLinearGrowth"
       ]
     },
     "FullAuditFinitePastIndependence": {
@@ -63111,80 +62975,43 @@
       ],
       "verification": "Fresh compilation and axiom audit of the orthogonal-decomposition dependency."
     },
-    "RevisionAppendixFubini": {
-      "source_sha256": "dd23cbadfb563cd9ff5f835119ed0df423cfec5bbd002d3ab3b3982b14db649a",
+    "AppendixProductFubini": {
+      "source_sha256": "663c209d29b0a4e694894e8b1a5bf183d4d7c78b75822f571d35575bf93c9e49",
       "declarations": [
-        "Asakura.Revision20261101.measurable_sections",
-        "Asakura.Revision20261101.measurable_function_sections",
-        "Asakura.Revision20261101.product_measure_properties",
-        "Asakura.Revision20261101.product_measure_sections",
-        "Asakura.Revision20261101.tonelli",
-        "Asakura.Revision20261101.fubini"
+        "Asakura.AppendixProduct.measurable_sections",
+        "Asakura.AppendixProduct.measurable_function_sections",
+        "Asakura.AppendixProduct.product_measure_properties",
+        "Asakura.AppendixProduct.product_measure_sections",
+        "Asakura.AppendixProduct.tonelli",
+        "Asakura.AppendixProduct.fubini"
       ]
     },
-    "RevisionAudit": {
-      "source_sha256": "a8e2170fe6e3d3805860c10058b022d26fa0ebcdad9d4a5e90cf0377d496c74f",
+    "ManuscriptCorrespondenceAudit": {
+      "source_sha256": "25abbaca211a93cfc5138e4030da950f710b110f6c8756f0454fbe7bbe099eb6",
       "declarations": []
     },
-    "RevisionBrownianStops": {
-      "source_sha256": "ba5869fae05276a54c656cd89092f9610f62457cb4b7f569f97fba5dbabb05bf",
+    "Chapter9OUAffineDensity": {
+      "source_sha256": "2bc1f912ebec2464c9e0b2813397a6f662980d563923eda7fae6a99a5d206d7f",
       "declarations": [
-        "Asakura.Chapter6.brownian_norm_level_stops_survival"
+        "Asakura.Chapter9.density_toLp",
+        "Asakura.Chapter9.gaussian_affine_density",
+        "Asakura.Chapter9.ou_affine_density",
+        "Asakura.Chapter9.probability_flow_density_cutoff"
       ]
     },
-    "RevisionLinearGrowthCorollary": {
-      "source_sha256": "2cb41d31f333b6ce04f324e28c510a3739b2b73c80d695ba0a0c5c8d19bb494a",
+    "Chapter9ProbabilityFlowMarginals": {
+      "source_sha256": "84b77718236fd67312f67206974975d86f9c0e94931151991a22d7cff836d119",
       "declarations": [
-        "Asakura.Chapter6.linear_growth_density_corollary_written_exit"
+        "Asakura.Chapter9.probability_flow_marginals",
+        "Asakura.Chapter9.reverse_path_endpoints",
+        "Asakura.Chapter9.probability_flow_uniqueness",
+        "Asakura.Chapter9.probability_flow_cutoff"
       ]
     },
-    "RevisionLinearGrowthDensityConstruction": {
-      "source_sha256": "bc37f896283de0f34d65fe4c0f03aa9af95c952dc232112759a462759f5a7a59",
+    "Chapter6SurvivalDensity": {
+      "source_sha256": "8d39353ad23931b6b1b479c79b2775edec52ff636ebba88ee09cd164f343f52e",
       "declarations": [
-        "Asakura.Chapter6.revisionLinearGrowthDensityConstant",
-        "Asakura.Chapter6.linear_growth_density_construction_exit"
-      ]
-    },
-    "RevisionLinearGrowthMeanOne": {
-      "source_sha256": "dad1af0de15fc69f5e5f6561941bcd1144db6ee175176964d643fc61c1667042",
-      "declarations": [
-        "Asakura.Chapter6.linear_growth_exponential_mean_one_exit"
-      ]
-    },
-    "RevisionLinearGrowthPositiveDensity": {
-      "source_sha256": "1f7bbd21483acba3579acfae694db40b2e39285806eb763f120ac0d944c982f5",
-      "declarations": [
-        "Asakura.Chapter6.linear_growth_positive_density_written_exit"
-      ]
-    },
-    "RevisionLocalizedDensity": {
-      "source_sha256": "1ed4281c7802cc249aef4cbdcc61c3c4a1160f7031a709c37d7825f05d91aa68",
-      "declarations": [
-        "Asakura.Chapter6.localized_density_data_survival"
-      ]
-    },
-    "RevisionOUDensity": {
-      "source_sha256": "ec6ff158a3bdb30d994332198df256ca20b433c0a1afed83dcc3f0d8f9ce1ec4",
-      "declarations": [
-        "Asakura.Revision20261101.density_toLp",
-        "Asakura.Revision20261101.gaussian_affine_density",
-        "Asakura.Revision20261101.ou_affine_density",
-        "Asakura.Revision20261101.probability_flow_density_cutoff"
-      ]
-    },
-    "RevisionProbabilityFlow": {
-      "source_sha256": "9b5f7b65d6925c0c91c2403565bb3d97a1119ba060eb389580ffbaf676a151d5",
-      "declarations": [
-        "Asakura.Revision20261101.probability_flow_marginals",
-        "Asakura.Revision20261101.reverse_path_endpoints",
-        "Asakura.Revision20261101.probability_flow_uniqueness",
-        "Asakura.Revision20261101.probability_flow_cutoff"
-      ]
-    },
-    "RevisionSurvivalDensity": {
-      "source_sha256": "adf0f9a9fd96e890fdad4a0095ab9ef7ee6d86504c5124b4ea081465a861882f",
-      "declarations": [
-        "Asakura.Revision20261101.mean_one_of_survival"
+        "Asakura.Chapter6.mean_one_of_survival"
       ]
     }
   },
@@ -64274,10 +64101,6 @@
         "Chapter6WeakSDEWritten",
         "Chapter6NonnegativeBorelExtension",
         "Chapter6LikelihoodPushforward",
-        "Chapter6EntropyTail",
-        "Chapter6DensityUniformIntegrability",
-        "Chapter6EntropyUniform",
-        "Chapter6EntropyDensityLimit",
         "Chapter6DensityLowerBound",
         "Chapter6CenteredDensityLocal",
         "Chapter6RandomVariationScalar",
@@ -64423,7 +64246,6 @@
         "Chapter6ContinuousCoefficientRegular",
         "Chapter6ContinuousVectorCovariance",
         "Chapter6ContinuousVectorConstruction",
-        "Chapter6StoppedEntropyIdentity",
         "Chapter6BrownianEnvelopeBound",
         "Chapter6BrownianLevelStops",
         "Chapter6LocalizedDensityData",
@@ -67259,22 +67081,12 @@
   },
   "revision_record": {
     "date": "2026-11-01",
-    "entry": "Book.Revisions",
-    "new_theorems": 21,
-    "new_definitions": 1,
-    "modules": [
-      "RevisionAppendixFubini",
-      "RevisionAudit",
-      "RevisionBrownianStops",
-      "RevisionLinearGrowthCorollary",
-      "RevisionLinearGrowthDensityConstruction",
-      "RevisionLinearGrowthMeanOne",
-      "RevisionLinearGrowthPositiveDensity",
-      "RevisionLocalizedDensity",
-      "RevisionOUDensity",
-      "RevisionProbabilityFlow",
-      "RevisionSurvivalDensity"
+    "entry_points": [
+      "Book.Appendices",
+      "Book.Chapter06",
+      "Book.Chapter09"
     ],
-    "scope": "Appendix A.5; section 6.3 survival-event proof; section 9.3.3 probability-flow theorem and density cutoff. Existing chapter coverage records refer to the prior manuscript; this record describes the targeted revision."
+    "scope": "Canonical revised proofs. Superseded entropy/uniform-integrability proof modules removed; historical versions remain in Git history.",
+    "appendix_module": "AppendixProductFubini"
   }
 }

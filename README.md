@@ -52,17 +52,17 @@ import Book.Chapter13
 
 ## 改訂原稿への対応（2026-11-01）
 
-`import Book.Revisions` で改訂箇所の証明を読み込めます。各章・付録の入口と `import Book` からも利用できます。
+章・付録の標準入口から、現在の原稿に対応する証明を読み込めます。
 
-- 付録A.5：直積測度・トネリ・フビニ。
-- 6.3節：停止測度下の二次モーメント、退出確率、生存事象と単調収束を使う証明。密度表示・正値性まで接続し、一様可積分性・エントロピー評価を使う旧証明は保存しています。
-- 9.3.3節：確率流・逆流による密度の輸送、一意性、同じ密度の初期分布へのW2収束。
+| 原稿 | 入口 | 主な定理 |
+|---|---|---|
+| 付録A.5 | `Book.Appendices` | `Asakura.AppendixProduct.tonelli`, `Asakura.AppendixProduct.fubini` |
+| 6.3節 | `Book.Chapter06` | `Asakura.Chapter6.linear_growth_density_corollary_written` |
+| 9.3.3節 | `Book.Chapter09` | `Asakura.Chapter9.probability_flow_marginals`, `Asakura.Chapter9.probability_flow_density_cutoff` |
 
-新規21定理を追加しました。`RevisionAudit` は関連する既存8定理も含めて公理依存を表示します。章対応表の旧行番号は改訂前の位置です。
+6.3節の標準定理は、停止測度下の二次モーメント、退出確率、生存事象と単調収束による証明です。旧エントロピー・一様可積分性による証明と重複する改訂用ファイルは削除しました。旧版はGit履歴から参照できます。旧証明のみに必要だった補題は削除し、共有する補題は残しています。
 
-```sh
-lake build +Book.Revisions +RevisionAudit
-```
+`import Book` はこれらをすべて含みます。`Book.Revisions`、`Revision*` モジュール、`_exit` 付きの改訂用定理名は標準名へ統合しました。`ManuscriptCorrespondenceAudit` は改訂箇所と関連定理の公理依存を表示します。対応表の旧行番号は改訂前の位置です。
 
 ## 固定した環境
 

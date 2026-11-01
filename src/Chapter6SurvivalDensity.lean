@@ -3,7 +3,7 @@ import Mathlib.Analysis.SpecificLimits.Basic
 
 open MeasureTheory Set Filter
 open scoped Topology ENNReal
-namespace Asakura.Revision20261101
+namespace Asakura.Chapter6
 set_option maxHeartbeats 1000000
 
 /-- The direct survival-event proof. No uniform-integrability or entropy assumption. -/
@@ -66,4 +66,4 @@ theorem mean_one_of_survival {Ω : Type*} [MeasurableSpace Ω]
   refine ⟨hZi,?_⟩
   have hh := integral_tendsto_of_tendsto_of_monotone hgi hZi (.of_forall hgm) (.of_forall hgt)
   exact tendsto_nhds_unique hh hgl
-end Asakura.Revision20261101
+end Asakura.Chapter6

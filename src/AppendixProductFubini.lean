@@ -3,7 +3,7 @@ import FullAuditMonotoneClass
 
 open MeasureTheory Set
 open scoped ENNReal
-namespace Asakura.Revision20261101
+namespace Asakura.AppendixProduct
 
 /-- Appendix A.5: measurable set sections. -/
 theorem measurable_sections {X Y : Type*} [MeasurableSpace X] [MeasurableSpace Y]
@@ -62,4 +62,4 @@ theorem fubini {X Y : Type*} [MeasurableSpace X] [MeasurableSpace Y]
   exact ⟨hf.prod_right_ae, hf.prod_left_ae, hf.integral_prod_left, hf.integral_prod_right,
     integral_prod f hf, (integral_prod f hf).trans (integral_integral_swap hf)⟩
 
-end Asakura.Revision20261101
+end Asakura.AppendixProduct

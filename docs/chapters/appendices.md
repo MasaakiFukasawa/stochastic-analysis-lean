@@ -6,6 +6,8 @@ import Book.Appendices
 
 測度論・関数解析・ブラウン運動の構成。定理の仮定を明示した形式化です。分数ブラウン運動は、[EndToEndMVNWritten](../../src/EndToEndMVNWritten.lean) で元の独立なブラウン運動から実際の伊藤積分とともに構成しています。
 
+付録A.5の直積測度・トネリ・フビニは [AppendixProductFubini](../../src/AppendixProductFubini.lean) にあります。`Asakura.AppendixProduct.tonelli` と `Asakura.AppendixProduct.fubini` を使います。
+
 - [Appendix](../../src/Appendix.lean)
 - [Extended](../../src/Extended.lean)
 - [PiLambda](../../src/PiLambda.lean)

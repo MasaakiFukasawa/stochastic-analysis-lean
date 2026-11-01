@@ -5,7 +5,7 @@ import Chapter9Cutoff
 
 open MeasureTheory Set Filter
 open scoped Topology
-namespace Asakura.Revision20261101
+namespace Asakura.Chapter9
 open Asakura.Chapter9 Asakura.FullAudit
 
 /-- The new theorem 9.3.1: the actual ODE flow transports the density forward,
@@ -82,4 +82,4 @@ theorem probability_flow_cutoff {d : ℕ}
   simpa only [Real.sqrt_zero, Real.sqrt_sq_eq_abs,
     transportDistance, abs_of_nonneg (Real.sqrt_nonneg _)] using h
 
-end Asakura.Revision20261101
+end Asakura.Chapter9

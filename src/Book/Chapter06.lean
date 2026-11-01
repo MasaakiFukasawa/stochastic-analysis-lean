@@ -1,4 +1,4 @@
-import RevisionLinearGrowthCorollary
+import Chapter6LinearGrowthCorollaryWritten
 import Chapter6AEClockCross
 import Chapter6AdaptedIntegratingFactor
 import Chapter6AdditiveGrowthPathBound
@@ -72,13 +72,9 @@ import Chapter6DensityLogarithm
 import Chapter6DensityLowerBound
 import Chapter6DensityMartingale
 import Chapter6DensityProbability
-import Chapter6DensityUniformIntegrability
 import Chapter6DriftCovarianceTransfer
 import Chapter6DriftCrossCovariance
 import Chapter6DriftGridIdentity
-import Chapter6EntropyDensityLimit
-import Chapter6EntropyTail
-import Chapter6EntropyUniform
 import Chapter6EuclideanEnergyBound
 import Chapter6ExponentialClosed
 import Chapter6ExponentialLocal
@@ -173,7 +169,6 @@ import Chapter6SemimartingaleWeight
 import Chapter6SquareEnvelopeTransfer
 import Chapter6SquareMeanToL1
 import Chapter6StoppedDensity
-import Chapter6StoppedEntropyIdentity
 import Chapter6StoppedGrowthClock
 import Chapter6StoppedGrowthEnergyMoment
 import Chapter6StoppedGrowthPathBound

@@ -1,8 +1,10 @@
 import Chapter6ContinuousVectorConstruction
 import Chapter6StoppedGrowthClock
 import Chapter6LocalizedDensityData
+import Chapter6BrownianLevelStops
+import Chapter6SurvivalDensity
 import Chapter6StoppedGrowthEnergyMoment
-import Chapter6EntropyDensityLimit
+
 
 open MeasureTheory Set Filter Finset
 open scoped Topology ENNReal BigOperators
@@ -12,7 +14,7 @@ set_option maxHeartbeats 5500000
 set_option backward.isDefEq.respectTransparency false
 
 /-- Linear growth gives a true density by the manuscript's exit-time,
-changed-measure moment, entropy and uniform-integrability argument. -/
+changed-measure maximal moment and survival-event argument. No entropy or uniform integrability. -/
 theorem linear_growth_exponential_mean_one {Ω : Type*} {m : MeasurableSpace Ω}
     (P : Measure Ω) [IsProbabilityMeasure P] {d : ℕ} (B : BrownianSystem P d)
     (H : Fin d → Ω × ℝ → ℝ) (hHm : ∀ j,Measurable (H j))
@@ -39,14 +41,30 @@ theorem linear_growth_exponential_mean_one {Ω : Type*} {m : MeasurableSpace Ω}
   have hEL j : ∀ᵐ w ∂P,∀ r∈Icc 0 R,L j (realTimeClamp r) w=∫ s in 0..r,H j (w,s) :=
     covariance_density_common_time P B.F Z (B.W j) (L j) hZ (B.martingale j) (hL j) (H j)
       (fun b hb => ae_of_all _ fun w => (hHc j w).continuousOn.intervalIntegrable_of_Icc hb) (hLe j) R hR
-  obtain ⟨τ,hτ,hτR,hτlim,hτb⟩ := brownian_norm_level_stops P B R hR
+  have hBc j : ∀ w,Continuous (fun t => B.W j (min (realTimeClamp R) t) w) :=
+    open_path_stopped_continuous (B.W j) ((B.martingale j).path P B.F) R hR (EReal.coe_lt_top _)
+  let V := fun j w => finiteRealPath (B.W j) R (hBc j) w
+  let S := fun w => ∑ j, ‖V j w‖
+  have hSm : Measurable S := Finset.measurable_sum _ (fun j _ =>
+    (finite_real_path_measurable B.F B.le (B.W j) R (EReal.coe_lt_top _) (hBc j)
+      ((B.martingale j).adapted P B.F)).norm)
+  have hS0 w : 0≤S w := sum_nonneg (fun _ _ => norm_nonneg _)
+  have hSW w t : ‖WithLp.toLp 2 (fun j => B.W j (min (realTimeClamp R) t) w)‖≤S w := by
+    apply (euclidean_norm_le_abs_sum _).trans
+    apply sum_le_sum
+    intro j _
+    have he := (V j w).norm_coe_le_norm (finitePrefixTime R hR t)
+    change |B.W j (realTimeClamp (finitePrefixTime R hR t).val) w|≤_ at he
+    rw [finite_prefix_time_clamp R hR (le_top : (R:EReal)≤⊤)] at he
+    exact he
+  obtain ⟨τ,hτ,hτR,hτlim,hτb,hgood⟩ := brownian_norm_level_stops P B R hR S hSW
   have hCb n : ∀ᵐ w ∂P,|C (τ n w) w|≤K^2*(1+((n:ℝ)+1))^2*R :=
     linear_growth_stopped_clock_bound P B.W H hHc C R hR hEC K ((n:ℝ)+1) hK (by positivity)
       hHb (τ n) (hτR n) (hτb.mono (fun w hw => hw n))
   let Dn := fun n w => Real.exp (Z (τ n w) w-C (τ n w) w/2)
   have hd n := localized_density_data P B Z C hZ hC L hL H R hR hEL (τ n) (hτ n) (hτR n)
     (K^2*(1+((n:ℝ)+1))^2*R) (hCb n)
-  choose hDm hDi hDmean Q hQp hQD hAE hEi hEe BQ hBQ hrep using hd
+  choose hDm hDi hDmean Q hQp hQD hAE BQ hBQ hrep using hd
   have hWc w : ContinuousOn (fun r => (fun j => B.W j (realTimeClamp r) w)) (Icc 0 R) := by
     have hh := (continuous_pi (fun j => (open_path_stopped_continuous (B.W j) ((B.martingale j).path P B.F) R hR (EReal.coe_lt_top _) w).comp real_time_clamp_continuous)).continuousOn (s := Icc 0 R)
     apply hh.congr
@@ -55,35 +73,81 @@ theorem linear_growth_exponential_mean_one {Ω : Type*} {m : MeasurableSpace Ω}
     simp only [Function.comp_def,min_eq_right (real_time_clamp_mono hr.2)]
   let A := (d:ℝ)*K*R
   let e := Real.exp (((d:ℝ)*K+1)*R)
-  let Bound := R*K^2*(2*(1+A*e)^2+8*e^2*(d:ℝ)^2*R)
-  have hbound n : (∫ w,Dn n w*Real.log (Dn n w) ∂P)≤Bound/2 := by
+  let Bound := (d:ℝ)^2*e^2*(2*A^2+8*(d:ℝ)^2*R)
+  have hbound n : Integrable (fun w => S w^2) (Q n) ∧
+      (∫ w,S w^2 ∂Q n)≤Bound := by
     letI := hQp n
     let u := fun w => (finitePrefixTime R hR (τ n w)).val
     have hum w : u w∈Icc 0 R := (finitePrefixTime R hR (τ n w)).property
-    have heu w : realTimeClamp (u w)=τ n w := by
-      dsimp [u]
-      rw [finite_prefix_time_clamp R hR (le_top : (R:EReal)≤⊤),min_eq_right (hτR n w)]
-    have hCm := (hC.stopped_regular P B.F B.mono B.le hZ hZ (τ n) (hτ n)
-      (fun w => (hτR n w).trans_lt (changed_time_finite R hR))).1 ⊤
-    simp only [min_top_right] at hCm
-    have hCeq : ∀ᵐ w ∂Q n,C (τ n w) w=∫ s in 0..u w,∑ j,(H j (w,s))^2 := by
-      apply (hAE n _).mp
-      filter_upwards [hEC] with w hw
-      rw [←heu w]
-      exact hw (u w) (hum w)
-    have hb := stopped_growth_energy_moment (Q n) (BQ n) B.W H R hR K hK hWc hHc hHb u hum (hrep n)
-      (fun w => C (τ n w) w) (hCm.mono (B.le _) le_rfl).aestronglyMeasurable hCeq
-    rw [hEe n]
-    exact div_le_div_of_nonneg_right hb.2 (by norm_num)
+    obtain ⟨G,hGi,hG0,hG2,hGb⟩ := brownian_path_L2_envelope_bound (Q n) (BQ n) R hR
+    let M := fun w => (d:ℝ)^2*e^2*(2*A^2+2*G w^2)
+    have hMi : Integrable M (Q n) :=
+      ((integrable_const (2*A^2)).add (hGi.integrable_sq.const_mul 2)).const_mul _
+    have hb : ∀ᵐ w ∂Q n,S w^2≤M w := by
+      filter_upwards [hrep n] with w hw
+      have hp := stopped_vector_growth_path_bound
+        (fun r j => B.W j (realTimeClamp r) w)
+        (fun r j => (BQ n).W j (realTimeClamp r) w) (fun r j => H j (w,r))
+        R (u w) K (G w) hR (hum w) hK (hG0 w) (hWc w)
+        (continuous_pi (fun j => hHc j w)).continuousOn (hHb w) (hGb w)
+        (fun r hr j => by linarith [hw j r hr])
+      have hVp j : ‖V j w‖≤(A+G w)*e := by
+        have hGw := hG0 w
+        apply (ContinuousMap.norm_le _ (by dsimp [A,e]; positivity)).2
+        intro r
+        have hh := (PiLp.norm_apply_le (WithLp.toLp 2 (fun j => B.W j (realTimeClamp r.val) w)) j).trans (hp r.val r.property)
+        simpa only [V,finiteRealPath,ContinuousMap.coe_mk,Real.norm_eq_abs,A,e] using hh
+      have hSp : S w≤(d:ℝ)*(A+G w)*e := by
+        have hh := sum_le_sum (fun j (_ : j∈Finset.univ) => hVp j)
+        simpa only [S,sum_const,card_univ,Fintype.card_fin,nsmul_eq_mul,mul_assoc] using hh
+      have hsq := pow_le_pow_left₀ (hS0 w) hSp 2
+      have htwo : (A+G w)^2≤2*A^2+2*G w^2 := by nlinarith [sq_nonneg (A-G w)]
+      have hh := mul_le_mul_of_nonneg_left htwo (show 0≤(d:ℝ)^2*e^2 by positivity)
+      dsimp [M]
+      nlinarith [hsq]
+    have hSi : Integrable (fun w => S w^2) (Q n) :=
+      hMi.mono' (hSm.pow_const 2).aestronglyMeasurable
+        (hb.mono (fun w hw => by simpa only [Real.norm_eq_abs,abs_of_nonneg (sq_nonneg (S w))] using hw))
+    refine ⟨hSi,?_⟩
+    calc
+      _ ≤ ∫ w,M w ∂Q n := integral_mono_ae hSi hMi hb
+      _ = (d:ℝ)^2*e^2*(2*A^2+2*(∫ w,G w^2 ∂Q n)) := by
+        rw [integral_const_mul,integral_add (integrable_const _) (hGi.integrable_sq.const_mul _),
+          integral_const,integral_const_mul]
+        simp
+      _ ≤ Bound := by
+        dsimp [Bound]
+        exact mul_le_mul_of_nonneg_left (by linarith [hG2]) (by positivity)
   let D := fun w => Real.exp (Z (realTimeClamp R) w-C (realTimeClamp R) w/2)
-  have hlim : ∀ᵐ w ∂P,Tendsto (fun n => Dn n w) atTop (𝓝 (D w)) := by
-    apply ae_of_all
-    intro w
-    apply tendsto_const_nhds.congr'
-    filter_upwards [hτlim w] with n hn
-    simp only [Dn,D,hn]
-  have hfinal := entropy_localized_density_limit P Dn hDm hDi (fun n => ae_of_all _ fun w => (Real.exp_pos _).le)
-    hEi (Bound/2) hbound hDmean D hlim
+  have hDmZ : Measurable D := by
+    have hmz := (hZ.adapted P B.F _ (changed_time_finite R hR)).mono (B.le _) le_rfl
+    have hmc := (hC.adapted P B.F hZ hZ _ (changed_time_finite R hR)).mono (B.le _) le_rfl
+    exact (hmz.sub (hmc.div_const 2)).exp
+  have heq (n : ℕ) w (hw : S w<(n:ℝ)+1) : D w=Dn n w := by
+    dsimp [D,Dn]
+    rw [hgood n w hw]
+  have htail : Tendsto (fun n : ℕ => ∫ w in {w | (n:ℝ)+1≤S w},Dn n w ∂P) atTop (𝓝 0) := by
+    have hbad (n : ℕ) : (∫ w in {w | (n:ℝ)+1≤S w},Dn n w ∂P)≤Bound/((n:ℝ)+1)^2 := by
+      letI := hQp n
+      let E := {w | (n:ℝ)+1≤S w}
+      have hEm : MeasurableSet E := measurableSet_le measurable_const hSm
+      have hmass : (Q n).real E=∫ w in E,Dn n w ∂P := by
+        rw [Measure.real,hQD n,withDensity_apply _ hEm]
+        rw [←ofReal_integral_eq_lintegral_ofReal (hDi n).restrict (.of_forall (fun _ => (Real.exp_pos _).le))]
+        exact ENNReal.toReal_ofReal (integral_nonneg (fun _ => (Real.exp_pos _).le))
+      have hh := mul_meas_ge_le_integral_of_nonneg (.of_forall (fun w => sq_nonneg (S w))) (hbound n).1 (((n:ℝ)+1)^2)
+      have he : {w | ((n:ℝ)+1)^2≤S w^2}=E := by
+        ext w
+        exact sq_le_sq₀ (by positivity) (hS0 w)
+      rw [he,hmass] at hh
+      exact (le_div_iff₀ (by positivity)).mpr (by nlinarith [(hbound n).2])
+    have hN : Tendsto (fun n : ℕ => (n:ℝ)) atTop atTop := tendsto_natCast_atTop_atTop
+    have hden : Tendsto (fun n : ℕ => ((n:ℝ)+1)^2) atTop atTop :=
+      tendsto_atTop_mono (fun n => by nlinarith [Nat.cast_nonneg (α:=ℝ) n]) hN
+    exact squeeze_zero (fun n => integral_nonneg (fun _ => (Real.exp_pos _).le)) hbad
+      (tendsto_const_nhds.div_atTop hden)
+  have hfinal := Asakura.Chapter6.mean_one_of_survival P Dn D S hDi
+    (fun _ _ => (Real.exp_pos _).le) hDmean hDmZ (fun _ => (Real.exp_pos _).le) hSm heq htail
   exact ⟨N,C,hN,hNI,hC,hCe,hfinal⟩
 
 end Asakura.Chapter6
